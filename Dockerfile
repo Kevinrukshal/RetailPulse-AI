@@ -4,6 +4,7 @@ ARG INSTALL_DEV=false
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app \
     PIP_DISABLE_PIP_VERSION_CHECK=1
 
 WORKDIR /app
@@ -12,6 +13,14 @@ RUN addgroup --system retailpulse \
     && adduser --system --ingroup retailpulse --home /app retailpulse
 
 COPY pyproject.toml README.md LICENSE alembic.ini ./
+RUN mkdir -p app etl \
+    && touch app/__init__.py etl/__init__.py \
+    && if [ "$INSTALL_DEV" = "true" ]; then \
+        python -m pip install --no-cache-dir ".[dev]"; \
+    else \
+        python -m pip install --no-cache-dir .; \
+    fi
+
 COPY app ./app
 COPY etl ./etl
 COPY migrations ./migrations
@@ -19,12 +28,7 @@ COPY sql ./sql
 COPY scripts ./scripts
 COPY tests ./tests
 
-RUN if [ "$INSTALL_DEV" = "true" ]; then \
-        python -m pip install --no-cache-dir ".[dev]"; \
-    else \
-        python -m pip install --no-cache-dir .; \
-    fi \
-    && mkdir -p /app/data/processed /app/data/rejected /app/data/sample \
+RUN mkdir -p /app/data/processed /app/data/rejected /app/data/sample \
     && chown -R retailpulse:retailpulse /app
 
 USER retailpulse

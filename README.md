@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 7 analytics. The complete ETL feeds six tested PostgreSQL views and
-> a documented advanced-SQL query library for business KPIs, RFM, regional performance,
-> discount impact, and profit leakage. API endpoints follow in the next phase.
+> Project status: Phase 8 analytics API. The ETL and SQL analytics layer are exposed through
+> a versioned, read-only FastAPI service with validated filters, Pydantic v2 contracts,
+> safe error handling, pagination, OpenAPI documentation, and CORS configuration.
 
 ## Planned MVP
 
@@ -179,6 +179,29 @@ Alembic creates six read-only views from `sql/views.sql`:
 functions, ranking, `CASE`, date functions, joins, and aggregation. These cover executive
 KPIs, trends, product/customer/region performance, RFM, discount impact, and profit leakage.
 Any result from the bundled synthetic dataset is a demonstration finding only.
+
+## Analytics API
+
+Swagger UI is available at `http://localhost:8000/docs`. The read-only endpoints are:
+
+```text
+GET /health
+GET /api/v1/summary
+GET /api/v1/revenue/monthly
+GET /api/v1/products/top
+GET /api/v1/products/loss-making
+GET /api/v1/customers/top
+GET /api/v1/customers/segments
+GET /api/v1/regions/performance
+GET /api/v1/profit-leakage
+GET /api/v1/data-quality/latest
+GET /api/v1/etl-runs
+```
+
+Fact-level endpoints accept appropriate `start_date`, `end_date`, `region`, `category`, and
+`subcategory` filters. Ranked endpoints validate `limit` and `sort_by`; ETL history uses
+`limit` and `offset`. SQL parameters are bound, sort expressions are allowlisted, and API
+database transactions are explicitly read-only.
 
 ## Configuration
 

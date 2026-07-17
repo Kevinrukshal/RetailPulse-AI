@@ -23,6 +23,7 @@ class Settings(BaseSettings):
 
     api_host: str = "0.0.0.0"
     api_port: int = Field(default=8000, ge=1, le=65535)
+    cors_origins: str = "http://localhost:3000,http://localhost:5173"
 
     postgres_db: str = "retailpulse"
     postgres_user: str = "retail_user"
@@ -52,6 +53,11 @@ class Settings(BaseSettings):
             f"postgresql+psycopg://{self.postgres_user}:{password}"
             f"@{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
         )
+
+    @property
+    def allowed_cors_origins(self) -> list[str]:
+        """Return normalized browser origins for CORS middleware."""
+        return [origin.strip() for origin in self.cors_origins.split(",") if origin.strip()]
 
 
 @lru_cache
