@@ -1,0 +1,1 @@
+"""RetailPulse AI automated tests."""
