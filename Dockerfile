@@ -15,6 +15,7 @@ COPY pyproject.toml README.md LICENSE alembic.ini ./
 COPY app ./app
 COPY etl ./etl
 COPY migrations ./migrations
+COPY sql ./sql
 COPY scripts ./scripts
 COPY tests ./tests
 

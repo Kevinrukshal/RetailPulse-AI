@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 6 end-to-end ETL. The CLI processes CSV/XLSX sources into quality
-> artifacts and normalized PostgreSQL records with transactional loading, failed-run
-> auditing, and stable same-file idempotency. Analytics follow in later verified phases.
+> Project status: Phase 7 analytics. The complete ETL feeds six tested PostgreSQL views and
+> a documented advanced-SQL query library for business KPIs, RFM, regional performance,
+> discount impact, and profit leakage. API endpoints follow in the next phase.
 
 ## Planned MVP
 
@@ -163,6 +163,22 @@ problems, and `1` for unexpected failures. It writes valid/rejected CSV files an
 Markdown quality reports under `data/processed` and `data/rejected`. Each execution gets a
 new ETL run record; the stable order-item key prevents the same file from duplicating sales
 facts when it is processed again.
+
+## SQL analytics
+
+Alembic creates six read-only views from `sql/views.sql`:
+
+- `executive_summary`
+- `monthly_performance`
+- `product_performance`
+- `customer_performance`
+- `regional_performance`
+- `profit_leakage`
+
+`sql/analysis_queries.sql` contains 22 executable, documented analyses using CTEs, window
+functions, ranking, `CASE`, date functions, joins, and aggregation. These cover executive
+KPIs, trends, product/customer/region performance, RFM, discount impact, and profit leakage.
+Any result from the bundled synthetic dataset is a demonstration finding only.
 
 ## Configuration
 
