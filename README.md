@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 5 platform foundation. The normalized PostgreSQL schema, Alembic
-> migration, Docker Compose environment, and database-aware health endpoint are available.
-> Transactional ETL loading and analytics follow in later verified phases.
+> Project status: Phase 6 end-to-end ETL. The CLI processes CSV/XLSX sources into quality
+> artifacts and normalized PostgreSQL records with transactional loading, failed-run
+> auditing, and stable same-file idempotency. Analytics follow in later verified phases.
 
 ## Planned MVP
 
@@ -143,6 +143,26 @@ loading and auditing easy to explain. A dimensional star schema would copy descr
 attributes into dedicated dimensions around a sales fact table for reporting performance.
 RetailPulse initially keeps normalized source-of-truth tables and exposes denormalized SQL
 views to Power BI; a dedicated dimensional layer can be added later if scale justifies it.
+
+## Run the ETL pipeline
+
+With the Compose stack healthy, run the sample inside the API container:
+
+```powershell
+docker compose exec api python -m etl.pipeline --file data/sample/sample_sales.csv
+```
+
+For a local Python process, set `DATABASE_URL` to a reachable PostgreSQL host and run:
+
+```powershell
+.\.venv\Scripts\python.exe -m etl.pipeline --file data\sample\sample_sales.csv
+```
+
+The command exits with `0` on success, `2` for source/validation problems, `3` for database
+problems, and `1` for unexpected failures. It writes valid/rejected CSV files and JSON/
+Markdown quality reports under `data/processed` and `data/rejected`. Each execution gets a
+new ETL run record; the stable order-item key prevents the same file from duplicating sales
+facts when it is processed again.
 
 ## Configuration
 
