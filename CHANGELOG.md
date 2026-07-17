@@ -2,6 +2,14 @@
 
 All notable changes to RetailPulse AI are documented here.
 
+## 1.2.0 - 2026-07-17
+
+### Added
+
+- Responsive browser dashboard for analytics and data-quality views.
+- Drag-and-drop CSV/XLSX upload with automatic analytics refresh.
+- Size limits, filename validation, and temporary-file cleanup for uploads.
+
 ## 1.1.0 - 2026-07-17
 
 ### Added

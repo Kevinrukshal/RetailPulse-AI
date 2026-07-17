@@ -101,8 +101,24 @@ def test_quality_and_paginated_etl_history(client: TestClient) -> None:
     assert len(runs.json()["items"]) == 1
 
 
+def test_upload_processes_a_real_csv(client: TestClient) -> None:
+    source = Path("/app/tests/fixtures/valid_sales.csv")
+
+    response = client.post(
+        "/api/v1/upload",
+        params={"filename": source.name},
+        content=source.read_bytes(),
+        headers={"content-type": "application/octet-stream"},
+    )
+
+    assert response.status_code == 201
+    assert response.json()["filename"] == "valid_sales.csv"
+    assert response.json()["valid_rows"] == response.json()["total_rows"]
+    assert response.json()["invalid_rows"] == 0
+
+
 def test_openapi_exposes_only_expected_operations() -> None:
-    assert app.openapi()["info"]["version"] == "1.1.0"
+    assert app.openapi()["info"]["version"] == "1.2.0"
     operations = {
         method
         for path in app.openapi()["paths"].values()
@@ -112,7 +128,7 @@ def test_openapi_exposes_only_expected_operations() -> None:
 
     assert operations == {"get", "post"}
     post_paths = {path for path, methods in app.openapi()["paths"].items() if "post" in methods}
-    assert post_paths == {"/api/v1/assistant/query"}
+    assert post_paths == {"/api/v1/assistant/query", "/api/v1/upload"}
 
 
 def test_database_errors_return_safe_503(client: TestClient) -> None:

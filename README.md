@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: v1.1.0. The release-verified analytics platform now includes an optional,
-> disabled-by-default, grounded AI business assistant. All bundled findings use synthetic
-> demonstration data.
+> Project status: v1.2.0. The release-verified analytics platform includes a browser upload
+> dashboard and an optional, disabled-by-default, grounded AI business assistant. All bundled
+> findings use synthetic demonstration data.
 
 ## What it demonstrates
 
@@ -15,7 +15,8 @@ analytics, BI, data engineering, and junior backend roles.
 - Multi-reason row validation, rejected-record quarantine, and auditable quality scoring.
 - Deterministic transformations and transactional, idempotent PostgreSQL loading.
 - Alembic-managed normalized tables plus six BI-oriented analytical views.
-- A versioned read-only FastAPI surface with filters, pagination, and safe failures.
+- Versioned read-only analytics endpoints with filters, pagination, and safe failures.
+- A responsive browser dashboard with bounded CSV/XLSX upload and automatic refresh.
 - A reproducible four-page Power BI specification and DAX measure library.
 - A guarded AI narrator over deterministic intents, reviewed SQL, and local documentation.
 - Docker Compose operations and PostgreSQL-backed CI with an 80% coverage gate.
@@ -36,7 +37,7 @@ dataset to be introduced without rewriting the pipeline.
 - Normalized `customers`, `products`, `orders`, and `order_items` tables preserve clear
   business entities and avoid update anomalies.
 - Power BI consumes denormalized analytical views rather than the transactional tables.
-- ETL runs from the command line; the API remains stateless and read-only.
+- ETL runs from the command line or the explicit, bounded browser upload route; analytics stay read-only.
 - Settings come from environment variables, logs go to standard output as JSON, and
   secrets stay outside source control.
 - AI is disabled by default; its provider SDK is isolated in the optional `ai` package extra.
@@ -60,10 +61,12 @@ python -m venv .venv
 Copy-Item .env.example .env
 docker compose up --build -d
 docker compose exec api python -m etl.pipeline --file data/sample/sample_sales.csv
-Invoke-RestMethod http://localhost:8000/api/v1/summary
+Start-Process http://localhost:8000
 ```
 
-The expected Python version is `3.14.x`. Change local values in `.env`; never commit it.
+The browser opens the RetailPulse dashboard. Choose a CSV/XLSX file, select **Process file**,
+then explore Overview, Products, Customers, Regions, Data quality, and Profit leakage. The
+expected Python version is `3.14.x`. Change local values in `.env`; never commit it.
 
 ## Local verification
 
@@ -133,7 +136,7 @@ Invoke-RestMethod http://localhost:8000/health
 
 Expected local services:
 
-- FastAPI and Swagger: `http://localhost:8000` and `http://localhost:8000/docs`
+- Browser dashboard and Swagger: `http://localhost:8000` and `http://localhost:8000/docs`
 - PostgreSQL 16: `localhost:5432`
 - pgAdmin: `http://localhost:5050`
 
@@ -189,7 +192,8 @@ Any result from the bundled synthetic dataset is a demonstration finding only.
 
 ## Analytics API
 
-Swagger UI is available at `http://localhost:8000/docs`. The read-only endpoints are:
+Swagger UI is available at `http://localhost:8000/docs`. The analytics and assistant endpoints are
+read-only; upload is the explicit ETL write endpoint:
 
 ```text
 GET /health
@@ -205,12 +209,18 @@ GET /api/v1/data-quality/latest
 GET /api/v1/etl-runs
 GET /api/v1/assistant/status
 POST /api/v1/assistant/query
+POST /api/v1/upload?filename=sales.csv
 ```
 
 Fact-level endpoints accept appropriate `start_date`, `end_date`, `region`, `category`, and
 `subcategory` filters. Ranked endpoints validate `limit` and `sort_by`; ETL history uses
 `limit` and `offset`. SQL parameters are bound, sort expressions are allowlisted, and API
-database transactions are explicitly read-only.
+analytical database transactions are explicitly read-only. Upload processing uses the separately
+audited transactional ETL write path.
+
+The upload route accepts a raw CSV/XLSX body, enforces `UPLOAD_MAX_MB`, deletes its temporary
+copy after processing, and uses the same validated, audited, idempotent ETL as the CLI. It is
+enabled for local use by default; set `UPLOAD_ENABLED=false` before exposing an API-only service.
 
 ## Power BI dashboard handoff
 
@@ -238,6 +248,7 @@ The detailed threat model and examples are in [the AI assistant guide](docs/ai_a
 - [Architecture](docs/architecture.md)
 - [Database design](docs/database.md)
 - [Analytics API](docs/api.md)
+- [Browser dashboard](docs/web_dashboard.md)
 - [Guarded AI assistant](docs/ai_assistant.md)
 - [Demonstration business insights](docs/business_insights.md)
 - [Deployment](docs/deployment.md)

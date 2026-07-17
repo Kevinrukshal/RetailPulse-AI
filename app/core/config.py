@@ -24,6 +24,8 @@ class Settings(BaseSettings):
     api_host: str = "0.0.0.0"
     api_port: int = Field(default=8000, ge=1, le=65535)
     cors_origins: str = "http://localhost:3000,http://localhost:5173"
+    upload_enabled: bool = True
+    upload_max_mb: float = Field(default=10.0, gt=0, le=100)
 
     postgres_db: str = "retailpulse"
     postgres_user: str = "retail_user"
@@ -64,6 +66,11 @@ class Settings(BaseSettings):
     def allowed_cors_origins(self) -> list[str]:
         """Return normalized browser origins for CORS middleware."""
         return [origin.strip() for origin in self.cors_origins.split(",") if origin.strip()]
+
+    @property
+    def upload_max_bytes(self) -> int:
+        """Return the configured upload limit in bytes."""
+        return int(self.upload_max_mb * 1024 * 1024)
 
 
 @lru_cache

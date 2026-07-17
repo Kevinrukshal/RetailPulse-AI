@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RetailPulse AI</title>
+  <meta name="description" content="Upload retail sales data and explore validated business analytics.">
+  <link rel="stylesheet" href="/app/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" aria-label="RetailPulse home">
+        <span class="brand-mark">RP</span>
+        <span><strong>RetailPulse</strong><small>Analytics workspace</small></span>
+      </a>
+      <nav class="nav" aria-label="Dashboard sections">
+        <button class="nav-item active" data-section="overview"><span>01</span>Overview</button>
+        <button class="nav-item" data-section="products"><span>02</span>Products</button>
+        <button class="nav-item" data-section="customers"><span>03</span>Customers</button>
+        <button class="nav-item" data-section="regions"><span>04</span>Regions</button>
+        <button class="nav-item" data-section="quality"><span>05</span>Data quality</button>
+        <button class="nav-item" data-section="leakage"><span>06</span>Profit leakage</button>
+      </nav>
+      <div class="sidebar-footer">
+        <span id="api-dot" class="status-dot"></span>
+        <div><strong id="api-label">Checking API</strong><small>Synthetic demo workspace</small></div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Business intelligence</p>
+          <h1 id="page-title">Executive overview</h1>
+        </div>
+        <div class="top-actions">
+          <button id="refresh-button" class="button secondary" type="button">Refresh data</button>
+          <a class="button ghost" href="/docs" target="_blank" rel="noreferrer">API docs</a>
+        </div>
+      </header>
+
+      <section class="upload-panel" aria-labelledby="upload-title">
+        <div class="upload-copy">
+          <span class="step-badge">Start here</span>
+          <h2 id="upload-title">Bring in your retail data</h2>
+          <p>Select a CSV or Excel file. RetailPulse validates every row, quarantines problems,
+            loads clean records, and refreshes the analytics below.</p>
+          <div class="requirements"><span>CSV / XLSX</span><span>Maximum 10 MB</span><span>Audited & idempotent</span></div>
+        </div>
+        <div id="drop-zone" class="drop-zone" tabindex="0" role="button" aria-label="Choose a sales data file">
+          <input id="file-input" type="file" accept=".csv,.xlsx" hidden>
+          <span class="upload-icon" aria-hidden="true">↑</span>
+          <strong id="file-label">Drop a file here or click to browse</strong>
+          <small id="file-meta">Use the included sample_sales.csv to try it</small>
+          <button id="upload-button" class="button primary" type="button" disabled>Process file</button>
+        </div>
+      </section>
+
+      <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+
+      <section id="loading" class="loading-grid" aria-label="Loading dashboard">
+        <div></div><div></div><div></div><div></div>
+      </section>
+
+      <section id="overview" class="dashboard-section active-section">
+        <div id="kpi-grid" class="kpi-grid"></div>
+        <div class="content-grid overview-grid">
+          <article class="card chart-card">
+            <div class="card-heading"><div><p class="eyebrow">Performance over time</p><h2>Monthly revenue</h2></div><span class="legend"><i></i>Revenue</span></div>
+            <div id="monthly-chart" class="bar-chart" aria-label="Monthly revenue chart"></div>
+          </article>
+          <article class="card">
+            <div class="card-heading"><div><p class="eyebrow">Market view</p><h2>Regional performance</h2></div></div>
+            <div id="region-bars" class="rank-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="products" class="dashboard-section">
+        <article class="card full-card"><div class="card-heading"><div><p class="eyebrow">Product intelligence</p><h2>Top products</h2></div></div><div id="products-table" class="table-wrap"></div></article>
+      </section>
+
+      <section id="customers" class="dashboard-section">
+        <div class="content-grid">
+          <article class="card"><div class="card-heading"><div><p class="eyebrow">Value leaders</p><h2>Top customers</h2></div></div><div id="customers-table" class="table-wrap"></div></article>
+          <article class="card"><div class="card-heading"><div><p class="eyebrow">RFM intelligence</p><h2>Customer segments</h2></div></div><div id="segments-list" class="rank-list"></div></article>
+        </div>
+      </section>
+
+      <section id="regions" class="dashboard-section">
+        <article class="card full-card"><div class="card-heading"><div><p class="eyebrow">Geographic performance</p><h2>Regions</h2></div></div><div id="regions-table" class="table-wrap"></div></article>
+      </section>
+
+      <section id="quality" class="dashboard-section">
+        <div class="content-grid">
+          <article class="card quality-card"><div class="card-heading"><div><p class="eyebrow">Latest pipeline run</p><h2>Quality score</h2></div></div><div id="quality-score" class="score-ring"></div><div id="quality-details" class="detail-list"></div></article>
+          <article class="card"><div class="card-heading"><div><p class="eyebrow">Audit trail</p><h2>Recent ETL runs</h2></div></div><div id="runs-table" class="table-wrap"></div></article>
+        </div>
+      </section>
+
+      <section id="leakage" class="dashboard-section">
+        <article class="card full-card"><div class="card-heading"><div><p class="eyebrow">Management attention</p><h2>Profit leakage</h2></div><span class="danger-legend">Review flagged lines</span></div><div id="leakage-table" class="table-wrap"></div></article>
+      </section>
+
+      <footer><span>RetailPulse AI v1.2</span><span>All bundled data is synthetic demonstration content.</span></footer>
+    </main>
+  </div>
+  <script src="/app/app.js" defer></script>
+</body>
+</html>

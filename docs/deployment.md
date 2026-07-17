@@ -34,7 +34,7 @@ services to the host network.
 - Put the API behind HTTPS, authentication, rate limits, access logs, and a restrictive CORS policy.
 - Do not publish PostgreSQL or pgAdmin ports to the public internet.
 - Add centralized logs, metrics, traces, uptime checks, alerting, and tested restore procedures.
-- Separate ETL, API, migration, and BI identities; the API and BI identities should be read-only.
+- Separate ETL/upload, analytics, migration, and BI identities; analytics and BI should be read-only.
 - Scan dependencies/images and define retention for source, rejected, and audit data.
 
 ## Release and rollback

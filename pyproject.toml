@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "retailpulse-ai"
-version = "1.1.0"
+version = "1.2.0"
 description = "Local-first retail analytics, ETL, and business intelligence platform."
 readme = "README.md"
 requires-python = ">=3.14,<3.15"

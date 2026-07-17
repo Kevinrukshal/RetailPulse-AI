@@ -1,7 +1,7 @@
 # Analytics API
 
-The API is versioned under `/api/v1`, serves analytics only, and exposes no ETL or database-write
-route. The assistant uses POST for a question body but executes read-only analytics.
+The API is versioned under `/api/v1`. Analytics and assistant routes are read-only; the local
+upload route is the explicit write path into the validated ETL pipeline.
 Interactive OpenAPI documentation is available at `/docs` while the stack is running.
 
 | Endpoint | Purpose | Notable query parameters |
@@ -18,6 +18,7 @@ Interactive OpenAPI documentation is available at `/docs` while the stack is run
 | `/etl-runs` | Paginated execution history | `limit`, `offset` |
 | `/assistant/status` | Non-secret AI availability and supported intents | none |
 | `/assistant/query` | Grounded answer and exact evidence (`POST`) | JSON question body |
+| `/upload` | Validate and load one file (`POST`) | `filename` plus raw CSV/XLSX body |
 
 Dates use ISO `YYYY-MM-DD`. A start date after the end date returns `422`; invalid limits or sort
 values also return `422`. Empty analytical result sets return an empty list or zero-valued summary,
@@ -34,9 +35,10 @@ Invoke-RestMethod "http://localhost:8000/api/v1/revenue/monthly?start_date=2025-
 SQL values are bound parameters. The few dynamic order expressions are selected from explicit
 server-side maps. Each request transaction is set read-only at the database level.
 
-This local portfolio API intentionally has no authentication. Before internet exposure, place it
-behind an authenticated gateway or add application auth, rate limiting, HTTPS, request-size limits,
-and environment-specific CORS origins.
+This local portfolio API intentionally has no authentication. Browser uploads are limited by
+`UPLOAD_MAX_MB` (10 MB by default), but should be disabled with `UPLOAD_ENABLED=false` before
+internet exposure unless an authenticated gateway, rate limiting, HTTPS, and environment-specific
+CORS controls are added.
 
 The assistant endpoint is disabled by default. It accepts a 5-500 character question, maps it to a
 fixed intent/query, and returns `422` for unsupported questions, `503` when disabled, and `502` for

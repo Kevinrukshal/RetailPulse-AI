@@ -1,7 +1,8 @@
 # Architecture
 
 RetailPulse is a local-first, layered analytics platform. It keeps ingestion concerns separate
-from read-only serving so an input file can never mutate the database through an HTTP endpoint.
+from read-only analytics serving; one explicit, bounded HTTP upload route invokes the same audited
+ETL used by the command line.
 
 ```text
 CSV / XLSX
@@ -14,7 +15,7 @@ extract -> map -> validate -> reject/report -> transform -> transactional load
                                              /        |       \
                                     analytics views  audit   normalized data
                                          |                         |
-                                  FastAPI GET API              Power BI
+                            FastAPI analytics + upload         Power BI
 ```
 
 ## Component boundaries
@@ -38,7 +39,8 @@ The entire database load occurs in one transaction, while each execution receive
 Invalid rows are quarantined with all reasons; unreasonable profit remains a warning rather than
 being silently removed.
 
-The API opens read-only transactions, uses bound SQL parameters, and allowlists dynamic sorts.
+Analytics routes open read-only transactions, use bound SQL parameters, and allowlist dynamic
+sorts. The upload route validates and deletes its temporary file around a transactional ETL run.
 Secrets come from environment variables. Containers run the application as a non-root user.
 
 ## Operational properties
@@ -56,4 +58,3 @@ The implementation favors clarity for portfolio and small-team use. At higher vo
 with PostgreSQL `COPY`, introduce incremental partitions/materialized views, use a queue for ETL,
 and separate operational and BI credentials. These are deliberate future optimizations, not
 requirements for the current 750-row demonstration workload.
-
