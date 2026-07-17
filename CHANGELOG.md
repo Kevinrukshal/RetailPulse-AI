@@ -2,6 +2,16 @@
 
 All notable changes to RetailPulse AI are documented here.
 
+## 1.1.0 - 2026-07-17
+
+### Added
+
+- Disabled-by-default AI business assistant with six deterministic intents.
+- Static, read-only SQL catalog with row caps, statement timeouts, and source allowlisting.
+- Local documentation retrieval and evidence/source disclosure in every assistant response.
+- Optional OpenAI Responses API narrator installed through the `ai` package extra.
+- Offline provider fakes, prompt-injection checks, and PostgreSQL-backed intent tests.
+
 ## 1.0.0 - 2026-07-17
 
 ### Added

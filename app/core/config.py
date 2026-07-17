@@ -33,14 +33,20 @@ class Settings(BaseSettings):
     database_url: str | None = None
 
     ai_enabled: bool = False
+    ai_provider: Literal["openai"] = "openai"
     openai_api_key: SecretStr | None = None
     ai_model: str | None = None
+    ai_row_limit: int = Field(default=10, ge=1, le=20)
+    ai_query_timeout_ms: int = Field(default=2_000, ge=100, le=10_000)
 
     @model_validator(mode="after")
     def validate_ai_configuration(self) -> Self:
         """Require explicit AI credentials only if the future feature is enabled."""
-        if self.ai_enabled and not self.openai_api_key:
+        api_key = self.openai_api_key.get_secret_value() if self.openai_api_key else ""
+        if self.ai_enabled and not api_key.strip():
             raise ValueError("OPENAI_API_KEY is required when AI_ENABLED is true")
+        if self.ai_enabled and not (self.ai_model or "").strip():
+            raise ValueError("AI_MODEL is required when AI_ENABLED is true")
         return self
 
     @property

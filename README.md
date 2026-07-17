@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: v1.0.0. The complete non-AI platform, Power BI handoff, CI pipeline, and
-> portfolio documentation are implemented and release-verified. All bundled findings use
-> synthetic demonstration data.
+> Project status: v1.1.0. The release-verified analytics platform now includes an optional,
+> disabled-by-default, grounded AI business assistant. All bundled findings use synthetic
+> demonstration data.
 
 ## What it demonstrates
 
@@ -17,6 +17,7 @@ analytics, BI, data engineering, and junior backend roles.
 - Alembic-managed normalized tables plus six BI-oriented analytical views.
 - A versioned read-only FastAPI surface with filters, pagination, and safe failures.
 - A reproducible four-page Power BI specification and DAX measure library.
+- A guarded AI narrator over deterministic intents, reviewed SQL, and local documentation.
 - Docker Compose operations and PostgreSQL-backed CI with an 80% coverage gate.
 
 The complete vertical slice is:
@@ -38,7 +39,7 @@ dataset to be introduced without rewriting the pipeline.
 - ETL runs from the command line; the API remains stateless and read-only.
 - Settings come from environment variables, logs go to standard output as JSON, and
   secrets stay outside source control.
-- AI is disabled and has no package or dependency until the core platform is stable.
+- AI is disabled by default; its provider SDK is isolated in the optional `ai` package extra.
 
 ## Requirements
 
@@ -71,7 +72,7 @@ From the repository root, run:
 ```powershell
 .\.venv\Scripts\python.exe -m ruff check .
 .\.venv\Scripts\python.exe -m ruff format --check .
-docker compose exec -e RUN_INTEGRATION_TESTS=1 api pytest --cov=app --cov=etl
+docker compose exec -e RUN_INTEGRATION_TESTS=1 api pytest --cov=ai --cov=app --cov=etl
 ```
 
 All commands must exit with code `0` before a release is accepted.
@@ -202,6 +203,8 @@ GET /api/v1/regions/performance
 GET /api/v1/profit-leakage
 GET /api/v1/data-quality/latest
 GET /api/v1/etl-runs
+GET /api/v1/assistant/status
+POST /api/v1/assistant/query
 ```
 
 Fact-level endpoints accept appropriate `start_date`, `end_date`, `region`, `category`, and
@@ -225,21 +228,22 @@ All supplied KPI values are deterministic outputs from synthetic demonstration d
 
 ## Configuration
 
-`app/core/config.py` uses Pydantic Settings v2. Environment variables override defaults;
-`.env.example` documents the supported local values. `AI_ENABLED=false` is the only
-supported AI mode during the MVP foundation.
+`app/core/config.py` uses Pydantic Settings v2. Environment variables override defaults and
+`.env.example` documents all values. Keep `AI_ENABLED=false` for the core-only platform. To use
+the narrator, set `INSTALL_AI=true`, configure the provider key/model, and rebuild the API image.
+The detailed threat model and examples are in [the AI assistant guide](docs/ai_assistant.md).
 
 ## Documentation
 
 - [Architecture](docs/architecture.md)
 - [Database design](docs/database.md)
 - [Analytics API](docs/api.md)
+- [Guarded AI assistant](docs/ai_assistant.md)
 - [Demonstration business insights](docs/business_insights.md)
 - [Deployment](docs/deployment.md)
 - [Power BI setup](docs/powerbi_setup.md)
 
-Safe, grounded AI assistance remains a post-v1 extension. No cloud infrastructure is claimed by
-this local-first release.
+No cloud infrastructure is claimed by this local-first release.
 
 ## Author
 

@@ -11,6 +11,7 @@ from sqlalchemy import text
 from sqlalchemy.exc import SQLAlchemyError
 
 from app.api.routes.analytics import router as analytics_router
+from app.api.routes.assistant import router as assistant_router
 from app.core.config import get_settings
 from app.core.logging import configure_logging
 from app.database.session import get_engine
@@ -26,15 +27,16 @@ async def lifespan(_: FastAPI) -> AsyncIterator[None]:
 
 LOGGER = logging.getLogger(__name__)
 settings = get_settings()
-app = FastAPI(title=settings.app_name, version="1.0.0", lifespan=lifespan)
+app = FastAPI(title=settings.app_name, version="1.1.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_cors_origins,
     allow_credentials=False,
-    allow_methods=["GET"],
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 app.include_router(analytics_router)
+app.include_router(assistant_router)
 
 
 @app.exception_handler(SQLAlchemyError)

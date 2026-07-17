@@ -101,8 +101,8 @@ def test_quality_and_paginated_etl_history(client: TestClient) -> None:
     assert len(runs.json()["items"]) == 1
 
 
-def test_openapi_exposes_only_get_operations() -> None:
-    assert app.openapi()["info"]["version"] == "1.0.0"
+def test_openapi_exposes_only_expected_operations() -> None:
+    assert app.openapi()["info"]["version"] == "1.1.0"
     operations = {
         method
         for path in app.openapi()["paths"].values()
@@ -110,7 +110,9 @@ def test_openapi_exposes_only_get_operations() -> None:
         if method in {"get", "post", "put", "patch", "delete"}
     }
 
-    assert operations == {"get"}
+    assert operations == {"get", "post"}
+    post_paths = {path for path, methods in app.openapi()["paths"].items() if "post" in methods}
+    assert post_paths == {"/api/v1/assistant/query"}
 
 
 def test_database_errors_return_safe_503(client: TestClient) -> None:

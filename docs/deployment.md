@@ -1,6 +1,6 @@
 # Deployment Guide
 
-The supported v1.0 target is local Docker Compose. Cloud providers are possible future targets;
+The supported v1.x target is local Docker Compose. Cloud providers are possible future targets;
 none is implied to be production-ready by this repository.
 
 ## Local deployment
@@ -21,9 +21,10 @@ with `docker compose down`. Do not add `-v` unless intentionally deleting local 
 ## Configuration and secrets
 
 `.env.example` is documentation only. Generate strong database and pgAdmin passwords in `.env`,
-restrict CORS, and never commit or paste that file into tickets. `AI_ENABLED=false` is the only
-supported v1.0 mode. The API container is non-root, but local port publishing still exposes services
-to the host network.
+restrict CORS, and never commit or paste that file into tickets. AI is disabled by default. Enabling
+it requires `INSTALL_AI=true`, `AI_ENABLED=true`, and provider credentials before rebuilding; see
+`docs/ai_assistant.md`. The API container is non-root, but local port publishing still exposes
+services to the host network.
 
 ## Production checklist
 

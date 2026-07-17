@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "retailpulse-ai"
-version = "1.0.0"
+version = "1.1.0"
 description = "Local-first retail analytics, ETL, and business intelligence platform."
 readme = "README.md"
 requires-python = ">=3.14,<3.15"
@@ -22,6 +22,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+ai = [
+    "openai>=2.0,<3.0",
+]
 dev = [
     "httpx>=0.28,<1.0",
     "pytest>=9.0,<10.0",
@@ -30,7 +33,7 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["app*", "etl*"]
+include = ["ai*", "app*", "etl*"]
 
 [tool.ruff]
 target-version = "py314"
@@ -51,7 +54,7 @@ markers = ["integration: requires a migrated PostgreSQL test database"]
 
 [tool.coverage.run]
 branch = true
-source = ["app", "etl"]
+source = ["ai", "app", "etl"]
 
 [tool.coverage.report]
 show_missing = true

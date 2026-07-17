@@ -23,6 +23,7 @@ services:
       context: .
       args:
         INSTALL_DEV: "true"
+        INSTALL_AI: ${INSTALL_AI:-false}
     env_file:
       - path: .env
         required: false
