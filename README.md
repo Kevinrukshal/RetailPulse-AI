@@ -1,17 +1,25 @@
 # RetailPulse AI
 
-RetailPulse AI is a local-first retail analytics platform that will turn CSV and Excel
+RetailPulse AI is a local-first retail analytics platform that turns CSV and Excel
 sales data into validated PostgreSQL records, business KPIs, read-only FastAPI endpoints,
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 9 Power BI handoff. The tested ETL, SQL analytics layer, and read-only
-> API now include a reproducible Power BI model, DAX measures, report specification, data
-> dictionary, reconciliation baseline, and secure local connection guide.
+> Project status: release-candidate hardening. The full non-AI platform, Power BI handoff,
+> CI pipeline, and portfolio documentation are implemented. All bundled findings use synthetic
+> demonstration data.
 
-## Planned MVP
+## What it demonstrates
 
-The first complete vertical slice will provide:
+- CSV/XLSX ingestion with configurable aliases and explicit domain errors.
+- Multi-reason row validation, rejected-record quarantine, and auditable quality scoring.
+- Deterministic transformations and transactional, idempotent PostgreSQL loading.
+- Alembic-managed normalized tables plus six BI-oriented analytical views.
+- A versioned read-only FastAPI surface with filters, pagination, and safe failures.
+- A reproducible four-page Power BI specification and DAX measure library.
+- Docker Compose operations and PostgreSQL-backed CI with an 80% coverage gate.
+
+The complete vertical slice is:
 
 ```text
 CSV/XLSX -> map -> validate -> reject/report -> transform -> PostgreSQL
@@ -37,38 +45,36 @@ dataset to be introduced without rewriting the pipeline.
 - Windows with PowerShell
 - Python 3.14 (the project rejects Python 3.15 until dependencies are revalidated)
 - Git
-- Docker Desktop with Docker Compose for later phases
-- Power BI Desktop for later manual dashboard validation
+- Docker Desktop with Docker Compose
+- Power BI Desktop only when building the optional report
 
-## Phase 1 setup
+## Quick start
 
 Run these commands from the repository root:
 
 ```powershell
-python --version
-docker --version
-docker compose version
-git --version
-
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
 Copy-Item .env.example .env
+docker compose up --build -d
+docker compose exec api python -m etl.pipeline --file data/sample/sample_sales.csv
+Invoke-RestMethod http://localhost:8000/api/v1/summary
 ```
 
 The expected Python version is `3.14.x`. Change local values in `.env`; never commit it.
 
-## Phase 1 verification
+## Local verification
 
 From the repository root, run:
 
 ```powershell
 .\.venv\Scripts\python.exe -m ruff check .
 .\.venv\Scripts\python.exe -m ruff format --check .
-.\.venv\Scripts\python.exe -m pytest tests\unit -v
+docker compose exec -e RUN_INTEGRATION_TESTS=1 api pytest --cov=app --cov=etl
 ```
 
-All commands must exit with code `0` before Phase 2 begins.
+All commands must exit with code `0` before a release is accepted.
 
 ## Demonstration data and extraction
 
@@ -223,18 +229,17 @@ All supplied KPI values are deterministic outputs from synthetic demonstration d
 `.env.example` documents the supported local values. `AI_ENABLED=false` is the only
 supported AI mode during the MVP foundation.
 
-## Roadmap
+## Documentation
 
-1. Project foundation and developer tooling.
-2. CSV/XLSX extraction, mapping, validation, transformation, and quality reports.
-3. PostgreSQL schema, Alembic migrations, idempotent loading, and ETL orchestration.
-4. Analytics views and versioned FastAPI endpoints.
-5. Docker Compose hardening and end-to-end test coverage.
-6. Power BI guidance, CI, and portfolio documentation.
-7. Safe AI business assistant after the non-AI platform is stable.
+- [Architecture](docs/architecture.md)
+- [Database design](docs/database.md)
+- [Analytics API](docs/api.md)
+- [Demonstration business insights](docs/business_insights.md)
+- [Deployment](docs/deployment.md)
+- [Power BI setup](docs/powerbi_setup.md)
 
-Possible future deployment targets include Render, Railway, Azure, and AWS. No cloud
-infrastructure is included in the local-first MVP.
+Safe, grounded AI assistance remains a post-v1 extension. No cloud infrastructure is claimed by
+this local-first release.
 
 ## Author
 

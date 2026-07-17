@@ -100,7 +100,7 @@ loaded and view alternatives for a views-only report.
 ## 5. Reconcile the report
 
 ```powershell
-docker compose exec db psql -U retailpulse -d retailpulse -c "SELECT * FROM executive_summary;"
+docker compose exec db psql -U retail_user -d retailpulse -c "SELECT * FROM executive_summary;"
 Invoke-RestMethod http://localhost:8000/api/v1/summary
 ```
 
