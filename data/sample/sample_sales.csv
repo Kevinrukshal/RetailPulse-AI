@@ -1,0 +1,751 @@
+order_id,order_date,ship_date,customer_id,customer_name,segment,country,city,state,region,product_id,product_name,category,subcategory,sales,quantity,discount,profit
+RP-2024-00001,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-2024-00001,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-004,Storage Cabinet,Furniture,Storage,438.00,2,0,160.00
+RP-2024-00002,2024-08-06,2024-08-10,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-015,Archive Box Pack,Office Supplies,Storage,79.80,2,0.05,31.80
+RP-2024-00002,2024-08-06,2024-08-10,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-008,Business Laptop,Technology,Computers,6744.60,6,0.10,1157.60
+RP-2025-00003,2025-12-17,2025-12-18,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-010,27 Inch Monitor,Technology,Displays,1381.80,6,0.30,30.80
+RP-2025-00003,2025-12-17,2025-12-18,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-013,Permanent Marker Set,Office Supplies,Art,119.70,7,0.05,60.15
+RP-2024-00004,2024-12-27,2024-12-30,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,316.00,4,0,158.50
+RP-2024-00004,2024-12-27,2024-12-30,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-013,Permanent Marker Set,Office Supplies,Art,115.20,8,0.20,47.50
+RP-2025-00005,2025-10-17,2025-10-21,C-0024,Demo Customer 024,Consumer,United States,New York,New York,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,36.00,1,0,14.25
+RP-2025-00006,2025-03-23,2025-03-26,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-007,Noise Cancelling Headset,Technology,Accessories,453.15,3,0.05,202.40
+RP-2025-00006,2025-03-23,2025-03-26,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-012,A4 Copy Paper,Office Supplies,Paper,59.38,5,0.05,22.13
+RP-2025-00006,2025-03-23,2025-03-26,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-020,Mobile File Pedestal,Furniture,Storage,358.20,2,0.10,102.20
+RP-2025-00007,2025-06-23,2025-06-26,C-0021,Demo Customer 021,Consumer,United States,Miami,Florida,South,P-007,Noise Cancelling Headset,Technology,Accessories,143.10,1,0.10,57.85
+RP-2025-00007,2025-06-23,2025-06-26,C-0021,Demo Customer 021,Consumer,United States,Miami,Florida,South,P-001,Ergonomic Office Chair,Furniture,Chairs,398.40,2,0.20,110.40
+RP-2025-00008,2025-12-26,2025-12-28,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-017,Executive Notebook,Office Supplies,Paper,75.60,4,0.10,36.10
+RP-2025-00008,2025-12-26,2025-12-28,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-016,Shipping Label Roll,Office Supplies,Labels,129.60,6,0.10,59.60
+RP-2023-00009,2023-01-08,2023-01-13,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,1481.55,7,0.15,479.80
+RP-2023-00009,2023-01-08,2023-01-13,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-014,Heavy Duty Stapler,Office Supplies,Binders,183.60,6,0.15,65.60
+RP-2023-00010,2023-06-30,2023-07-01,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-010,27 Inch Monitor,Technology,Displays,1250.20,4,0.05,348.70
+RP-2023-00010,2023-06-30,2023-07-01,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-013,Permanent Marker Set,Office Supplies,Art,36.00,2,0,17.20
+RP-2023-00010,2023-06-30,2023-07-01,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-009,Laser Printer,Technology,Machines,359.10,1,0.10,77.85
+RP-2023-00010,2023-06-30,2023-07-01,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-012,A4 Copy Paper,Office Supplies,Paper,80.00,8,0.20,21.90
+RP-2024-00011,2024-07-05,2024-07-06,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-004,Storage Cabinet,Furniture,Storage,372.30,2,0.15,94.30
+RP-2024-00011,2024-07-05,2024-07-06,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-019,Web Conference Camera,Technology,Accessories,464.40,4,0.10,182.90
+RP-2024-00011,2024-07-05,2024-07-06,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-007,Noise Cancelling Headset,Technology,Accessories,810.90,6,0.15,311.90
+RP-2024-00011,2024-07-05,2024-07-06,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,1120.50,5,0.10,404.25
+RP-2023-00012,2023-11-24,2023-12-01,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-006,Wireless Keyboard,Technology,Accessories,221.20,4,0.30,63.70
+RP-2023-00012,2023-11-24,2023-12-01,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-019,Web Conference Camera,Technology,Accessories,825.60,8,0.20,265.10
+RP-2025-00013,2025-09-25,2025-09-28,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-009,Laser Printer,Technology,Machines,2793.00,7,0,839.25
+RP-2023-00014,2023-06-08,2023-06-14,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-015,Archive Box Pack,Office Supplies,Storage,226.80,6,0.10,87.80
+RP-2025-00015,2025-03-14,2025-03-21,C-0047,Demo Customer 047,Home Office,United States,San Francisco,California,West,P-015,Archive Box Pack,Office Supplies,Storage,189.00,5,0.10,72.75
+RP-2025-00015,2025-03-14,2025-03-21,C-0047,Demo Customer 047,Home Office,United States,San Francisco,California,West,P-016,Shipping Label Roll,Office Supplies,Labels,182.40,8,0.05,89.90
+RP-2025-00015,2025-03-14,2025-03-21,C-0047,Demo Customer 047,Home Office,United States,San Francisco,California,West,P-009,Laser Printer,Technology,Machines,1436.40,4,0.10,318.90
+RP-2025-00016,2025-01-24,2025-01-27,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-005,LED Desk Lamp,Furniture,Furnishings,401.20,8,0.15,176.70
+RP-2025-00016,2025-01-24,2025-01-27,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,973.00,7,0,433.25
+RP-2025-00016,2025-01-24,2025-01-27,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-018,Desk Organizer,Office Supplies,Storage,31.00,1,0,13.75
+RP-2025-00016,2025-01-24,2025-01-27,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-013,Permanent Marker Set,Office Supplies,Art,18.00,1,0,7.35
+RP-2023-00017,2023-03-19,2023-03-23,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,871.50,5,0.30,155.25
+RP-2023-00017,2023-03-19,2023-03-23,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-018,Desk Organizer,Office Supplies,Storage,223.20,8,0.10,102.70
+RP-2025-00018,2025-07-18,2025-07-25,C-0040,Demo Customer 040,Corporate,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,1002.40,7,0.20,217.65
+RP-2025-00018,2025-07-18,2025-07-25,C-0040,Demo Customer 040,Corporate,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,906.30,6,0.05,407.30
+RP-2023-00019,2023-05-19,2023-05-26,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-010,27 Inch Monitor,Technology,Displays,296.10,1,0.10,68.85
+RP-2023-00019,2023-05-19,2023-05-26,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,417.00,3,0,184.25
+RP-2023-00019,2023-05-19,2023-05-26,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-015,Archive Box Pack,Office Supplies,Storage,35.70,1,0.15,10.45
+RP-2023-00019,2023-05-19,2023-05-26,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-018,Desk Organizer,Office Supplies,Storage,88.35,3,0.05,41.60
+RP-2024-00020,2024-01-31,2024-02-02,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-012,A4 Copy Paper,Office Supplies,Paper,70.00,7,0.20,18.85
+RP-2024-00020,2024-01-31,2024-02-02,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-013,Permanent Marker Set,Office Supplies,Art,126.00,7,0,66.45
+RP-2024-00021,2024-07-19,2024-07-20,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,709.65,3,0.05,278.90
+RP-2024-00021,2024-07-19,2024-07-20,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,537.20,8,0.15,224.70
+RP-2023-00022,2023-07-21,2023-07-28,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,151.20,8,0.10,74.70
+RP-2025-00023,2025-03-27,2025-04-02,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,159.30,3,0.10,73.55
+RP-2025-00024,2025-02-23,2025-02-27,C-0073,Demo Customer 073,Corporate,United States,Boston,Massachusetts,East,P-018,Desk Organizer,Office Supplies,Storage,173.60,7,0.20,67.85
+RP-2025-00024,2025-02-23,2025-02-27,C-0073,Demo Customer 073,Corporate,United States,Boston,Massachusetts,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,1432.00,8,0,535.50
+RP-2023-00025,2023-06-11,2023-06-12,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-004,Storage Cabinet,Furniture,Storage,438.00,2,0,160.00
+RP-2023-00025,2023-06-11,2023-06-12,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-006,Wireless Keyboard,Technology,Accessories,442.40,7,0.20,168.65
+RP-2023-00025,2023-06-11,2023-06-12,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-005,LED Desk Lamp,Furniture,Furnishings,141.60,3,0.20,55.85
+RP-2023-00025,2023-06-11,2023-06-12,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-018,Desk Organizer,Office Supplies,Storage,93.00,3,0,46.25
+RP-2024-00026,2024-01-08,2024-01-13,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-013,Permanent Marker Set,Office Supplies,Art,75.60,6,0.30,24.20
+RP-2024-00026,2024-01-08,2024-01-13,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,278.00,2,0,122.00
+RP-2024-00026,2024-01-08,2024-01-13,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-007,Noise Cancelling Headset,Technology,Accessories,1144.80,8,0.10,480.30
+RP-2024-00027,2024-03-18,2024-03-24,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-012,A4 Copy Paper,Office Supplies,Paper,52.50,6,0.30,8.30
+RP-2024-00028,2024-10-19,2024-10-23,C-0060,Demo Customer 060,Consumer,United States,Atlanta,Georgia,South,P-004,Storage Cabinet,Furniture,Storage,558.45,3,0.15,142.70
+RP-2024-00028,2024-10-19,2024-10-23,C-0060,Demo Customer 060,Consumer,United States,Atlanta,Georgia,South,P-007,Noise Cancelling Headset,Technology,Accessories,858.60,6,0.10,359.60
+RP-2024-00028,2024-10-19,2024-10-23,C-0060,Demo Customer 060,Consumer,United States,Atlanta,Georgia,South,P-019,Web Conference Camera,Technology,Accessories,451.50,5,0.30,100.25
+RP-2023-00029,2023-10-14,2023-10-17,C-0070,Demo Customer 070,Corporate,United States,Seattle,Washington,West,P-019,Web Conference Camera,Technology,Accessories,438.60,4,0.15,157.10
+RP-2023-00029,2023-10-14,2023-10-17,C-0070,Demo Customer 070,Corporate,United States,Seattle,Washington,West,P-018,Desk Organizer,Office Supplies,Storage,58.90,2,0.05,26.90
+RP-2023-00029,2023-10-14,2023-10-17,C-0070,Demo Customer 070,Corporate,United States,Seattle,Washington,West,P-016,Shipping Label Roll,Office Supplies,Labels,159.60,7,0.05,78.35
+RP-2024-00030,2024-08-21,2024-08-28,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,50.40,2,0.30,9.40
+RP-2024-00030,2024-08-21,2024-08-28,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-009,Laser Printer,Technology,Machines,1137.15,3,0.05,298.40
+RP-2024-00030,2024-08-21,2024-08-28,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-011,USB-C Dock,Technology,Accessories,125.10,1,0.10,45.85
+RP-2024-00030,2024-08-21,2024-08-28,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-010,27 Inch Monitor,Technology,Displays,658.00,2,0,206.00
+RP-2025-00031,2025-05-14,2025-05-18,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-010,27 Inch Monitor,Technology,Displays,2187.85,7,0.05,612.10
+RP-2025-00031,2025-05-14,2025-05-18,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-005,LED Desk Lamp,Furniture,Furnishings,41.30,1,0.30,11.05
+RP-2023-00032,2023-11-06,2023-11-10,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-009,Laser Printer,Technology,Machines,1516.20,4,0.05,398.70
+RP-2023-00032,2023-11-06,2023-11-10,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,450.30,6,0.05,215.30
+RP-2023-00032,2023-11-06,2023-11-10,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,97.20,3,0.10,36.95
+RP-2024-00033,2024-03-17,2024-03-21,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-019,Web Conference Camera,Technology,Accessories,696.60,6,0.10,275.60
+RP-2023-00034,2023-03-15,2023-03-19,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-015,Archive Box Pack,Office Supplies,Storage,178.50,5,0.15,62.25
+RP-2023-00034,2023-03-15,2023-03-19,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,288.00,8,0,131.50
+RP-2023-00035,2023-05-01,2023-05-07,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-016,Shipping Label Roll,Office Supplies,Labels,86.40,4,0.10,38.90
+RP-2023-00035,2023-05-01,2023-05-07,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-008,Business Laptop,Technology,Computers,1124.10,1,0.10,190.85
+RP-2023-00035,2023-05-01,2023-05-07,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-020,Mobile File Pedestal,Furniture,Storage,945.25,5,0.05,309.00
+RP-2023-00035,2023-05-01,2023-05-07,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-004,Storage Cabinet,Furniture,Storage,1401.60,8,0.20,297.10
+RP-2025-00036,2025-09-21,2025-09-27,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,996.00,4,0,422.50
+RP-2025-00036,2025-09-21,2025-09-27,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,284.40,4,0.10,126.90
+RP-2025-00036,2025-09-21,2025-09-27,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,68.40,2,0.05,27.40
+RP-2025-00037,2025-11-24,2025-11-25,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-019,Web Conference Camera,Technology,Accessories,129.00,1,0,56.75
+RP-2025-00038,2025-02-02,2025-02-04,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-018,Desk Organizer,Office Supplies,Storage,24.80,1,0.20,7.55
+RP-2025-00038,2025-02-02,2025-02-04,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-003,Five Shelf Bookcase,Furniture,Bookcases,859.20,6,0.20,186.20
+RP-2025-00038,2025-02-02,2025-02-04,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-011,USB-C Dock,Technology,Accessories,194.60,2,0.30,38.60
+RP-2024-00039,2024-07-13,2024-07-18,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-005,LED Desk Lamp,Furniture,Furnishings,59.00,1,0,28.75
+RP-2024-00040,2024-06-01,2024-06-08,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-020,Mobile File Pedestal,Furniture,Storage,1273.60,8,0.20,257.10
+RP-2023-00041,2023-05-17,2023-05-19,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-019,Web Conference Camera,Technology,Accessories,645.00,5,0,293.75
+RP-2023-00041,2023-05-17,2023-05-19,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-010,27 Inch Monitor,Technology,Displays,2237.20,8,0.15,436.70
+RP-2023-00041,2023-05-17,2023-05-19,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-012,A4 Copy Paper,Office Supplies,Paper,12.50,1,0,3.05
+RP-2023-00041,2023-05-17,2023-05-19,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-015,Archive Box Pack,Office Supplies,Storage,168.00,4,0,74.50
+RP-2024-00042,2024-12-05,2024-12-06,C-0078,Demo Customer 078,Consumer,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,2498.00,2,0,634.00
+RP-2024-00042,2024-12-05,2024-12-06,C-0078,Demo Customer 078,Consumer,United States,Seattle,Washington,West,P-009,Laser Printer,Technology,Machines,319.20,1,0.20,37.95
+RP-2024-00042,2024-12-05,2024-12-06,C-0078,Demo Customer 078,Consumer,United States,Seattle,Washington,West,P-018,Desk Organizer,Office Supplies,Storage,147.25,5,0.05,71.00
+RP-2024-00042,2024-12-05,2024-12-06,C-0078,Demo Customer 078,Consumer,United States,Seattle,Washington,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,456.45,3,0.15,118.70
+RP-2023-00043,2023-04-10,2023-04-15,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-010,27 Inch Monitor,Technology,Displays,1184.40,4,0.10,282.90
+RP-2023-00043,2023-04-10,2023-04-15,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,134.40,8,0.20,57.90
+RP-2023-00043,2023-04-10,2023-04-15,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-011,USB-C Dock,Technology,Accessories,500.40,4,0.10,190.90
+RP-2023-00043,2023-04-10,2023-04-15,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-018,Desk Organizer,Office Supplies,Storage,74.40,3,0.20,27.65
+RP-2025-00044,2025-03-22,2025-03-27,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-019,Web Conference Camera,Technology,Accessories,928.80,8,0.10,368.30
+RP-2025-00044,2025-03-22,2025-03-27,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-012,A4 Copy Paper,Office Supplies,Paper,74.38,7,0.15,23.23
+RP-2025-00044,2025-03-22,2025-03-27,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-013,Permanent Marker Set,Office Supplies,Art,119.70,7,0.05,60.15
+RP-2023-00045,2023-12-05,2023-12-08,C-0030,Demo Customer 030,Consumer,United States,Seattle,Washington,West,P-015,Archive Box Pack,Office Supplies,Storage,29.40,1,0.30,4.15
+RP-2024-00046,2024-05-07,2024-05-12,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,2322.75,5,0.05,741.50
+RP-2024-00047,2024-04-02,2024-04-03,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-011,USB-C Dock,Technology,Accessories,889.60,8,0.20,273.10
+RP-2024-00047,2024-04-02,2024-04-03,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,226.80,7,0.10,89.55
+RP-2024-00047,2024-04-02,2024-04-03,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-013,Permanent Marker Set,Office Supplies,Art,108.00,6,0,56.60
+RP-2025-00048,2025-02-28,2025-03-05,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-004,Storage Cabinet,Furniture,Storage,1752.00,8,0,647.50
+RP-2025-00048,2025-02-28,2025-03-05,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-001,Ergonomic Office Chair,Furniture,Chairs,1892.40,8,0.05,747.90
+RP-2025-00048,2025-02-28,2025-03-05,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,126.40,2,0.20,46.40
+RP-2024-00049,2024-06-24,2024-06-28,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-019,Web Conference Camera,Technology,Accessories,774.00,6,0,353.00
+RP-2024-00049,2024-06-24,2024-06-28,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-016,Shipping Label Roll,Office Supplies,Labels,24.00,1,0,10.25
+RP-2025-00050,2025-06-12,2025-06-16,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-012,A4 Copy Paper,Office Supplies,Paper,62.50,5,0,25.25
+RP-2024-00051,2024-07-04,2024-07-07,C-0020,Demo Customer 020,Home Office,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,316.00,4,0,158.50
+RP-2024-00051,2024-07-04,2024-07-07,C-0020,Demo Customer 020,Home Office,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,84.00,2,0,36.00
+RP-2024-00051,2024-07-04,2024-07-07,C-0020,Demo Customer 020,Home Office,United States,Atlanta,Georgia,South,P-004,Storage Cabinet,Furniture,Storage,985.50,5,0.10,294.25
+RP-2024-00052,2024-03-21,2024-03-23,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-010,27 Inch Monitor,Technology,Displays,1316.00,5,0.20,189.75
+RP-2024-00052,2024-03-21,2024-03-23,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-011,USB-C Dock,Technology,Accessories,278.00,2,0,122.00
+RP-2024-00052,2024-03-21,2024-03-23,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-013,Permanent Marker Set,Office Supplies,Art,43.20,3,0.20,16.25
+RP-2023-00053,2023-03-11,2023-03-15,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-009,Laser Printer,Technology,Machines,2394.00,6,0,719.00
+RP-2024-00054,2024-06-02,2024-06-08,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-010,27 Inch Monitor,Technology,Displays,312.55,1,0.05,85.30
+RP-2024-00054,2024-06-02,2024-06-08,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-001,Ergonomic Office Chair,Furniture,Chairs,1743.00,7,0,741.25
+RP-2024-00054,2024-06-02,2024-06-08,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-020,Mobile File Pedestal,Furniture,Storage,1194.00,6,0,431.00
+RP-2024-00055,2024-10-19,2024-10-20,C-0022,Demo Customer 022,Corporate,United States,Seattle,Washington,West,P-009,Laser Printer,Technology,Machines,399.00,1,0,117.75
+RP-2025-00056,2025-05-03,2025-05-10,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-013,Permanent Marker Set,Office Supplies,Art,18.00,1,0,7.35
+RP-2025-00056,2025-05-03,2025-05-10,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-009,Laser Printer,Technology,Machines,1596.00,4,0,478.50
+RP-2023-00057,2023-06-27,2023-07-01,C-0030,Demo Customer 030,Consumer,United States,Seattle,Washington,West,P-017,Executive Notebook,Office Supplies,Paper,42.00,2,0,21.00
+RP-2023-00058,2023-09-18,2023-09-19,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-004,Storage Cabinet,Furniture,Storage,788.40,4,0.10,234.90
+RP-2023-00059,2023-10-15,2023-10-18,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-008,Business Laptop,Technology,Computers,3747.00,3,0,952.25
+RP-2023-00059,2023-10-15,2023-10-18,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-015,Archive Box Pack,Office Supplies,Storage,279.30,7,0.05,117.55
+RP-2024-00060,2024-12-07,2024-12-13,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,109.65,1,0.15,37.40
+RP-2024-00061,2024-05-02,2024-05-05,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,216.00,6,0,98.00
+RP-2024-00061,2024-05-02,2024-05-05,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-018,Desk Organizer,Office Supplies,Storage,155.00,5,0,78.75
+RP-2024-00061,2024-05-02,2024-05-05,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,29.40,2,0.30,8.40
+RP-2023-00062,2023-11-28,2023-12-01,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-016,Shipping Label Roll,Office Supplies,Labels,24.00,1,0,10.25
+RP-2023-00062,2023-11-28,2023-12-01,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-008,Business Laptop,Technology,Computers,3559.65,3,0.05,764.90
+RP-2023-00062,2023-11-28,2023-12-01,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-004,Storage Cabinet,Furniture,Storage,394.20,2,0.10,116.20
+RP-2024-00063,2024-05-20,2024-05-24,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-004,Storage Cabinet,Furniture,Storage,591.30,3,0.10,175.55
+RP-2024-00063,2024-05-20,2024-05-24,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,318.60,6,0.10,149.60
+RP-2024-00064,2024-02-29,2024-03-01,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,139.65,7,0.05,72.40
+RP-2024-00064,2024-02-29,2024-03-01,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,295.00,5,0,153.75
+RP-2024-00064,2024-02-29,2024-03-01,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-011,USB-C Dock,Technology,Accessories,236.30,2,0.15,80.30
+RP-2024-00064,2024-02-29,2024-03-01,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-004,Storage Cabinet,Furniture,Storage,1664.40,8,0.05,559.90
+RP-2023-00065,2023-08-22,2023-08-27,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,474.00,6,0,239.00
+RP-2023-00065,2023-08-22,2023-08-27,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-013,Permanent Marker Set,Office Supplies,Art,54.00,3,0,27.05
+RP-2023-00065,2023-08-22,2023-08-27,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-016,Shipping Label Roll,Office Supplies,Labels,50.40,3,0.30,14.15
+RP-2023-00065,2023-08-22,2023-08-27,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-018,Desk Organizer,Office Supplies,Storage,58.90,2,0.05,26.90
+RP-2025-00066,2025-08-08,2025-08-11,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-004,Storage Cabinet,Furniture,Storage,1226.40,7,0.20,259.65
+RP-2025-00066,2025-08-08,2025-08-11,C-0034,Demo Customer 034,Corporate,United States,Chicago,Illinois,Central,P-010,27 Inch Monitor,Technology,Displays,1316.00,4,0,414.50
+RP-2025-00067,2025-11-09,2025-11-15,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-016,Shipping Label Roll,Office Supplies,Labels,102.00,5,0.15,43.25
+RP-2025-00067,2025-11-09,2025-11-15,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-020,Mobile File Pedestal,Furniture,Storage,796.00,5,0.20,159.75
+RP-2025-00067,2025-11-09,2025-11-15,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-012,A4 Copy Paper,Office Supplies,Paper,70.00,8,0.30,11.90
+RP-2024-00068,2024-11-06,2024-11-11,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-002,Standing Desk,Furniture,Tables,1956.00,4,0,690.50
+RP-2024-00068,2024-11-06,2024-11-11,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-018,Desk Organizer,Office Supplies,Storage,223.20,8,0.10,102.70
+RP-2024-00068,2024-11-06,2024-11-11,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-007,Noise Cancelling Headset,Technology,Accessories,1017.60,8,0.20,353.10
+RP-2024-00069,2024-02-19,2024-02-23,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-011,USB-C Dock,Technology,Accessories,1000.80,8,0.10,384.30
+RP-2024-00070,2024-11-03,2024-11-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-010,27 Inch Monitor,Technology,Displays,1118.60,4,0.15,217.10
+RP-2024-00070,2024-11-03,2024-11-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-015,Archive Box Pack,Office Supplies,Storage,84.00,2,0,36.00
+RP-2024-00070,2024-11-03,2024-11-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-009,Laser Printer,Technology,Machines,798.00,2,0,238.00
+RP-2024-00070,2024-11-03,2024-11-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,348.60,2,0.30,60.60
+RP-2024-00071,2024-11-16,2024-11-19,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-008,Business Laptop,Technology,Computers,4246.60,4,0.15,521.10
+RP-2024-00071,2024-11-16,2024-11-19,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-007,Noise Cancelling Headset,Technology,Accessories,381.60,3,0.20,130.85
+RP-2023-00072,2023-08-12,2023-08-14,C-0005,Demo Customer 005,Home Office,United States,Miami,Florida,South,P-020,Mobile File Pedestal,Furniture,Storage,1432.80,8,0.10,416.30
+RP-2023-00072,2023-08-12,2023-08-14,C-0005,Demo Customer 005,Home Office,United States,Miami,Florida,South,P-002,Standing Desk,Furniture,Tables,3129.60,8,0.20,601.10
+RP-2023-00072,2023-08-12,2023-08-14,C-0005,Demo Customer 005,Home Office,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,1032.00,8,0,471.50
+RP-2023-00072,2023-08-12,2023-08-14,C-0005,Demo Customer 005,Home Office,United States,Miami,Florida,South,P-003,Five Shelf Bookcase,Furniture,Bookcases,483.30,3,0.10,145.55
+RP-2023-00073,2023-06-14,2023-06-19,C-0058,Demo Customer 058,Corporate,United States,Chicago,Illinois,Central,P-016,Shipping Label Roll,Office Supplies,Labels,48.00,2,0,23.00
+RP-2023-00073,2023-06-14,2023-06-19,C-0058,Demo Customer 058,Corporate,United States,Chicago,Illinois,Central,P-017,Executive Notebook,Office Supplies,Paper,117.60,7,0.20,50.35
+RP-2023-00073,2023-06-14,2023-06-19,C-0058,Demo Customer 058,Corporate,United States,Chicago,Illinois,Central,P-011,USB-C Dock,Technology,Accessories,528.20,4,0.05,218.70
+RP-2025-00074,2025-08-13,2025-08-20,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,73.50,5,0.30,24.75
+RP-2025-00074,2025-08-13,2025-08-20,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,286.20,2,0.10,118.20
+RP-2023-00075,2023-10-27,2023-11-02,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-004,Storage Cabinet,Furniture,Storage,394.20,2,0.10,116.20
+RP-2023-00075,2023-10-27,2023-11-02,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-006,Wireless Keyboard,Technology,Accessories,300.20,4,0.05,142.70
+RP-2023-00076,2023-01-18,2023-01-25,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-018,Desk Organizer,Office Supplies,Storage,79.05,3,0.15,32.30
+RP-2023-00076,2023-01-18,2023-01-25,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-012,A4 Copy Paper,Office Supplies,Paper,25.00,2,0,8.60
+RP-2023-00076,2023-01-18,2023-01-25,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,444.80,4,0.20,135.30
+RP-2023-00077,2023-10-27,2023-10-31,C-0061,Demo Customer 061,Corporate,United States,Miami,Florida,South,P-017,Executive Notebook,Office Supplies,Paper,35.70,2,0.15,14.70
+RP-2023-00078,2023-05-01,2023-05-05,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,236.55,1,0.05,91.30
+RP-2023-00078,2023-05-01,2023-05-05,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-013,Permanent Marker Set,Office Supplies,Art,57.60,4,0.20,22.50
+RP-2025-00079,2025-08-01,2025-08-08,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-001,Ergonomic Office Chair,Furniture,Chairs,1992.00,8,0,847.50
+RP-2025-00079,2025-08-01,2025-08-08,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,377.60,8,0.20,153.10
+RP-2025-00079,2025-08-01,2025-08-08,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,2640.60,6,0.10,743.60
+RP-2025-00079,2025-08-01,2025-08-08,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-016,Shipping Label Roll,Office Supplies,Labels,114.00,5,0.05,55.25
+RP-2023-00080,2023-05-06,2023-05-12,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-016,Shipping Label Roll,Office Supplies,Labels,20.40,1,0.15,6.65
+RP-2023-00081,2023-06-15,2023-06-18,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-013,Permanent Marker Set,Office Supplies,Art,129.60,8,0.10,61.90
+RP-2023-00081,2023-06-15,2023-06-18,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,2123.30,2,0.15,259.30
+RP-2023-00081,2023-06-15,2023-06-18,C-0015,Demo Customer 015,Consumer,United States,San Francisco,California,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,179.00,1,0,64.75
+RP-2025-00082,2025-11-13,2025-11-20,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-011,USB-C Dock,Technology,Accessories,264.10,2,0.05,108.10
+RP-2025-00082,2025-11-13,2025-11-20,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-007,Noise Cancelling Headset,Technology,Accessories,302.10,2,0.05,134.10
+RP-2025-00083,2025-06-05,2025-06-06,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-007,Noise Cancelling Headset,Technology,Accessories,1001.70,7,0.10,419.95
+RP-2024-00084,2024-04-19,2024-04-26,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-013,Permanent Marker Set,Office Supplies,Art,76.50,5,0.15,33.25
+RP-2024-00084,2024-04-19,2024-04-26,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-005,LED Desk Lamp,Furniture,Furnishings,413.00,7,0,216.25
+RP-2024-00084,2024-04-19,2024-04-26,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-012,A4 Copy Paper,Office Supplies,Paper,12.50,1,0,3.05
+RP-2024-00084,2024-04-19,2024-04-26,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-009,Laser Printer,Technology,Machines,1197.00,3,0,358.25
+RP-2025-00085,2025-12-30,2026-01-02,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,1253.00,7,0,468.25
+RP-2025-00085,2025-12-30,2026-01-02,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-014,Heavy Duty Stapler,Office Supplies,Binders,75.60,3,0.30,15.35
+RP-2025-00085,2025-12-30,2026-01-02,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-015,Archive Box Pack,Office Supplies,Storage,302.40,8,0.10,117.90
+RP-2025-00085,2025-12-30,2026-01-02,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-002,Standing Desk,Furniture,Tables,2787.30,6,0.05,890.30
+RP-2024-00086,2024-03-09,2024-03-11,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-009,Laser Printer,Technology,Machines,2793.00,7,0,839.25
+RP-2024-00086,2024-03-09,2024-03-11,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-004,Storage Cabinet,Furniture,Storage,208.05,1,0.05,67.80
+RP-2024-00086,2024-03-09,2024-03-11,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-012,A4 Copy Paper,Office Supplies,Paper,78.75,7,0.10,27.60
+RP-2024-00086,2024-03-09,2024-03-11,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-003,Five Shelf Bookcase,Furniture,Bookcases,161.10,1,0.10,46.85
+RP-2025-00087,2025-09-14,2025-09-15,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,336.30,6,0.05,167.30
+RP-2025-00087,2025-09-14,2025-09-15,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-020,Mobile File Pedestal,Furniture,Storage,756.20,4,0.05,246.70
+RP-2025-00087,2025-09-14,2025-09-15,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-013,Permanent Marker Set,Office Supplies,Art,75.60,6,0.30,24.20
+RP-2023-00088,2023-04-23,2023-04-29,C-0040,Demo Customer 040,Corporate,United States,New York,New York,East,P-015,Archive Box Pack,Office Supplies,Storage,100.80,3,0.20,30.05
+RP-2023-00088,2023-04-23,2023-04-29,C-0040,Demo Customer 040,Corporate,United States,New York,New York,East,P-004,Storage Cabinet,Furniture,Storage,1533.00,7,0,566.25
+RP-2023-00088,2023-04-23,2023-04-29,C-0040,Demo Customer 040,Corporate,United States,New York,New York,East,P-019,Web Conference Camera,Technology,Accessories,361.20,4,0.30,79.70
+RP-2023-00089,2023-09-02,2023-09-07,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,636.00,5,0.20,219.75
+RP-2023-00089,2023-09-02,2023-09-07,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-006,Wireless Keyboard,Technology,Accessories,316.00,4,0,158.50
+RP-2023-00089,2023-09-02,2023-09-07,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-019,Web Conference Camera,Technology,Accessories,387.00,3,0,175.25
+RP-2024-00090,2024-02-11,2024-02-17,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-003,Five Shelf Bookcase,Furniture,Bookcases,760.75,5,0.15,199.50
+RP-2024-00090,2024-02-11,2024-02-17,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-004,Storage Cabinet,Furniture,Storage,525.60,3,0.20,109.85
+RP-2024-00090,2024-02-11,2024-02-17,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-015,Archive Box Pack,Office Supplies,Storage,168.00,5,0.20,51.75
+RP-2025-00091,2025-11-15,2025-11-19,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,126.00,6,0,68.00
+RP-2025-00091,2025-11-15,2025-11-19,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-002,Standing Desk,Furniture,Tables,342.30,1,0.30,24.05
+RP-2025-00091,2025-11-15,2025-11-19,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,288.00,8,0,131.50
+RP-2025-00092,2025-10-22,2025-10-23,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-003,Five Shelf Bookcase,Furniture,Bookcases,483.30,3,0.10,145.55
+RP-2025-00092,2025-10-22,2025-10-23,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-015,Archive Box Pack,Office Supplies,Storage,113.40,3,0.10,42.65
+RP-2025-00092,2025-10-22,2025-10-23,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-008,Business Laptop,Technology,Computers,3747.00,3,0,952.25
+RP-2025-00092,2025-10-22,2025-10-23,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-013,Permanent Marker Set,Office Supplies,Art,144.00,8,0,76.30
+RP-2023-00093,2023-02-08,2023-02-10,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-008,Business Laptop,Technology,Computers,999.20,1,0.20,65.95
+RP-2023-00093,2023-02-08,2023-02-10,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,2787.30,6,0.05,890.30
+RP-2023-00094,2023-12-26,2024-01-01,C-0060,Demo Customer 060,Consumer,United States,Atlanta,Georgia,South,P-011,USB-C Dock,Technology,Accessories,139.00,1,0,59.75
+RP-2023-00094,2023-12-26,2024-01-01,C-0060,Demo Customer 060,Consumer,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,42.00,1,0,16.75
+RP-2023-00094,2023-12-26,2024-01-01,C-0060,Demo Customer 060,Consumer,United States,Atlanta,Georgia,South,P-005,LED Desk Lamp,Furniture,Furnishings,318.60,6,0.10,149.60
+RP-2023-00094,2023-12-26,2024-01-01,C-0060,Demo Customer 060,Consumer,United States,Atlanta,Georgia,South,P-012,A4 Copy Paper,Office Supplies,Paper,22.50,2,0.10,6.10
+RP-2024-00095,2024-04-27,2024-05-04,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-016,Shipping Label Roll,Office Supplies,Labels,114.00,5,0.05,55.25
+RP-2024-00095,2024-04-27,2024-05-04,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-020,Mobile File Pedestal,Furniture,Storage,895.50,5,0.10,259.25
+RP-2024-00095,2024-04-27,2024-05-04,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-011,USB-C Dock,Technology,Accessories,1112.00,8,0,495.50
+RP-2024-00095,2024-04-27,2024-05-04,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-006,Wireless Keyboard,Technology,Accessories,158.00,2,0,78.00
+RP-2023-00096,2023-10-03,2023-10-10,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-001,Ergonomic Office Chair,Furniture,Chairs,672.30,3,0.10,241.55
+RP-2023-00096,2023-10-03,2023-10-10,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-010,27 Inch Monitor,Technology,Displays,2632.00,8,0,831.50
+RP-2023-00096,2023-10-03,2023-10-10,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-012,A4 Copy Paper,Office Supplies,Paper,33.75,3,0.10,10.40
+RP-2023-00096,2023-10-03,2023-10-10,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-004,Storage Cabinet,Furniture,Storage,1303.05,7,0.15,336.30
+RP-2024-00097,2024-04-24,2024-04-29,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-018,Desk Organizer,Office Supplies,Storage,27.90,1,0.10,10.65
+RP-2024-00097,2024-04-24,2024-04-29,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-006,Wireless Keyboard,Technology,Accessories,395.00,5,0,198.75
+RP-2024-00097,2024-04-24,2024-04-29,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-017,Executive Notebook,Office Supplies,Paper,126.00,6,0,68.00
+RP-2024-00097,2024-04-24,2024-04-29,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-012,A4 Copy Paper,Office Supplies,Paper,11.88,1,0.05,2.43
+RP-2023-00098,2023-09-07,2023-09-08,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,106.20,2,0.10,48.20
+RP-2023-00098,2023-09-07,2023-09-08,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,172.80,6,0.20,54.80
+RP-2023-00098,2023-09-07,2023-09-08,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-015,Archive Box Pack,Office Supplies,Storage,279.30,7,0.05,117.55
+RP-2024-00099,2024-12-26,2024-12-27,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-009,Laser Printer,Technology,Machines,1895.25,5,0.05,499.00
+RP-2024-00099,2024-12-26,2024-12-27,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-004,Storage Cabinet,Furniture,Storage,613.20,4,0.30,59.70
+RP-2024-00099,2024-12-26,2024-12-27,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,100.80,3,0.20,30.05
+RP-2025-00100,2025-07-05,2025-07-11,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-008,Business Laptop,Technology,Computers,4246.60,4,0.15,521.10
+RP-2024-00101,2024-08-14,2024-08-20,C-0006,Demo Customer 006,Consumer,United States,Seattle,Washington,West,P-006,Wireless Keyboard,Technology,Accessories,632.00,8,0,319.50
+RP-2024-00102,2024-04-23,2024-04-30,C-0072,Demo Customer 072,Consumer,United States,New York,New York,East,P-010,27 Inch Monitor,Technology,Displays,1118.60,4,0.15,217.10
+RP-2024-00102,2024-04-23,2024-04-30,C-0072,Demo Customer 072,Consumer,United States,New York,New York,East,P-009,Laser Printer,Technology,Machines,2713.20,8,0.15,480.70
+RP-2024-00103,2024-09-30,2024-10-06,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-010,27 Inch Monitor,Technology,Displays,2187.85,7,0.05,612.10
+RP-2025-00104,2025-03-09,2025-03-10,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-017,Executive Notebook,Office Supplies,Paper,100.80,6,0.20,42.80
+RP-2025-00104,2025-03-09,2025-03-10,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,64.80,2,0.10,23.80
+RP-2025-00104,2025-03-09,2025-03-10,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,94.40,2,0.20,36.40
+RP-2024-00105,2024-06-11,2024-06-17,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-010,27 Inch Monitor,Technology,Displays,658.00,2,0,206.00
+RP-2024-00105,2024-06-11,2024-06-17,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,35.70,1,0.15,10.45
+RP-2024-00106,2024-06-12,2024-06-15,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-019,Web Conference Camera,Technology,Accessories,612.75,5,0.05,261.50
+RP-2024-00106,2024-06-12,2024-06-15,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-018,Desk Organizer,Office Supplies,Storage,184.45,7,0.15,78.70
+RP-2024-00106,2024-06-12,2024-06-15,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-016,Shipping Label Roll,Office Supplies,Labels,96.00,4,0,48.50
+RP-2024-00107,2024-11-06,2024-11-10,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,117.60,4,0.30,24.10
+RP-2025-00108,2025-01-02,2025-01-09,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,747.00,3,0,316.25
+RP-2025-00108,2025-01-02,2025-01-09,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-016,Shipping Label Roll,Office Supplies,Labels,163.20,8,0.15,70.70
+RP-2025-00109,2025-04-26,2025-04-30,C-0053,Demo Customer 053,Home Office,United States,Miami,Florida,South,P-013,Permanent Marker Set,Office Supplies,Art,51.30,3,0.05,24.35
+RP-2025-00110,2025-11-07,2025-11-11,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-012,A4 Copy Paper,Office Supplies,Paper,100.00,8,0,41.90
+RP-2025-00110,2025-11-07,2025-11-11,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,129.60,4,0.10,50.10
+RP-2025-00110,2025-11-07,2025-11-11,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-002,Standing Desk,Furniture,Tables,1956.00,5,0.20,374.75
+RP-2024-00111,2024-03-12,2024-03-17,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-004,Storage Cabinet,Furniture,Storage,1226.40,7,0.20,259.65
+RP-2024-00111,2024-03-12,2024-03-17,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-002,Standing Desk,Furniture,Tables,1320.30,3,0.10,370.55
+RP-2024-00111,2024-03-12,2024-03-17,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-015,Archive Box Pack,Office Supplies,Storage,126.00,3,0,55.25
+RP-2024-00111,2024-03-12,2024-03-17,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-005,LED Desk Lamp,Furniture,Furnishings,424.80,8,0.10,200.30
+RP-2024-00112,2024-09-19,2024-09-20,C-0033,Demo Customer 033,Consumer,United States,Boston,Massachusetts,East,P-018,Desk Organizer,Office Supplies,Storage,147.25,5,0.05,71.00
+RP-2025-00113,2025-01-10,2025-01-15,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-014,Heavy Duty Stapler,Office Supplies,Binders,108.00,3,0,47.75
+RP-2025-00113,2025-01-10,2025-01-15,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,236.55,1,0.05,91.30
+RP-2023-00114,2023-04-11,2023-04-13,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-005,LED Desk Lamp,Furniture,Furnishings,392.35,7,0.05,195.60
+RP-2023-00114,2023-04-11,2023-04-13,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-020,Mobile File Pedestal,Furniture,Storage,1393.00,7,0,503.25
+RP-2023-00114,2023-04-11,2023-04-13,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,53.55,3,0.15,23.30
+RP-2023-00114,2023-04-11,2023-04-13,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-018,Desk Organizer,Office Supplies,Storage,155.00,5,0,78.75
+RP-2023-00115,2023-06-14,2023-06-18,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-017,Executive Notebook,Office Supplies,Paper,105.00,5,0,56.25
+RP-2023-00116,2023-03-22,2023-03-28,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,537.00,3,0,199.25
+RP-2023-00116,2023-03-22,2023-03-28,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-013,Permanent Marker Set,Office Supplies,Art,16.20,1,0.10,5.55
+RP-2023-00116,2023-03-22,2023-03-28,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-015,Archive Box Pack,Office Supplies,Storage,151.20,4,0.10,57.70
+RP-2025-00117,2025-06-20,2025-06-22,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-020,Mobile File Pedestal,Furniture,Storage,139.30,1,0.30,10.05
+RP-2024-00118,2024-03-11,2024-03-17,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-010,27 Inch Monitor,Technology,Displays,789.60,3,0.20,112.85
+RP-2024-00118,2024-03-11,2024-03-17,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-015,Archive Box Pack,Office Supplies,Storage,226.80,6,0.10,87.80
+RP-2024-00118,2024-03-11,2024-03-17,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-017,Executive Notebook,Office Supplies,Paper,56.70,3,0.10,26.45
+RP-2024-00118,2024-03-11,2024-03-17,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-018,Desk Organizer,Office Supplies,Storage,248.00,8,0,127.50
+RP-2025-00119,2025-11-08,2025-11-10,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-010,27 Inch Monitor,Technology,Displays,2632.00,8,0,831.50
+RP-2025-00120,2025-07-25,2025-07-26,C-0078,Demo Customer 078,Consumer,United States,Seattle,Washington,West,P-001,Ergonomic Office Chair,Furniture,Chairs,747.00,3,0,316.25
+RP-2023-00121,2023-03-09,2023-03-14,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-019,Web Conference Camera,Technology,Accessories,116.10,1,0.10,43.85
+RP-2023-00121,2023-03-09,2023-03-14,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,4996.00,4,0,1270.50
+RP-2023-00122,2023-04-22,2023-04-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-004,Storage Cabinet,Furniture,Storage,876.00,4,0,322.50
+RP-2023-00122,2023-04-22,2023-04-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-011,USB-C Dock,Technology,Accessories,1112.00,8,0,495.50
+RP-2023-00122,2023-04-22,2023-04-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,636.00,4,0,302.50
+RP-2023-00122,2023-04-22,2023-04-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-015,Archive Box Pack,Office Supplies,Storage,294.00,7,0,132.25
+RP-2025-00123,2025-08-24,2025-08-29,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-001,Ergonomic Office Chair,Furniture,Chairs,946.20,4,0.05,372.70
+RP-2023-00124,2023-08-18,2023-08-24,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-006,Wireless Keyboard,Technology,Accessories,158.00,2,0,78.00
+RP-2023-00124,2023-08-18,2023-08-24,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-009,Laser Printer,Technology,Machines,2234.40,7,0.20,280.65
+RP-2023-00124,2023-08-18,2023-08-24,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-001,Ergonomic Office Chair,Furniture,Chairs,597.60,3,0.20,166.85
+RP-2024-00125,2024-11-12,2024-11-13,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-013,Permanent Marker Set,Office Supplies,Art,76.50,5,0.15,33.25
+RP-2023-00126,2023-03-19,2023-03-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-004,Storage Cabinet,Furniture,Storage,416.10,2,0.05,138.10
+RP-2023-00126,2023-03-19,2023-03-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,1190.35,7,0.05,405.60
+RP-2023-00126,2023-03-19,2023-03-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-020,Mobile File Pedestal,Furniture,Storage,895.50,5,0.10,259.25
+RP-2023-00126,2023-03-19,2023-03-24,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-009,Laser Printer,Technology,Machines,2394.00,6,0,719.00
+RP-2023-00127,2023-10-31,2023-11-02,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,37.80,2,0.10,16.80
+RP-2023-00127,2023-10-31,2023-11-02,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,123.90,3,0.30,38.15
+RP-2023-00127,2023-10-31,2023-11-02,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-003,Five Shelf Bookcase,Furniture,Bookcases,170.05,1,0.05,55.80
+RP-2024-00128,2024-05-11,2024-05-16,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-012,A4 Copy Paper,Office Supplies,Paper,56.25,5,0.10,19.00
+RP-2024-00128,2024-05-11,2024-05-16,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-006,Wireless Keyboard,Technology,Accessories,470.05,7,0.15,196.30
+RP-2024-00128,2024-05-11,2024-05-16,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-020,Mobile File Pedestal,Furniture,Storage,835.80,6,0.30,72.80
+RP-2024-00128,2024-05-11,2024-05-16,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-003,Five Shelf Bookcase,Furniture,Bookcases,1253.00,7,0,468.25
+RP-2023-00129,2023-08-17,2023-08-20,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-020,Mobile File Pedestal,Furniture,Storage,597.00,3,0,214.25
+RP-2023-00129,2023-08-17,2023-08-20,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,792.30,6,0.05,329.30
+RP-2025-00130,2025-02-07,2025-02-09,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,537.00,3,0,199.25
+RP-2025-00130,2025-02-07,2025-02-09,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,572.40,4,0.10,238.90
+RP-2025-00130,2025-02-07,2025-02-09,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-018,Desk Organizer,Office Supplies,Storage,31.00,1,0,13.75
+RP-2023-00131,2023-01-29,2023-01-31,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-017,Executive Notebook,Office Supplies,Paper,134.40,8,0.20,57.90
+RP-2023-00131,2023-01-29,2023-01-31,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-005,LED Desk Lamp,Furniture,Furnishings,250.75,5,0.15,109.50
+RP-2023-00131,2023-01-29,2023-01-31,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-019,Web Conference Camera,Technology,Accessories,696.60,6,0.10,275.60
+RP-2023-00131,2023-01-29,2023-01-31,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-006,Wireless Keyboard,Technology,Accessories,79.00,1,0,37.75
+RP-2024-00132,2024-01-08,2024-01-13,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,1992.00,8,0,847.50
+RP-2024-00132,2024-01-08,2024-01-13,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,1432.00,8,0,535.50
+RP-2024-00133,2024-03-07,2024-03-10,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,5620.50,5,0.10,964.25
+RP-2024-00133,2024-03-07,2024-03-10,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-004,Storage Cabinet,Furniture,Storage,876.00,4,0,322.50
+RP-2023-00134,2023-04-06,2023-04-12,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-013,Permanent Marker Set,Office Supplies,Art,90.00,5,0,46.75
+RP-2023-00135,2023-03-26,2023-03-30,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-011,USB-C Dock,Technology,Accessories,973.00,7,0,433.25
+RP-2023-00135,2023-03-26,2023-03-30,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-020,Mobile File Pedestal,Furniture,Storage,945.25,5,0.05,309.00
+RP-2023-00136,2023-10-31,2023-11-01,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-020,Mobile File Pedestal,Furniture,Storage,1512.40,8,0.05,495.90
+RP-2024-00137,2024-05-30,2024-05-31,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-006,Wireless Keyboard,Technology,Accessories,63.20,1,0.20,21.95
+RP-2024-00137,2024-05-30,2024-05-31,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-012,A4 Copy Paper,Office Supplies,Paper,22.50,2,0.10,6.10
+RP-2023-00138,2023-03-14,2023-03-15,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-017,Executive Notebook,Office Supplies,Paper,18.90,1,0.10,7.15
+RP-2024-00139,2024-02-16,2024-02-22,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-007,Noise Cancelling Headset,Technology,Accessories,318.00,2,0,150.00
+RP-2025-00140,2025-01-04,2025-01-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,924.35,7,0.05,384.60
+RP-2024-00141,2024-08-09,2024-08-13,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-012,A4 Copy Paper,Office Supplies,Paper,33.75,3,0.10,10.40
+RP-2024-00141,2024-08-09,2024-08-13,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,279.30,7,0.05,117.55
+RP-2024-00141,2024-08-09,2024-08-13,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,79.00,1,0,37.75
+RP-2024-00141,2024-08-09,2024-08-13,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-002,Standing Desk,Furniture,Tables,1173.60,3,0.20,223.85
+RP-2024-00142,2024-03-27,2024-03-29,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,568.80,8,0.10,256.30
+RP-2023-00143,2023-05-05,2023-05-10,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-017,Executive Notebook,Office Supplies,Paper,124.95,7,0.15,57.70
+RP-2023-00143,2023-05-05,2023-05-10,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-004,Storage Cabinet,Furniture,Storage,372.30,2,0.15,94.30
+RP-2023-00143,2023-05-05,2023-05-10,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,796.80,4,0.20,223.30
+RP-2023-00143,2023-05-05,2023-05-10,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-009,Laser Printer,Technology,Machines,2793.00,7,0,839.25
+RP-2023-00144,2023-09-13,2023-09-15,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-015,Archive Box Pack,Office Supplies,Storage,29.40,1,0.30,4.15
+RP-2023-00144,2023-09-13,2023-09-15,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,258.00,2,0,116.00
+RP-2023-00144,2023-09-13,2023-09-15,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-013,Permanent Marker Set,Office Supplies,Art,54.00,3,0,27.05
+RP-2023-00144,2023-09-13,2023-09-15,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-011,USB-C Dock,Technology,Accessories,125.10,1,0.10,45.85
+RP-2025-00145,2025-05-28,2025-06-03,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-017,Executive Notebook,Office Supplies,Paper,147.00,7,0,79.75
+RP-2025-00145,2025-05-28,2025-06-03,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-019,Web Conference Camera,Technology,Accessories,232.20,2,0.10,90.20
+RP-2025-00145,2025-05-28,2025-06-03,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-004,Storage Cabinet,Furniture,Storage,1040.25,5,0.05,349.00
+RP-2025-00145,2025-05-28,2025-06-03,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-012,A4 Copy Paper,Office Supplies,Paper,56.25,5,0.10,19.00
+RP-2023-00146,2023-11-16,2023-11-19,C-0005,Demo Customer 005,Home Office,United States,Miami,Florida,South,P-002,Standing Desk,Furniture,Tables,2396.10,7,0.30,183.35
+RP-2023-00146,2023-11-16,2023-11-19,C-0005,Demo Customer 005,Home Office,United States,Miami,Florida,South,P-018,Desk Organizer,Office Supplies,Storage,139.50,5,0.10,63.25
+RP-2024-00147,2024-04-01,2024-04-07,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-015,Archive Box Pack,Office Supplies,Storage,235.20,7,0.20,73.45
+RP-2024-00147,2024-04-01,2024-04-07,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-005,LED Desk Lamp,Furniture,Furnishings,236.00,4,0,122.50
+RP-2024-00147,2024-04-01,2024-04-07,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-007,Noise Cancelling Headset,Technology,Accessories,675.75,5,0.15,259.50
+RP-2025-00148,2025-01-24,2025-01-31,C-0028,Demo Customer 028,Corporate,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,205.20,6,0.05,87.20
+RP-2025-00148,2025-01-24,2025-01-31,C-0028,Demo Customer 028,Corporate,United States,Atlanta,Georgia,South,P-019,Web Conference Camera,Technology,Accessories,129.00,1,0,56.75
+RP-2025-00148,2025-01-24,2025-01-31,C-0028,Demo Customer 028,Corporate,United States,Atlanta,Georgia,South,P-008,Business Laptop,Technology,Computers,3996.80,4,0.20,271.30
+RP-2025-00149,2025-04-02,2025-04-08,C-0038,Demo Customer 038,Home Office,United States,Seattle,Washington,West,P-019,Web Conference Camera,Technology,Accessories,696.60,6,0.10,275.60
+RP-2023-00150,2023-08-18,2023-08-23,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-009,Laser Printer,Technology,Machines,1895.25,5,0.05,499.00
+RP-2023-00150,2023-08-18,2023-08-23,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-017,Executive Notebook,Office Supplies,Paper,16.80,1,0.20,5.05
+RP-2023-00150,2023-08-18,2023-08-23,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,177.00,3,0,91.25
+RP-2023-00150,2023-08-18,2023-08-23,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-008,Business Laptop,Technology,Computers,8743.00,7,0,2225.25
+RP-2024-00151,2024-01-23,2024-01-26,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-017,Executive Notebook,Office Supplies,Paper,21.00,1,0,9.25
+RP-2024-00151,2024-01-23,2024-01-26,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-010,27 Inch Monitor,Technology,Displays,296.10,1,0.10,68.85
+RP-2025-00152,2025-02-16,2025-02-18,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-018,Desk Organizer,Office Supplies,Storage,167.40,6,0.10,76.40
+RP-2025-00152,2025-02-16,2025-02-18,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-012,A4 Copy Paper,Office Supplies,Paper,35.63,3,0.05,12.28
+RP-2025-00152,2025-02-16,2025-02-18,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-011,USB-C Dock,Technology,Accessories,132.05,1,0.05,52.80
+RP-2025-00152,2025-02-16,2025-02-18,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-002,Standing Desk,Furniture,Tables,684.60,2,0.30,50.60
+RP-2023-00153,2023-03-16,2023-03-19,C-0078,Demo Customer 078,Consumer,United States,Seattle,Washington,West,P-007,Noise Cancelling Headset,Technology,Accessories,946.05,7,0.15,364.30
+RP-2024-00154,2024-01-09,2024-01-16,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,597.60,3,0.20,166.85
+RP-2024-00154,2024-01-09,2024-01-16,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,102.60,3,0.05,42.35
+RP-2024-00154,2024-01-09,2024-01-16,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-019,Web Conference Camera,Technology,Accessories,232.20,2,0.10,90.20
+RP-2024-00154,2024-01-09,2024-01-16,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-018,Desk Organizer,Office Supplies,Storage,139.50,5,0.10,63.25
+RP-2025-00155,2025-02-01,2025-02-07,C-0033,Demo Customer 033,Consumer,United States,Boston,Massachusetts,East,P-010,27 Inch Monitor,Technology,Displays,2187.85,7,0.05,612.10
+RP-2025-00155,2025-02-01,2025-02-07,C-0033,Demo Customer 033,Consumer,United States,Boston,Massachusetts,East,P-011,USB-C Dock,Technology,Accessories,590.75,5,0.15,204.50
+RP-2025-00155,2025-02-01,2025-02-07,C-0033,Demo Customer 033,Consumer,United States,Boston,Massachusetts,East,P-006,Wireless Keyboard,Technology,Accessories,395.00,5,0,198.75
+RP-2024-00156,2024-09-29,2024-09-30,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,21.00,1,0,9.25
+RP-2024-00156,2024-09-29,2024-09-30,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,483.30,3,0.10,145.55
+RP-2024-00156,2024-09-29,2024-09-30,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-005,LED Desk Lamp,Furniture,Furnishings,50.15,1,0.15,19.90
+RP-2025-00157,2025-10-24,2025-10-25,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-005,LED Desk Lamp,Furniture,Furnishings,236.00,4,0,122.50
+RP-2025-00157,2025-10-24,2025-10-25,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-011,USB-C Dock,Technology,Accessories,695.00,5,0,308.75
+RP-2023-00158,2023-06-12,2023-06-15,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-015,Archive Box Pack,Office Supplies,Storage,201.60,6,0.20,62.60
+RP-2023-00159,2023-06-28,2023-07-01,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-015,Archive Box Pack,Office Supplies,Storage,39.90,1,0.05,14.65
+RP-2023-00159,2023-06-28,2023-07-01,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-013,Permanent Marker Set,Office Supplies,Art,34.20,2,0.05,15.40
+RP-2025-00160,2025-03-24,2025-03-27,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-008,Business Laptop,Technology,Computers,2373.10,2,0.05,509.10
+RP-2025-00160,2025-03-24,2025-03-27,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-016,Shipping Label Roll,Office Supplies,Labels,96.00,5,0.20,37.25
+RP-2025-00160,2025-03-24,2025-03-27,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-009,Laser Printer,Technology,Machines,1436.40,4,0.10,318.90
+RP-2025-00160,2025-03-24,2025-03-27,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-005,LED Desk Lamp,Furniture,Furnishings,112.10,2,0.05,54.10
+RP-2023-00161,2023-09-18,2023-09-21,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-008,Business Laptop,Technology,Computers,6245.00,5,0,1588.75
+RP-2023-00161,2023-09-18,2023-09-21,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-006,Wireless Keyboard,Technology,Accessories,395.00,5,0,198.75
+RP-2023-00161,2023-09-18,2023-09-21,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,36.00,1,0,14.25
+RP-2023-00162,2023-11-06,2023-11-12,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-011,USB-C Dock,Technology,Accessories,973.00,7,0,433.25
+RP-2023-00162,2023-11-06,2023-11-12,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-008,Business Laptop,Technology,Computers,1124.10,1,0.10,190.85
+RP-2023-00163,2023-05-19,2023-05-22,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,250.20,2,0.10,94.20
+RP-2023-00163,2023-05-19,2023-05-22,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,7494.00,6,0,1907.00
+RP-2025-00164,2025-01-31,2025-02-06,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-012,A4 Copy Paper,Office Supplies,Paper,35.63,3,0.05,12.28
+RP-2025-00164,2025-01-31,2025-02-06,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-017,Executive Notebook,Office Supplies,Paper,139.65,7,0.05,72.40
+RP-2025-00164,2025-01-31,2025-02-06,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,286.40,2,0.20,60.40
+RP-2025-00164,2025-01-31,2025-02-06,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-015,Archive Box Pack,Office Supplies,Storage,226.80,6,0.10,87.80
+RP-2023-00165,2023-05-16,2023-05-19,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-008,Business Laptop,Technology,Computers,6994.40,7,0.20,476.65
+RP-2023-00165,2023-05-16,2023-05-19,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,252.00,7,0,114.75
+RP-2023-00165,2023-05-16,2023-05-19,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,75.05,1,0.05,33.80
+RP-2025-00166,2025-10-02,2025-10-05,C-0024,Demo Customer 024,Consumer,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,445.20,4,0.30,111.70
+RP-2025-00166,2025-10-02,2025-10-05,C-0024,Demo Customer 024,Consumer,United States,New York,New York,East,P-012,A4 Copy Paper,Office Supplies,Paper,10.63,1,0.15,1.18
+RP-2025-00166,2025-10-02,2025-10-05,C-0024,Demo Customer 024,Consumer,United States,New York,New York,East,P-020,Mobile File Pedestal,Furniture,Storage,597.00,3,0,214.25
+RP-2024-00167,2024-08-03,2024-08-06,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,3129.60,8,0.20,601.10
+RP-2024-00167,2024-08-03,2024-08-06,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,56.05,1,0.05,25.80
+RP-2024-00167,2024-08-03,2024-08-06,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-001,Ergonomic Office Chair,Furniture,Chairs,1419.30,6,0.05,560.30
+RP-2024-00167,2024-08-03,2024-08-06,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-009,Laser Printer,Technology,Machines,1795.50,5,0.10,399.25
+RP-2024-00168,2024-03-21,2024-03-27,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-007,Noise Cancelling Headset,Technology,Accessories,381.60,3,0.20,130.85
+RP-2024-00168,2024-03-21,2024-03-27,C-0074,Demo Customer 074,Home Office,United States,Chicago,Illinois,Central,P-008,Business Laptop,Technology,Computers,7494.00,6,0,1907.00
+RP-2025-00169,2025-04-19,2025-04-24,C-0026,Demo Customer 026,Home Office,United States,Chicago,Illinois,Central,P-007,Noise Cancelling Headset,Technology,Accessories,1272.00,8,0,607.50
+RP-2023-00170,2023-10-05,2023-10-12,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-016,Shipping Label Roll,Office Supplies,Labels,168.00,7,0,86.75
+RP-2023-00170,2023-10-05,2023-10-12,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-010,27 Inch Monitor,Technology,Displays,1645.00,5,0,518.75
+RP-2025-00171,2025-09-12,2025-09-15,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,508.80,4,0.20,175.30
+RP-2025-00171,2025-09-12,2025-09-15,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,18.90,1,0.10,7.15
+RP-2025-00171,2025-09-12,2025-09-15,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-015,Archive Box Pack,Office Supplies,Storage,113.40,3,0.10,42.65
+RP-2025-00171,2025-09-12,2025-09-15,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-008,Business Laptop,Technology,Computers,2498.00,2,0,634.00
+RP-2023-00172,2023-04-09,2023-04-13,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-009,Laser Printer,Technology,Machines,718.20,2,0.10,158.20
+RP-2023-00172,2023-04-09,2023-04-13,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-007,Noise Cancelling Headset,Technology,Accessories,453.15,3,0.05,202.40
+RP-2023-00172,2023-04-09,2023-04-13,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-003,Five Shelf Bookcase,Furniture,Bookcases,1217.20,8,0.15,320.70
+RP-2024-00173,2024-01-02,2024-01-03,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-013,Permanent Marker Set,Office Supplies,Art,119.70,7,0.05,60.15
+RP-2024-00173,2024-01-02,2024-01-03,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,747.00,3,0,316.25
+RP-2024-00173,2024-01-02,2024-01-03,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-009,Laser Printer,Technology,Machines,2713.20,8,0.15,480.70
+RP-2024-00173,2024-01-02,2024-01-03,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,351.05,7,0.15,154.30
+RP-2025-00174,2025-12-02,2025-12-03,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-016,Shipping Label Roll,Office Supplies,Labels,168.00,7,0,86.75
+RP-2025-00174,2025-12-02,2025-12-03,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-019,Web Conference Camera,Technology,Accessories,580.50,5,0.10,229.25
+RP-2025-00174,2025-12-02,2025-12-03,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-010,27 Inch Monitor,Technology,Displays,1842.40,7,0.20,266.65
+RP-2024-00175,2024-05-02,2024-05-09,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-013,Permanent Marker Set,Office Supplies,Art,126.00,7,0,66.45
+RP-2025-00176,2025-06-12,2025-06-15,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-015,Archive Box Pack,Office Supplies,Storage,279.30,7,0.05,117.55
+RP-2025-00176,2025-06-12,2025-06-15,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-011,USB-C Dock,Technology,Accessories,827.05,7,0.15,287.30
+RP-2025-00176,2025-06-12,2025-06-15,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-013,Permanent Marker Set,Office Supplies,Art,17.10,1,0.05,6.45
+RP-2025-00176,2025-06-12,2025-06-15,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-020,Mobile File Pedestal,Furniture,Storage,318.40,2,0.20,62.40
+RP-2024-00177,2024-08-29,2024-09-03,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1344.60,6,0.10,485.60
+RP-2024-00177,2024-08-29,2024-09-03,C-0067,Demo Customer 067,Corporate,United States,Dallas,Texas,Central,P-019,Web Conference Camera,Technology,Accessories,129.00,1,0,56.75
+RP-2025-00178,2025-03-01,2025-03-06,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-018,Desk Organizer,Office Supplies,Storage,27.90,1,0.10,10.65
+RP-2024-00179,2024-01-16,2024-01-17,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-015,Archive Box Pack,Office Supplies,Storage,226.80,6,0.10,87.80
+RP-2025-00180,2025-01-26,2025-02-01,C-0031,Demo Customer 031,Corporate,United States,San Francisco,California,West,P-002,Standing Desk,Furniture,Tables,1467.00,3,0,517.25
+RP-2025-00180,2025-01-26,2025-02-01,C-0031,Demo Customer 031,Corporate,United States,San Francisco,California,West,P-009,Laser Printer,Technology,Machines,1117.20,4,0.30,-0.30
+RP-2025-00180,2025-01-26,2025-02-01,C-0031,Demo Customer 031,Corporate,United States,San Francisco,California,West,P-014,Heavy Duty Stapler,Office Supplies,Binders,144.00,4,0,64.50
+RP-2025-00181,2025-06-22,2025-06-24,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-006,Wireless Keyboard,Technology,Accessories,79.00,1,0,37.75
+RP-2025-00181,2025-06-22,2025-06-24,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,304.30,2,0.15,78.30
+RP-2025-00181,2025-06-22,2025-06-24,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-012,A4 Copy Paper,Office Supplies,Paper,52.50,6,0.30,8.30
+RP-2023-00182,2023-09-12,2023-09-17,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-020,Mobile File Pedestal,Furniture,Storage,338.30,2,0.15,82.30
+RP-2023-00182,2023-09-12,2023-09-17,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1568.70,7,0.10,566.95
+RP-2023-00183,2023-10-22,2023-10-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-017,Executive Notebook,Office Supplies,Paper,58.80,4,0.30,19.30
+RP-2023-00183,2023-10-22,2023-10-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-003,Five Shelf Bookcase,Furniture,Bookcases,510.15,3,0.05,172.40
+RP-2023-00183,2023-10-22,2023-10-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-019,Web Conference Camera,Technology,Accessories,857.85,7,0.05,367.10
+RP-2023-00183,2023-10-22,2023-10-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-005,LED Desk Lamp,Furniture,Furnishings,354.00,6,0,185.00
+RP-2024-00184,2024-07-02,2024-07-04,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-011,USB-C Dock,Technology,Accessories,1112.00,8,0,495.50
+RP-2024-00184,2024-07-02,2024-07-04,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-016,Shipping Label Roll,Office Supplies,Labels,108.00,5,0.10,49.25
+RP-2024-00184,2024-07-02,2024-07-04,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,268.60,4,0.15,111.10
+RP-2023-00185,2023-11-28,2023-11-30,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-009,Laser Printer,Technology,Machines,1017.45,3,0.15,178.70
+RP-2023-00185,2023-11-28,2023-11-30,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-004,Storage Cabinet,Furniture,Storage,985.50,5,0.10,294.25
+RP-2023-00185,2023-11-28,2023-11-30,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-012,A4 Copy Paper,Office Supplies,Paper,12.50,1,0,3.05
+RP-2023-00185,2023-11-28,2023-11-30,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-018,Desk Organizer,Office Supplies,Storage,31.00,1,0,13.75
+RP-2025-00186,2025-04-27,2025-05-03,C-0050,Demo Customer 050,Home Office,United States,Chicago,Illinois,Central,P-010,27 Inch Monitor,Technology,Displays,1612.10,7,0.30,36.35
+RP-2025-00186,2025-04-27,2025-05-03,C-0050,Demo Customer 050,Home Office,United States,Chicago,Illinois,Central,P-016,Shipping Label Roll,Office Supplies,Labels,72.00,3,0,35.75
+RP-2024-00187,2024-12-09,2024-12-12,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,1000.80,8,0.10,384.30
+RP-2024-00187,2024-12-09,2024-12-12,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-016,Shipping Label Roll,Office Supplies,Labels,114.00,5,0.05,55.25
+RP-2024-00187,2024-12-09,2024-12-12,C-0055,Demo Customer 055,Corporate,United States,San Francisco,California,West,P-012,A4 Copy Paper,Office Supplies,Paper,37.50,3,0,14.15
+RP-2024-00188,2024-07-13,2024-07-14,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-005,LED Desk Lamp,Furniture,Furnishings,47.20,1,0.20,16.95
+RP-2024-00188,2024-07-13,2024-07-14,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-017,Executive Notebook,Office Supplies,Paper,58.80,4,0.30,19.30
+RP-2024-00188,2024-07-13,2024-07-14,C-0023,Demo Customer 023,Home Office,United States,San Francisco,California,West,P-006,Wireless Keyboard,Technology,Accessories,426.60,6,0.10,191.60
+RP-2025-00189,2025-05-18,2025-05-19,C-0050,Demo Customer 050,Home Office,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,211.65,1,0.15,66.40
+RP-2025-00189,2025-05-18,2025-05-19,C-0050,Demo Customer 050,Home Office,United States,Chicago,Illinois,Central,P-007,Noise Cancelling Headset,Technology,Accessories,286.20,2,0.10,118.20
+RP-2025-00190,2025-01-24,2025-01-28,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-016,Shipping Label Roll,Office Supplies,Labels,45.60,2,0.05,20.60
+RP-2025-00190,2025-01-24,2025-01-28,C-0014,Demo Customer 014,Home Office,United States,Seattle,Washington,West,P-014,Heavy Duty Stapler,Office Supplies,Binders,36.00,1,0,14.25
+RP-2023-00191,2023-06-06,2023-06-09,C-0012,Demo Customer 012,Consumer,United States,Atlanta,Georgia,South,P-011,USB-C Dock,Technology,Accessories,667.20,6,0.20,204.20
+RP-2023-00191,2023-06-06,2023-06-09,C-0012,Demo Customer 012,Consumer,United States,Atlanta,Georgia,South,P-009,Laser Printer,Technology,Machines,638.40,2,0.20,78.40
+RP-2023-00191,2023-06-06,2023-06-09,C-0012,Demo Customer 012,Consumer,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,36.00,1,0,14.25
+RP-2024-00192,2024-04-08,2024-04-13,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-012,A4 Copy Paper,Office Supplies,Paper,30.00,3,0.20,6.65
+RP-2024-00192,2024-04-08,2024-04-13,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,222.60,2,0.30,54.60
+RP-2023-00193,2023-07-05,2023-07-06,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-009,Laser Printer,Technology,Machines,837.90,3,0.30,-0.85
+RP-2024-00194,2024-11-04,2024-11-09,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-006,Wireless Keyboard,Technology,Accessories,201.45,3,0.15,82.70
+RP-2024-00194,2024-11-04,2024-11-09,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,59.00,1,0,28.75
+RP-2024-00194,2024-11-04,2024-11-09,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-020,Mobile File Pedestal,Furniture,Storage,756.20,4,0.05,246.70
+RP-2024-00195,2024-07-12,2024-07-17,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-004,Storage Cabinet,Furniture,Storage,985.50,5,0.10,294.25
+RP-2024-00195,2024-07-12,2024-07-17,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-005,LED Desk Lamp,Furniture,Furnishings,472.00,8,0,247.50
+RP-2024-00195,2024-07-12,2024-07-17,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,132.05,1,0.05,52.80
+RP-2024-00195,2024-07-12,2024-07-17,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-009,Laser Printer,Technology,Machines,1077.30,3,0.10,238.55
+RP-2023-00196,2023-09-08,2023-09-15,C-0071,Demo Customer 071,Home Office,United States,San Francisco,California,West,P-002,Standing Desk,Furniture,Tables,978.00,2,0,344.00
+RP-2023-00197,2023-10-29,2023-11-02,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1743.00,7,0,741.25
+RP-2023-00198,2023-06-24,2023-07-01,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-007,Noise Cancelling Headset,Technology,Accessories,302.10,2,0.05,134.10
+RP-2023-00198,2023-06-24,2023-07-01,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,108.00,3,0,47.75
+RP-2023-00198,2023-06-24,2023-07-01,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-011,USB-C Dock,Technology,Accessories,1112.00,8,0,495.50
+RP-2023-00198,2023-06-24,2023-07-01,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-006,Wireless Keyboard,Technology,Accessories,237.00,3,0,118.25
+RP-2025-00199,2025-05-13,2025-05-20,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-007,Noise Cancelling Headset,Technology,Accessories,302.10,2,0.05,134.10
+RP-2025-00199,2025-05-13,2025-05-20,C-0059,Demo Customer 059,Home Office,United States,Dallas,Texas,Central,P-004,Storage Cabinet,Furniture,Storage,1401.60,8,0.20,297.10
+RP-2024-00200,2024-11-30,2024-12-06,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-001,Ergonomic Office Chair,Furniture,Chairs,1245.00,5,0,528.75
+RP-2024-00200,2024-11-30,2024-12-06,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-002,Standing Desk,Furniture,Tables,3325.20,8,0.15,796.70
+RP-2024-00200,2024-11-30,2024-12-06,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-018,Desk Organizer,Office Supplies,Storage,206.15,7,0.05,100.40
+RP-2024-00200,2024-11-30,2024-12-06,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,30.60,1,0.15,8.85
+RP-2025-00201,2025-08-25,2025-08-26,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,413.00,7,0,216.25
+RP-2025-00201,2025-08-25,2025-08-26,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-008,Business Laptop,Technology,Computers,6245.00,5,0,1588.75
+RP-2023-00202,2023-04-18,2023-04-19,C-0071,Demo Customer 071,Home Office,United States,San Francisco,California,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,143.20,1,0.20,28.95
+RP-2024-00203,2024-01-14,2024-01-16,C-0033,Demo Customer 033,Consumer,United States,Boston,Massachusetts,East,P-006,Wireless Keyboard,Technology,Accessories,395.00,5,0,198.75
+RP-2024-00203,2024-01-14,2024-01-16,C-0033,Demo Customer 033,Consumer,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,64.80,2,0.10,23.80
+RP-2024-00204,2024-01-26,2024-01-31,C-0054,Demo Customer 054,Consumer,United States,Seattle,Washington,West,P-007,Noise Cancelling Headset,Technology,Accessories,1144.80,8,0.10,480.30
+RP-2024-00205,2024-08-15,2024-08-22,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1220.10,7,0.30,218.35
+RP-2024-00206,2024-04-12,2024-04-19,C-0030,Demo Customer 030,Consumer,United States,Seattle,Washington,West,P-005,LED Desk Lamp,Furniture,Furnishings,94.40,2,0.20,36.40
+RP-2024-00206,2024-04-12,2024-04-19,C-0030,Demo Customer 030,Consumer,United States,Seattle,Washington,West,P-010,27 Inch Monitor,Technology,Displays,1776.60,6,0.10,425.60
+RP-2024-00206,2024-04-12,2024-04-19,C-0030,Demo Customer 030,Consumer,United States,Seattle,Washington,West,P-011,USB-C Dock,Technology,Accessories,708.90,6,0.15,245.90
+RP-2024-00207,2024-10-25,2024-10-30,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-016,Shipping Label Roll,Office Supplies,Labels,159.60,7,0.05,78.35
+RP-2024-00207,2024-10-25,2024-10-30,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-011,USB-C Dock,Technology,Accessories,695.00,5,0,308.75
+RP-2024-00208,2024-08-04,2024-08-11,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-020,Mobile File Pedestal,Furniture,Storage,1592.00,8,0,575.50
+RP-2024-00208,2024-08-04,2024-08-11,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-006,Wireless Keyboard,Technology,Accessories,67.15,1,0.15,25.90
+RP-2024-00209,2024-07-09,2024-07-14,C-0038,Demo Customer 038,Home Office,United States,Seattle,Washington,West,P-001,Ergonomic Office Chair,Furniture,Chairs,211.65,1,0.15,66.40
+RP-2024-00209,2024-07-09,2024-07-14,C-0038,Demo Customer 038,Home Office,United States,Seattle,Washington,West,P-015,Archive Box Pack,Office Supplies,Storage,126.00,3,0,55.25
+RP-2024-00210,2024-09-03,2024-09-04,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-019,Web Conference Camera,Technology,Accessories,516.00,5,0.20,164.75
+RP-2023-00211,2023-03-29,2023-04-04,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-015,Archive Box Pack,Office Supplies,Storage,117.60,4,0.30,24.10
+RP-2023-00211,2023-03-29,2023-04-04,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,199.20,1,0.20,53.95
+RP-2023-00211,2023-03-29,2023-04-04,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-013,Permanent Marker Set,Office Supplies,Art,32.40,2,0.10,13.60
+RP-2023-00211,2023-03-29,2023-04-04,C-0063,Demo Customer 063,Consumer,United States,San Francisco,California,West,P-016,Shipping Label Roll,Office Supplies,Labels,168.00,7,0,86.75
+RP-2023-00212,2023-04-24,2023-04-27,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-011,USB-C Dock,Technology,Accessories,945.20,8,0.15,328.70
+RP-2025-00213,2025-08-08,2025-08-10,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-006,Wireless Keyboard,Technology,Accessories,395.00,5,0,198.75
+RP-2025-00213,2025-08-08,2025-08-10,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,18.90,1,0.10,7.15
+RP-2025-00213,2025-08-08,2025-08-10,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-016,Shipping Label Roll,Office Supplies,Labels,22.80,1,0.05,9.05
+RP-2023-00214,2023-09-24,2023-10-01,C-0012,Demo Customer 012,Consumer,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,273.60,8,0.05,117.10
+RP-2023-00214,2023-09-24,2023-10-01,C-0012,Demo Customer 012,Consumer,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,189.00,5,0.10,72.75
+RP-2024-00215,2024-04-12,2024-04-15,C-0061,Demo Customer 061,Corporate,United States,Miami,Florida,South,P-015,Archive Box Pack,Office Supplies,Storage,176.40,6,0.30,37.40
+RP-2024-00215,2024-04-12,2024-04-15,C-0061,Demo Customer 061,Corporate,United States,Miami,Florida,South,P-008,Business Laptop,Technology,Computers,9492.40,8,0.05,2043.90
+RP-2023-00216,2023-03-08,2023-03-14,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-006,Wireless Keyboard,Technology,Accessories,284.40,4,0.10,126.90
+RP-2023-00216,2023-03-08,2023-03-14,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-013,Permanent Marker Set,Office Supplies,Art,16.20,1,0.10,5.55
+RP-2024-00217,2024-04-06,2024-04-08,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-015,Archive Box Pack,Office Supplies,Storage,119.70,3,0.05,48.95
+RP-2024-00217,2024-04-06,2024-04-08,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-020,Mobile File Pedestal,Furniture,Storage,1393.00,7,0,503.25
+RP-2024-00217,2024-04-06,2024-04-08,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-018,Desk Organizer,Office Supplies,Storage,155.00,5,0,78.75
+RP-2024-00218,2024-09-14,2024-09-16,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-019,Web Conference Camera,Technology,Accessories,645.00,5,0,293.75
+RP-2024-00218,2024-09-14,2024-09-16,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-012,A4 Copy Paper,Office Supplies,Paper,67.50,6,0.10,23.30
+RP-2024-00218,2024-09-14,2024-09-16,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-009,Laser Printer,Technology,Machines,1077.30,3,0.10,238.55
+RP-2024-00218,2024-09-14,2024-09-16,C-0076,Demo Customer 076,Corporate,United States,Atlanta,Georgia,South,P-011,USB-C Dock,Technology,Accessories,500.40,4,0.10,190.90
+RP-2024-00219,2024-12-18,2024-12-24,C-0026,Demo Customer 026,Home Office,United States,Chicago,Illinois,Central,P-013,Permanent Marker Set,Office Supplies,Art,36.00,2,0,17.20
+RP-2024-00219,2024-12-18,2024-12-24,C-0026,Demo Customer 026,Home Office,United States,Chicago,Illinois,Central,P-020,Mobile File Pedestal,Furniture,Storage,378.10,2,0.05,122.10
+RP-2025-00220,2025-03-25,2025-03-30,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,108.00,3,0,47.75
+RP-2025-00220,2025-03-25,2025-03-30,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-020,Mobile File Pedestal,Furniture,Storage,358.20,2,0.10,102.20
+RP-2025-00220,2025-03-25,2025-03-30,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-006,Wireless Keyboard,Technology,Accessories,395.00,5,0,198.75
+RP-2025-00220,2025-03-25,2025-03-30,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-009,Laser Printer,Technology,Machines,2394.00,6,0,719.00
+RP-2024-00221,2024-08-09,2024-08-13,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-007,Noise Cancelling Headset,Technology,Accessories,810.90,6,0.15,311.90
+RP-2024-00221,2024-08-09,2024-08-13,C-0018,Demo Customer 018,Consumer,United States,Chicago,Illinois,Central,P-016,Shipping Label Roll,Office Supplies,Labels,57.60,3,0.20,21.35
+RP-2023-00222,2023-09-24,2023-09-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-010,27 Inch Monitor,Technology,Displays,1398.25,5,0.15,272.00
+RP-2023-00222,2023-09-24,2023-09-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-007,Noise Cancelling Headset,Technology,Accessories,755.25,5,0.05,339.00
+RP-2023-00222,2023-09-24,2023-09-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-018,Desk Organizer,Office Supplies,Storage,62.00,2,0,30.00
+RP-2023-00222,2023-09-24,2023-09-25,C-0004,Demo Customer 004,Corporate,United States,Atlanta,Georgia,South,P-012,A4 Copy Paper,Office Supplies,Paper,8.75,1,0.30,-0.70
+RP-2025-00223,2025-02-09,2025-02-12,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,170.05,1,0.05,55.80
+RP-2025-00223,2025-02-09,2025-02-12,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-016,Shipping Label Roll,Office Supplies,Labels,96.00,4,0,48.50
+RP-2024-00224,2024-01-25,2024-01-27,C-0050,Demo Customer 050,Home Office,United States,Chicago,Illinois,Central,P-017,Executive Notebook,Office Supplies,Paper,159.60,8,0.05,83.10
+RP-2024-00224,2024-01-25,2024-01-27,C-0050,Demo Customer 050,Home Office,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1494.00,6,0,635.00
+RP-2025-00225,2025-02-14,2025-02-16,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,3747.00,3,0,952.25
+RP-2025-00225,2025-02-14,2025-02-16,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-009,Laser Printer,Technology,Machines,2034.90,6,0.15,359.90
+RP-2024-00226,2024-12-06,2024-12-10,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-018,Desk Organizer,Office Supplies,Storage,105.40,4,0.15,43.90
+RP-2024-00226,2024-12-06,2024-12-10,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-004,Storage Cabinet,Furniture,Storage,350.40,2,0.20,72.40
+RP-2024-00226,2024-12-06,2024-12-10,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-013,Permanent Marker Set,Office Supplies,Art,108.00,6,0,56.60
+RP-2024-00227,2024-07-20,2024-07-23,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-020,Mobile File Pedestal,Furniture,Storage,1393.00,7,0,503.25
+RP-2024-00227,2024-07-20,2024-07-23,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-001,Ergonomic Office Chair,Furniture,Chairs,1568.70,7,0.10,566.95
+RP-2024-00227,2024-07-20,2024-07-23,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-007,Noise Cancelling Headset,Technology,Accessories,1001.70,7,0.10,419.95
+RP-2024-00227,2024-07-20,2024-07-23,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,210.00,5,0,93.75
+RP-2023-00228,2023-07-02,2023-07-07,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-016,Shipping Label Roll,Office Supplies,Labels,136.80,6,0.05,66.80
+RP-2023-00228,2023-07-02,2023-07-07,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-012,A4 Copy Paper,Office Supplies,Paper,87.50,7,0,36.35
+RP-2023-00228,2023-07-02,2023-07-07,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-009,Laser Printer,Technology,Machines,2513.70,7,0.10,559.95
+RP-2023-00228,2023-07-02,2023-07-07,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-013,Permanent Marker Set,Office Supplies,Art,15.30,1,0.15,4.65
+RP-2023-00229,2023-09-25,2023-09-28,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,103.20,1,0.20,30.95
+RP-2023-00229,2023-09-25,2023-09-28,C-0013,Demo Customer 013,Corporate,United States,Miami,Florida,South,P-013,Permanent Marker Set,Office Supplies,Art,36.00,2,0,17.20
+RP-2025-00230,2025-05-16,2025-05-22,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-010,27 Inch Monitor,Technology,Displays,1776.60,6,0.10,425.60
+RP-2025-00230,2025-05-16,2025-05-22,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,237.00,3,0,118.25
+RP-2025-00230,2025-05-16,2025-05-22,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,99.75,5,0.05,51.00
+RP-2024-00231,2024-03-01,2024-03-02,C-0070,Demo Customer 070,Corporate,United States,Seattle,Washington,West,P-013,Permanent Marker Set,Office Supplies,Art,18.00,1,0,7.35
+RP-2023-00232,2023-07-18,2023-07-25,C-0072,Demo Customer 072,Consumer,United States,New York,New York,East,P-007,Noise Cancelling Headset,Technology,Accessories,1113.00,7,0,531.25
+RP-2023-00232,2023-07-18,2023-07-25,C-0072,Demo Customer 072,Consumer,United States,New York,New York,East,P-005,LED Desk Lamp,Furniture,Furnishings,413.00,7,0,216.25
+RP-2024-00233,2024-12-31,2025-01-04,C-0012,Demo Customer 012,Consumer,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,180.00,5,0,81.25
+RP-2024-00233,2024-12-31,2025-01-04,C-0012,Demo Customer 012,Consumer,United States,Atlanta,Georgia,South,P-008,Business Laptop,Technology,Computers,7494.00,6,0,1907.00
+RP-2025-00234,2025-08-07,2025-08-13,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-006,Wireless Keyboard,Technology,Accessories,316.00,4,0,158.50
+RP-2025-00234,2025-08-07,2025-08-13,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-011,USB-C Dock,Technology,Accessories,139.00,1,0,59.75
+RP-2025-00234,2025-08-07,2025-08-13,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,5932.75,5,0.05,1276.50
+RP-2025-00234,2025-08-07,2025-08-13,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-004,Storage Cabinet,Furniture,Storage,1533.00,7,0,566.25
+RP-2025-00235,2025-08-26,2025-08-28,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,236.55,1,0.05,91.30
+RP-2025-00236,2025-06-12,2025-06-14,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-015,Archive Box Pack,Office Supplies,Storage,84.00,2,0,36.00
+RP-2025-00236,2025-06-12,2025-06-14,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,371.70,7,0.10,174.95
+RP-2025-00236,2025-06-12,2025-06-14,C-0017,Demo Customer 017,Home Office,United States,Boston,Massachusetts,East,P-010,27 Inch Monitor,Technology,Displays,230.30,1,0.30,3.05
+RP-2023-00237,2023-05-28,2023-06-04,C-0007,Demo Customer 007,Corporate,United States,San Francisco,California,West,P-019,Web Conference Camera,Technology,Accessories,903.00,7,0,412.25
+RP-2025-00238,2025-02-24,2025-03-01,C-0062,Demo Customer 062,Home Office,United States,Seattle,Washington,West,P-012,A4 Copy Paper,Office Supplies,Paper,25.00,2,0,8.60
+RP-2025-00238,2025-02-24,2025-03-01,C-0062,Demo Customer 062,Home Office,United States,Seattle,Washington,West,P-016,Shipping Label Roll,Office Supplies,Labels,96.00,4,0,48.50
+RP-2025-00238,2025-02-24,2025-03-01,C-0062,Demo Customer 062,Home Office,United States,Seattle,Washington,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,805.50,5,0.10,244.25
+RP-2024-00239,2024-03-29,2024-04-01,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-009,Laser Printer,Technology,Machines,1396.50,5,0.30,0.25
+RP-2024-00239,2024-03-29,2024-04-01,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-012,A4 Copy Paper,Office Supplies,Paper,37.50,3,0,14.15
+RP-2024-00239,2024-03-29,2024-04-01,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-006,Wireless Keyboard,Technology,Accessories,525.35,7,0.05,251.60
+RP-2024-00239,2024-03-29,2024-04-01,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,3747.00,3,0,952.25
+RP-2025-00240,2025-08-05,2025-08-08,C-0053,Demo Customer 053,Home Office,United States,Miami,Florida,South,P-012,A4 Copy Paper,Office Supplies,Paper,35.63,3,0.05,12.28
+RP-2025-00240,2025-08-05,2025-08-08,C-0053,Demo Customer 053,Home Office,United States,Miami,Florida,South,P-017,Executive Notebook,Office Supplies,Paper,71.40,4,0.15,31.90
+RP-2023-00241,2023-01-29,2023-02-03,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-018,Desk Organizer,Office Supplies,Storage,235.60,8,0.05,115.10
+RP-2023-00241,2023-01-29,2023-02-03,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-012,A4 Copy Paper,Office Supplies,Paper,12.50,1,0,3.05
+RP-2024-00242,2024-10-02,2024-10-07,C-0065,Demo Customer 065,Home Office,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,122.40,4,0.15,42.90
+RP-2024-00243,2024-12-29,2025-01-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-015,Archive Box Pack,Office Supplies,Storage,84.00,2,0,36.00
+RP-2025-00244,2025-07-20,2025-07-23,C-0026,Demo Customer 026,Home Office,United States,Chicago,Illinois,Central,P-004,Storage Cabinet,Furniture,Storage,1752.00,8,0,647.50
+RP-2025-00245,2025-09-13,2025-09-18,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,57.60,2,0.20,16.60
+RP-2025-00245,2025-09-13,2025-09-18,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-012,A4 Copy Paper,Office Supplies,Paper,25.00,2,0,8.60
+RP-2025-00245,2025-09-13,2025-09-18,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-011,USB-C Dock,Technology,Accessories,125.10,1,0.10,45.85
+RP-2025-00245,2025-09-13,2025-09-18,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-008,Business Laptop,Technology,Computers,4996.00,4,0,1270.50
+RP-2023-00246,2023-09-28,2023-09-30,C-0021,Demo Customer 021,Consumer,United States,Miami,Florida,South,P-011,USB-C Dock,Technology,Accessories,708.90,6,0.15,245.90
+RP-2024-00247,2024-08-01,2024-08-08,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-009,Laser Printer,Technology,Machines,1596.00,5,0.20,199.75
+RP-2023-00248,2023-06-07,2023-06-14,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,42.00,2,0,21.00
+RP-2023-00248,2023-06-07,2023-06-14,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1182.75,5,0.05,466.50
+RP-2025-00249,2025-08-05,2025-08-11,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1992.00,8,0,847.50
+RP-2024-00250,2024-09-15,2024-09-16,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,68.40,2,0.05,27.40
+RP-2024-00250,2024-09-15,2024-09-16,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-016,Shipping Label Roll,Office Supplies,Labels,108.00,5,0.10,49.25
+RP-2024-00250,2024-09-15,2024-09-16,C-0068,Demo Customer 068,Home Office,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,252.00,6,0,113.00
+RP-2023-00251,2023-06-18,2023-06-20,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-017,Executive Notebook,Office Supplies,Paper,14.70,1,0.30,2.95
+RP-2023-00251,2023-06-18,2023-06-20,C-0052,Demo Customer 052,Corporate,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,134.30,2,0.15,54.30
+RP-2025-00252,2025-12-11,2025-12-12,C-0058,Demo Customer 058,Corporate,United States,Chicago,Illinois,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,72.00,2,0,31.00
+RP-2023-00253,2023-11-27,2023-12-02,C-0080,Demo Customer 080,Home Office,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,147.00,7,0,79.75
+RP-2023-00254,2023-02-16,2023-02-21,C-0006,Demo Customer 006,Consumer,United States,Seattle,Washington,West,P-007,Noise Cancelling Headset,Technology,Accessories,1081.20,8,0.15,416.70
+RP-2023-00255,2023-09-28,2023-09-29,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-010,27 Inch Monitor,Technology,Displays,1398.25,5,0.15,272.00
+RP-2023-00255,2023-09-28,2023-09-29,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,309.60,3,0.20,97.85
+RP-2023-00255,2023-09-28,2023-09-29,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-001,Ergonomic Office Chair,Furniture,Chairs,747.00,3,0,316.25
+RP-2023-00255,2023-09-28,2023-09-29,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-003,Five Shelf Bookcase,Furniture,Bookcases,895.00,5,0,333.75
+RP-2023-00256,2023-01-19,2023-01-22,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-010,27 Inch Monitor,Technology,Displays,2105.60,8,0.20,305.10
+RP-2023-00256,2023-01-19,2023-01-22,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,464.40,4,0.10,182.90
+RP-2023-00256,2023-01-19,2023-01-22,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,194.40,6,0.10,76.40
+RP-2023-00256,2023-01-19,2023-01-22,C-0045,Demo Customer 045,Consumer,United States,Miami,Florida,South,P-017,Executive Notebook,Office Supplies,Paper,63.00,3,0,32.75
+RP-2023-00257,2023-06-12,2023-06-14,C-0073,Demo Customer 073,Corporate,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,214.20,7,0.15,76.95
+RP-2023-00257,2023-06-12,2023-06-14,C-0073,Demo Customer 073,Corporate,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,3423.00,7,0,1210.25
+RP-2023-00257,2023-06-12,2023-06-14,C-0073,Demo Customer 073,Corporate,United States,Boston,Massachusetts,East,P-009,Laser Printer,Technology,Machines,2394.00,6,0,719.00
+RP-2023-00257,2023-06-12,2023-06-14,C-0073,Demo Customer 073,Corporate,United States,Boston,Massachusetts,East,P-001,Ergonomic Office Chair,Furniture,Chairs,448.20,2,0.10,160.20
+RP-2024-00258,2024-10-15,2024-10-17,C-0028,Demo Customer 028,Corporate,United States,Atlanta,Georgia,South,P-008,Business Laptop,Technology,Computers,5932.75,5,0.05,1276.50
+RP-2024-00258,2024-10-15,2024-10-17,C-0028,Demo Customer 028,Corporate,United States,Atlanta,Georgia,South,P-001,Ergonomic Office Chair,Furniture,Chairs,1058.25,5,0.15,342.00
+RP-2024-00258,2024-10-15,2024-10-17,C-0028,Demo Customer 028,Corporate,United States,Atlanta,Georgia,South,P-017,Executive Notebook,Office Supplies,Paper,126.00,6,0,68.00
+RP-2025-00259,2025-02-01,2025-02-02,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,108.00,3,0,47.75
+RP-2025-00259,2025-02-01,2025-02-02,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,79.00,1,0,37.75
+RP-2025-00259,2025-02-01,2025-02-02,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,896.40,4,0.10,322.90
+RP-2025-00259,2025-02-01,2025-02-02,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-011,USB-C Dock,Technology,Accessories,778.40,8,0.30,161.90
+RP-2025-00260,2025-03-21,2025-03-23,C-0038,Demo Customer 038,Home Office,United States,Seattle,Washington,West,P-017,Executive Notebook,Office Supplies,Paper,89.25,5,0.15,40.50
+RP-2025-00260,2025-03-21,2025-03-23,C-0038,Demo Customer 038,Home Office,United States,Seattle,Washington,West,P-013,Permanent Marker Set,Office Supplies,Art,119.70,7,0.05,60.15
+RP-2025-00261,2025-03-04,2025-03-09,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,716.00,4,0,266.50
+RP-2025-00261,2025-03-04,2025-03-09,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-005,LED Desk Lamp,Furniture,Furnishings,472.00,8,0,247.50
+RP-2025-00261,2025-03-04,2025-03-09,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-008,Business Laptop,Technology,Computers,6744.60,6,0.10,1157.60
+RP-2025-00261,2025-03-04,2025-03-09,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-012,A4 Copy Paper,Office Supplies,Paper,59.38,5,0.05,22.13
+RP-2025-00262,2025-07-07,2025-07-13,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-003,Five Shelf Bookcase,Furniture,Bookcases,751.80,6,0.30,78.80
+RP-2025-00262,2025-07-07,2025-07-13,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-002,Standing Desk,Furniture,Tables,929.10,2,0.05,295.10
+RP-2025-00262,2025-07-07,2025-07-13,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,71.10,1,0.10,29.85
+RP-2025-00263,2025-08-29,2025-09-02,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-016,Shipping Label Roll,Office Supplies,Labels,20.40,1,0.15,6.65
+RP-2025-00263,2025-08-29,2025-09-02,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-005,LED Desk Lamp,Furniture,Furnishings,318.60,6,0.10,149.60
+RP-2025-00263,2025-08-29,2025-09-02,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-001,Ergonomic Office Chair,Furniture,Chairs,1792.80,8,0.10,648.30
+RP-2025-00263,2025-08-29,2025-09-02,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-012,A4 Copy Paper,Office Supplies,Paper,25.00,2,0,8.60
+RP-2023-00264,2023-08-26,2023-08-30,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-005,LED Desk Lamp,Furniture,Furnishings,413.00,7,0,216.25
+RP-2023-00264,2023-08-26,2023-08-30,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-017,Executive Notebook,Office Supplies,Paper,119.70,6,0.05,61.70
+RP-2023-00264,2023-08-26,2023-08-30,C-0009,Demo Customer 009,Consumer,United States,Boston,Massachusetts,East,P-008,Business Laptop,Technology,Computers,4746.20,4,0.05,1020.70
+RP-2025-00265,2025-09-02,2025-09-05,C-0047,Demo Customer 047,Home Office,United States,San Francisco,California,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,510.15,3,0.05,172.40
+RP-2024-00266,2024-08-06,2024-08-09,C-0007,Demo Customer 007,Corporate,United States,San Francisco,California,West,P-002,Standing Desk,Furniture,Tables,1246.95,3,0.15,297.20
+RP-2024-00266,2024-08-06,2024-08-09,C-0007,Demo Customer 007,Corporate,United States,San Francisco,California,West,P-012,A4 Copy Paper,Office Supplies,Paper,100.00,8,0,41.90
+RP-2024-00266,2024-08-06,2024-08-09,C-0007,Demo Customer 007,Corporate,United States,San Francisco,California,West,P-020,Mobile File Pedestal,Furniture,Storage,1432.80,8,0.10,416.30
+RP-2024-00266,2024-08-06,2024-08-09,C-0007,Demo Customer 007,Corporate,United States,San Francisco,California,West,P-010,27 Inch Monitor,Technology,Displays,1316.00,5,0.20,189.75
+RP-2024-00267,2024-06-14,2024-06-18,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1220.10,7,0.30,218.35
+RP-2024-00267,2024-06-14,2024-06-18,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-005,LED Desk Lamp,Furniture,Furnishings,300.90,6,0.15,131.90
+RP-2024-00267,2024-06-14,2024-06-18,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-007,Noise Cancelling Headset,Technology,Accessories,429.30,3,0.10,178.55
+RP-2024-00267,2024-06-14,2024-06-18,C-0066,Demo Customer 066,Consumer,United States,Chicago,Illinois,Central,P-019,Web Conference Camera,Technology,Accessories,516.00,5,0.20,164.75
+RP-2025-00268,2025-11-30,2025-12-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-005,LED Desk Lamp,Furniture,Furnishings,56.05,1,0.05,25.80
+RP-2025-00268,2025-11-30,2025-12-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-011,USB-C Dock,Technology,Accessories,1056.40,8,0.05,439.90
+RP-2025-00268,2025-11-30,2025-12-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,716.00,4,0,266.50
+RP-2024-00269,2024-10-10,2024-10-14,C-0062,Demo Customer 062,Home Office,United States,Seattle,Washington,West,P-005,LED Desk Lamp,Furniture,Furnishings,50.15,1,0.15,19.90
+RP-2025-00270,2025-07-31,2025-08-02,C-0035,Demo Customer 035,Home Office,United States,Dallas,Texas,Central,P-008,Business Laptop,Technology,Computers,4996.00,4,0,1270.50
+RP-2025-00270,2025-07-31,2025-08-02,C-0035,Demo Customer 035,Home Office,United States,Dallas,Texas,Central,P-001,Ergonomic Office Chair,Furniture,Chairs,1058.25,5,0.15,342.00
+RP-2023-00271,2023-01-19,2023-01-23,C-0079,Demo Customer 079,Corporate,United States,San Francisco,California,West,P-017,Executive Notebook,Office Supplies,Paper,63.00,3,0,32.75
+RP-2023-00272,2023-09-26,2023-09-27,C-0043,Demo Customer 043,Corporate,United States,Dallas,Texas,Central,P-020,Mobile File Pedestal,Furniture,Storage,995.00,5,0,358.75
+RP-2025-00273,2025-08-22,2025-08-28,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,1249.00,1,0,315.75
+RP-2024-00274,2024-07-27,2024-07-31,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-015,Archive Box Pack,Office Supplies,Storage,79.80,2,0.05,31.80
+RP-2024-00274,2024-07-27,2024-07-31,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,1344.60,6,0.10,485.60
+RP-2024-00274,2024-07-27,2024-07-31,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-009,Laser Printer,Technology,Machines,1895.25,5,0.05,499.00
+RP-2025-00275,2025-08-13,2025-08-20,C-0010,Demo Customer 010,Corporate,United States,Chicago,Illinois,Central,P-008,Business Laptop,Technology,Computers,9992.00,8,0,2543.50
+RP-2023-00276,2023-10-17,2023-10-21,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-010,27 Inch Monitor,Technology,Displays,1776.60,6,0.10,425.60
+RP-2023-00276,2023-10-17,2023-10-21,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-011,USB-C Dock,Technology,Accessories,583.80,6,0.30,120.80
+RP-2023-00276,2023-10-17,2023-10-21,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-013,Permanent Marker Set,Office Supplies,Art,61.20,4,0.15,26.10
+RP-2023-00276,2023-10-17,2023-10-21,C-0032,Demo Customer 032,Home Office,United States,New York,New York,East,P-001,Ergonomic Office Chair,Furniture,Chairs,634.95,3,0.15,204.20
+RP-2025-00277,2025-05-31,2025-06-05,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-004,Storage Cabinet,Furniture,Storage,1095.00,5,0,403.75
+RP-2025-00277,2025-05-31,2025-06-05,C-0077,Demo Customer 077,Home Office,United States,Miami,Florida,South,P-001,Ergonomic Office Chair,Furniture,Chairs,224.10,1,0.10,78.85
+RP-2023-00278,2023-04-30,2023-05-05,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-002,Standing Desk,Furniture,Tables,1246.95,3,0.15,297.20
+RP-2023-00278,2023-04-30,2023-05-05,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-019,Web Conference Camera,Technology,Accessories,219.30,2,0.15,77.30
+RP-2023-00278,2023-04-30,2023-05-05,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-017,Executive Notebook,Office Supplies,Paper,63.00,3,0,32.75
+RP-2024-00279,2024-06-29,2024-07-03,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,91.80,3,0.15,31.55
+RP-2024-00279,2024-06-29,2024-07-03,C-0025,Demo Customer 025,Corporate,United States,Boston,Massachusetts,East,P-020,Mobile File Pedestal,Furniture,Storage,1074.60,6,0.10,311.60
+RP-2023-00280,2023-10-01,2023-10-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-005,LED Desk Lamp,Furniture,Furnishings,159.30,3,0.10,73.55
+RP-2023-00280,2023-10-01,2023-10-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-002,Standing Desk,Furniture,Tables,415.65,1,0.15,97.40
+RP-2023-00280,2023-10-01,2023-10-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-011,USB-C Dock,Technology,Accessories,708.90,6,0.15,245.90
+RP-2023-00280,2023-10-01,2023-10-05,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-007,Noise Cancelling Headset,Technology,Accessories,795.00,5,0,378.75
+RP-2023-00281,2023-06-24,2023-06-27,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,108.00,3,0,47.75
+RP-2023-00281,2023-06-24,2023-06-27,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-016,Shipping Label Roll,Office Supplies,Labels,120.00,5,0,61.25
+RP-2023-00281,2023-06-24,2023-06-27,C-0037,Demo Customer 037,Corporate,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,122.55,1,0.05,50.30
+RP-2024-00282,2024-09-22,2024-09-29,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-010,27 Inch Monitor,Technology,Displays,1480.50,5,0.10,354.25
+RP-2024-00282,2024-09-22,2024-09-29,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,632.00,8,0,319.50
+RP-2023-00283,2023-10-10,2023-10-16,C-0073,Demo Customer 073,Corporate,United States,Boston,Massachusetts,East,P-007,Noise Cancelling Headset,Technology,Accessories,270.30,2,0.15,102.30
+RP-2024-00284,2024-01-16,2024-01-18,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-019,Web Conference Camera,Technology,Accessories,129.00,1,0,56.75
+RP-2024-00284,2024-01-16,2024-01-18,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-012,A4 Copy Paper,Office Supplies,Paper,87.50,7,0,36.35
+RP-2024-00284,2024-01-16,2024-01-18,C-0044,Demo Customer 044,Home Office,United States,Atlanta,Georgia,South,P-004,Storage Cabinet,Furniture,Storage,930.75,5,0.15,239.50
+RP-2025-00285,2025-01-01,2025-01-02,C-0040,Demo Customer 040,Corporate,United States,New York,New York,East,P-006,Wireless Keyboard,Technology,Accessories,79.00,1,0,37.75
+RP-2025-00286,2025-10-14,2025-10-18,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-013,Permanent Marker Set,Office Supplies,Art,54.00,3,0,27.05
+RP-2025-00286,2025-10-14,2025-10-18,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,112.10,2,0.05,54.10
+RP-2023-00287,2023-07-29,2023-08-03,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-014,Heavy Duty Stapler,Office Supplies,Binders,252.00,7,0,114.75
+RP-2023-00287,2023-07-29,2023-08-03,C-0011,Demo Customer 011,Home Office,United States,Dallas,Texas,Central,P-019,Web Conference Camera,Technology,Accessories,825.60,8,0.20,265.10
+RP-2024-00288,2024-09-06,2024-09-11,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,108.00,3,0,47.75
+RP-2024-00288,2024-09-06,2024-09-11,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,1173.60,3,0.20,223.85
+RP-2024-00288,2024-09-06,2024-09-11,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,1360.40,8,0.05,463.90
+RP-2024-00288,2024-09-06,2024-09-11,C-0049,Demo Customer 049,Corporate,United States,Boston,Massachusetts,East,P-018,Desk Organizer,Office Supplies,Storage,52.70,2,0.15,20.70
+RP-2024-00289,2024-06-05,2024-06-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-006,Wireless Keyboard,Technology,Accessories,375.25,5,0.05,179.00
+RP-2024-00289,2024-06-05,2024-06-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-015,Archive Box Pack,Office Supplies,Storage,268.80,8,0.20,84.30
+RP-2024-00289,2024-06-05,2024-06-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-003,Five Shelf Bookcase,Furniture,Bookcases,161.10,1,0.10,46.85
+RP-2024-00289,2024-06-05,2024-06-09,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-005,LED Desk Lamp,Furniture,Furnishings,165.20,4,0.30,51.70
+RP-2025-00290,2025-11-30,2025-12-01,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,177.00,3,0,91.25
+RP-2025-00290,2025-11-30,2025-12-01,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-020,Mobile File Pedestal,Furniture,Storage,895.50,5,0.10,259.25
+RP-2025-00290,2025-11-30,2025-12-01,C-0027,Demo Customer 027,Consumer,United States,Dallas,Texas,Central,P-004,Storage Cabinet,Furniture,Storage,438.00,2,0,160.00
+RP-2025-00291,2025-01-12,2025-01-15,C-0056,Demo Customer 056,Home Office,United States,New York,New York,East,P-001,Ergonomic Office Chair,Furniture,Chairs,1743.00,7,0,741.25
+RP-2025-00292,2025-03-03,2025-03-09,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-013,Permanent Marker Set,Office Supplies,Art,88.20,7,0.30,28.65
+RP-2025-00292,2025-03-03,2025-03-09,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-019,Web Conference Camera,Technology,Accessories,657.90,6,0.15,236.90
+RP-2025-00292,2025-03-03,2025-03-09,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,2640.60,6,0.10,743.60
+RP-2025-00292,2025-03-03,2025-03-09,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-009,Laser Printer,Technology,Machines,1077.30,3,0.10,238.55
+RP-2025-00293,2025-04-29,2025-05-03,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-011,USB-C Dock,Technology,Accessories,924.35,7,0.05,384.60
+RP-2025-00294,2025-09-27,2025-10-04,C-0003,Demo Customer 003,Consumer,United States,Dallas,Texas,Central,P-017,Executive Notebook,Office Supplies,Paper,58.80,4,0.30,19.30
+RP-2024-00295,2024-08-20,2024-08-24,C-0064,Demo Customer 064,Corporate,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,1253.00,7,0,468.25
+RP-2023-00296,2023-08-03,2023-08-10,C-0020,Demo Customer 020,Home Office,United States,Atlanta,Georgia,South,P-017,Executive Notebook,Office Supplies,Paper,94.50,5,0.10,45.75
+RP-2023-00296,2023-08-03,2023-08-10,C-0020,Demo Customer 020,Home Office,United States,Atlanta,Georgia,South,P-005,LED Desk Lamp,Furniture,Furnishings,47.20,1,0.20,16.95
+RP-2023-00296,2023-08-03,2023-08-10,C-0020,Demo Customer 020,Home Office,United States,Atlanta,Georgia,South,P-009,Laser Printer,Technology,Machines,2154.60,6,0.10,479.60
+RP-2023-00296,2023-08-03,2023-08-10,C-0020,Demo Customer 020,Home Office,United States,Atlanta,Georgia,South,P-020,Mobile File Pedestal,Furniture,Storage,716.40,4,0.10,206.90
+RP-2025-00297,2025-12-19,2025-12-26,C-0039,Demo Customer 039,Consumer,United States,San Francisco,California,West,P-008,Business Laptop,Technology,Computers,7868.70,7,0.10,1350.95
+RP-2025-00298,2025-06-12,2025-06-14,C-0070,Demo Customer 070,Corporate,United States,Seattle,Washington,West,P-002,Standing Desk,Furniture,Tables,2738.40,8,0.30,209.90
+RP-2025-00298,2025-06-12,2025-06-14,C-0070,Demo Customer 070,Corporate,United States,Seattle,Washington,West,P-018,Desk Organizer,Office Supplies,Storage,210.80,8,0.15,90.30
+RP-2025-00298,2025-06-12,2025-06-14,C-0070,Demo Customer 070,Corporate,United States,Seattle,Washington,West,P-015,Archive Box Pack,Office Supplies,Storage,35.70,1,0.15,10.45
+RP-2023-00299,2023-06-11,2023-06-13,C-0041,Demo Customer 041,Home Office,United States,Boston,Massachusetts,East,P-002,Standing Desk,Furniture,Tables,2934.00,6,0,1037.00
+RP-2025-00300,2025-07-21,2025-07-28,C-0030,Demo Customer 030,Consumer,United States,Seattle,Washington,West,P-004,Storage Cabinet,Furniture,Storage,438.00,2,0,160.00
+RP-2023-00301,2023-07-13,2023-07-17,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-008,Business Laptop,Technology,Computers,1249.00,1,0,315.75
+RP-2023-00301,2023-07-13,2023-07-17,C-0002,Demo Customer 002,Home Office,United States,Chicago,Illinois,Central,P-011,USB-C Dock,Technology,Accessories,695.00,5,0,308.75
+RP-2023-00302,2023-05-07,2023-05-14,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-013,Permanent Marker Set,Office Supplies,Art,18.00,1,0,7.35
+RP-2023-00302,2023-05-07,2023-05-14,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-001,Ergonomic Office Chair,Furniture,Chairs,1045.80,6,0.30,186.80
+RP-2023-00302,2023-05-07,2023-05-14,C-0008,Demo Customer 008,Home Office,United States,New York,New York,East,P-003,Five Shelf Bookcase,Furniture,Bookcases,537.00,3,0,199.25
+RP-2025-00303,2025-11-03,2025-11-08,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,265.50,5,0.10,124.25
+RP-2025-00303,2025-11-03,2025-11-08,C-0075,Demo Customer 075,Consumer,United States,Dallas,Texas,Central,P-020,Mobile File Pedestal,Furniture,Storage,1074.60,6,0.10,311.60
+RP-2023-00304,2023-01-31,2023-02-07,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-002,Standing Desk,Furniture,Tables,3912.00,8,0,1383.50
+RP-2023-00304,2023-01-31,2023-02-07,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-019,Web Conference Camera,Technology,Accessories,258.00,2,0,116.00
+RP-2023-00304,2023-01-31,2023-02-07,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-016,Shipping Label Roll,Office Supplies,Labels,91.20,4,0.05,43.70
+RP-2023-00304,2023-01-31,2023-02-07,C-0069,Demo Customer 069,Consumer,United States,Miami,Florida,South,P-011,USB-C Dock,Technology,Accessories,945.20,8,0.15,328.70
+RP-2023-00305,2023-01-22,2023-01-26,C-0019,Demo Customer 019,Corporate,United States,Dallas,Texas,Central,P-005,LED Desk Lamp,Furniture,Furnishings,401.20,8,0.15,176.70
+RP-2025-00306,2025-04-16,2025-04-22,C-0007,Demo Customer 007,Corporate,United States,San Francisco,California,West,P-001,Ergonomic Office Chair,Furniture,Chairs,1792.80,8,0.10,648.30
+RP-2024-00307,2024-05-18,2024-05-22,C-0048,Demo Customer 048,Consumer,United States,New York,New York,East,P-020,Mobile File Pedestal,Furniture,Storage,1184.05,7,0.15,294.30
+RP-2025-00308,2025-08-29,2025-09-03,C-0024,Demo Customer 024,Consumer,United States,New York,New York,East,P-008,Business Laptop,Technology,Computers,6245.00,5,0,1588.75
+RP-2023-00309,2023-08-20,2023-08-27,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-006,Wireless Keyboard,Technology,Accessories,355.50,5,0.10,159.25
+RP-2023-00309,2023-08-20,2023-08-27,C-0016,Demo Customer 016,Corporate,United States,New York,New York,East,P-013,Permanent Marker Set,Office Supplies,Art,34.20,2,0.05,15.40
+RP-2025-00310,2025-07-19,2025-07-26,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-015,Archive Box Pack,Office Supplies,Storage,235.20,8,0.30,50.70
+RP-2025-00310,2025-07-19,2025-07-26,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-006,Wireless Keyboard,Technology,Accessories,55.30,1,0.30,14.05
+RP-2025-00310,2025-07-19,2025-07-26,C-0036,Demo Customer 036,Consumer,United States,Atlanta,Georgia,South,P-016,Shipping Label Roll,Office Supplies,Labels,43.20,2,0.10,18.20
+RP-2024-00311,2024-09-19,2024-09-20,C-0005,Demo Customer 005,Home Office,United States,Miami,Florida,South,P-014,Heavy Duty Stapler,Office Supplies,Binders,252.00,7,0,114.75

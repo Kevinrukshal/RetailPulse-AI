@@ -1,0 +1,13 @@
+order_id,order_date,ship_date,customer_id,customer_name,segment,country,city,state,region,product_id,product_name,category,subcategory,sales,quantity,discount,profit
+,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-BAD-0002,2024-08-12,2024-08-14,,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-BAD-0003,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-BAD-0004,not-a-date,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-BAD-0005,2025-04-10,2025-04-01,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-BAD-0006,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,-25.00,7,0.05,1788.10
+RP-BAD-0007,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,0,0.05,1788.10
+RP-BAD-0008,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,1.25,1788.10
+RP-BAD-0009,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,North,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-BAD-0010,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,many,several,0.05,unknown
+RP-DUPLICATE,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-DUPLICATE,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10

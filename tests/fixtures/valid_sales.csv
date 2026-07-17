@@ -1,0 +1,13 @@
+order_id,order_date,ship_date,customer_id,customer_name,segment,country,city,state,region,product_id,product_name,category,subcategory,sales,quantity,discount,profit
+RP-2024-00001,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-008,Business Laptop,Technology,Computers,8305.85,7,0.05,1788.10
+RP-2024-00001,2024-08-12,2024-08-14,C-0046,Demo Customer 046,Corporate,United States,Seattle,Washington,West,P-004,Storage Cabinet,Furniture,Storage,438.00,2,0,160.00
+RP-2024-00002,2024-08-06,2024-08-10,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-015,Archive Box Pack,Office Supplies,Storage,79.80,2,0.05,31.80
+RP-2024-00002,2024-08-06,2024-08-10,C-0042,Demo Customer 042,Consumer,United States,Chicago,Illinois,Central,P-008,Business Laptop,Technology,Computers,6744.60,6,0.10,1157.60
+RP-2025-00003,2025-12-17,2025-12-18,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-010,27 Inch Monitor,Technology,Displays,1381.80,6,0.30,30.80
+RP-2025-00003,2025-12-17,2025-12-18,C-0029,Demo Customer 029,Home Office,United States,Miami,Florida,South,P-013,Permanent Marker Set,Office Supplies,Art,119.70,7,0.05,60.15
+RP-2024-00004,2024-12-27,2024-12-30,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-006,Wireless Keyboard,Technology,Accessories,316.00,4,0,158.50
+RP-2024-00004,2024-12-27,2024-12-30,C-0051,Demo Customer 051,Consumer,United States,Dallas,Texas,Central,P-013,Permanent Marker Set,Office Supplies,Art,115.20,8,0.20,47.50
+RP-2025-00005,2025-10-17,2025-10-21,C-0024,Demo Customer 024,Consumer,United States,New York,New York,East,P-014,Heavy Duty Stapler,Office Supplies,Binders,36.00,1,0,14.25
+RP-2025-00006,2025-03-23,2025-03-26,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-007,Noise Cancelling Headset,Technology,Accessories,453.15,3,0.05,202.40
+RP-2025-00006,2025-03-23,2025-03-26,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-012,A4 Copy Paper,Office Supplies,Paper,59.38,5,0.05,22.13
+RP-2025-00006,2025-03-23,2025-03-26,C-0001,Demo Customer 001,Corporate,United States,Boston,Massachusetts,East,P-020,Mobile File Pedestal,Furniture,Storage,358.20,2,0.10,102.20

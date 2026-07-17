@@ -5,8 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 1 foundation. ETL, PostgreSQL migrations, API routes, Docker
-> services, and analytics are intentionally scheduled for later verified phases.
+> Project status: Phase 2 extraction. Deterministic demonstration data, configurable
+> column mapping, and tested CSV/XLSX extraction are available. Validation, persistence,
+> API routes, Docker services, and analytics follow in later verified phases.
 
 ## Planned MVP
 
@@ -68,6 +69,23 @@ From the repository root, run:
 ```
 
 All commands must exit with code `0` before Phase 2 begins.
+
+## Demonstration data and extraction
+
+Regenerate the 750-row synthetic sample and test fixtures with:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\generate_sample_data.py
+```
+
+The public extraction function is `etl.extract.extract_sales_data`. It accepts `.csv` and
+`.xlsx` paths, returns a Pandas DataFrame, selects the first usable Excel worksheet, and
+raises clear domain exceptions for missing, empty, encoded, unsupported, or unreadable
+inputs. Optional source-to-canonical aliases support future public datasets without ETL
+rewrites.
+
+The generated records are fictional demonstration data. Do not present findings from them
+as real business conclusions.
 
 ## Configuration
 
