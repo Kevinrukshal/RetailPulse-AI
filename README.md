@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 3 data quality. Deterministic sample data, CSV/XLSX extraction,
-> configurable mapping, row-level validation, rejected-row auditing, and JSON/Markdown
-> quality reports are available. Persistence and analytics follow in later phases.
+> Project status: Phase 4 transformation. Extraction, mapping, validation, quality reports,
+> and deterministic database-ready transformations are available. PostgreSQL persistence
+> and analytics follow in later verified phases.
 
 ## Planned MVP
 
@@ -102,6 +102,14 @@ round(100 * valid_rows / total_rows, 2)
 
 A row with several issues counts once as rejected. `etl.quality_report.write_quality_outputs`
 writes valid and rejected CSVs plus machine-readable JSON and human-readable Markdown.
+
+## Deterministic transformation
+
+`etl.transform.transform_sales_data` standardizes validated values, parses dates and
+numerics, and derives calendar fields, profit margin, revenue per unit, discount band, and
+profit status. It also attaches the ETL run ID, source SHA-256, UTC load timestamp, and a
+stable order-item key. The key combines source hash, order ID, product ID, and source row
+number, preserving legitimate repeated products while making the same-file rerun stable.
 
 ## Configuration
 
