@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 4 transformation. Extraction, mapping, validation, quality reports,
-> and deterministic database-ready transformations are available. PostgreSQL persistence
-> and analytics follow in later verified phases.
+> Project status: Phase 5 platform foundation. The normalized PostgreSQL schema, Alembic
+> migration, Docker Compose environment, and database-aware health endpoint are available.
+> Transactional ETL loading and analytics follow in later verified phases.
 
 ## Planned MVP
 
@@ -110,6 +110,39 @@ numerics, and derives calendar fields, profit margin, revenue per unit, discount
 profit status. It also attaches the ETL run ID, source SHA-256, UTC load timestamp, and a
 stable order-item key. The key combines source hash, order ID, product ID, and source row
 number, preserving legitimate repeated products while making the same-file rerun stable.
+
+## PostgreSQL and Docker Compose
+
+Copy the local environment template once, then build the three services:
+
+```powershell
+Copy-Item .env.example .env
+docker compose config
+docker compose up --build -d
+docker compose ps
+docker compose exec api alembic upgrade head
+Invoke-RestMethod http://localhost:8000/health
+```
+
+Expected local services:
+
+- FastAPI and Swagger: `http://localhost:8000` and `http://localhost:8000/docs`
+- PostgreSQL 16: `localhost:5432`
+- pgAdmin: `http://localhost:5050`
+
+The API image runs as a non-root user and logs to standard output. Compose uses named
+volumes for PostgreSQL and pgAdmin, binds `data/` for ETL artifacts, waits for PostgreSQL
+health, and applies Alembic migrations before starting Uvicorn. Ports and credentials come
+from `.env`; never commit that file.
+
+### Normalized model versus a star schema
+
+The initial model separates customers, products, order headers, order items, ETL runs,
+quality results, and rejected records. This reduces duplicated descriptive data and makes
+loading and auditing easy to explain. A dimensional star schema would copy descriptive
+attributes into dedicated dimensions around a sales fact table for reporting performance.
+RetailPulse initially keeps normalized source-of-truth tables and exposes denormalized SQL
+views to Power BI; a dedicated dimensional layer can be added later if scale justifies it.
 
 ## Configuration
 
