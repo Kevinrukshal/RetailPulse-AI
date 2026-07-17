@@ -31,3 +31,15 @@ class NoUsableWorksheetError(ExtractionError):
 
 class ColumnMappingError(ExtractionError):
     """Raised when source columns cannot be mapped unambiguously."""
+
+
+class ValidationError(Exception):
+    """Base exception for dataset-level validation failures."""
+
+
+class MissingRequiredColumnsError(ValidationError):
+    """Raised when a dataset lacks fields required for row validation."""
+
+
+class EmptyDatasetError(ValidationError):
+    """Raised when a dataset has columns but contains no records."""

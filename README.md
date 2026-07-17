@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 2 extraction. Deterministic demonstration data, configurable
-> column mapping, and tested CSV/XLSX extraction are available. Validation, persistence,
-> API routes, Docker services, and analytics follow in later verified phases.
+> Project status: Phase 3 data quality. Deterministic sample data, CSV/XLSX extraction,
+> configurable mapping, row-level validation, rejected-row auditing, and JSON/Markdown
+> quality reports are available. Persistence and analytics follow in later phases.
 
 ## Planned MVP
 
@@ -86,6 +86,22 @@ rewrites.
 
 The generated records are fictional demonstration data. Do not present findings from them
 as real business conclusions.
+
+## Validation and quality scoring
+
+`etl.validate.validate_sales_data` preserves the source DataFrame and returns separate
+valid and rejected DataFrames. Every rejected row contains all applicable machine-readable
+reason codes. Unreasonable profit is retained as a warning for investigation rather than
+silently discarded.
+
+The quality score is:
+
+```text
+round(100 * valid_rows / total_rows, 2)
+```
+
+A row with several issues counts once as rejected. `etl.quality_report.write_quality_outputs`
+writes valid and rejected CSVs plus machine-readable JSON and human-readable Markdown.
 
 ## Configuration
 
