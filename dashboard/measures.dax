@@ -1,0 +1,47 @@
+// Create these measures in a dedicated Measures table.
+// Base measures require the optional normalized model.
+
+Total Revenue = SUM ( order_items[sales] )
+Total Profit = SUM ( order_items[profit] )
+Profit Margin = DIVIDE ( [Total Profit], [Total Revenue] )
+Total Orders = DISTINCTCOUNT ( orders[order_id] )
+Unique Customers = DISTINCTCOUNT ( orders[customer_id] )
+Units Sold = SUM ( order_items[quantity] )
+Average Order Value = DIVIDE ( [Total Revenue], [Total Orders] )
+Average Discount = AVERAGE ( order_items[discount] )
+
+Loss-Making Revenue =
+CALCULATE ( [Total Revenue], KEEPFILTERS ( order_items[profit] < 0 ) )
+
+Loss Value =
+- CALCULATE ( [Total Profit], KEEPFILTERS ( order_items[profit] < 0 ) )
+
+Loss-Making Lines =
+CALCULATE ( COUNTROWS ( order_items ), KEEPFILTERS ( order_items[profit] < 0 ) )
+
+Revenue Previous Month =
+CALCULATE ( [Total Revenue], DATEADD ( 'Date'[Date], -1, MONTH ) )
+
+Revenue MoM % =
+DIVIDE ( [Total Revenue] - [Revenue Previous Month], [Revenue Previous Month] )
+
+Revenue Previous Year =
+CALCULATE ( [Total Revenue], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+
+Revenue YoY % =
+DIVIDE ( [Total Revenue] - [Revenue Previous Year], [Revenue Previous Year] )
+
+Last Refreshed At =
+"Last refreshed: " & FORMAT ( NOW (), "yyyy-mm-dd hh:mm" )
+
+// Views-only alternatives when normalized tables are not imported.
+View Revenue = SUM ( monthly_performance[revenue] )
+View Profit = SUM ( monthly_performance[profit] )
+View Profit Margin = DIVIDE ( [View Profit], [View Revenue] )
+Leakage Line Count = COUNTROWS ( profit_leakage )
+
+Leakage Loss Value =
+- CALCULATE (
+    SUM ( profit_leakage[profit] ),
+    KEEPFILTERS ( profit_leakage[profit] < 0 )
+)

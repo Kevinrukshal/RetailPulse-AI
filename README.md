@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: Phase 8 analytics API. The ETL and SQL analytics layer are exposed through
-> a versioned, read-only FastAPI service with validated filters, Pydantic v2 contracts,
-> safe error handling, pagination, OpenAPI documentation, and CORS configuration.
+> Project status: Phase 9 Power BI handoff. The tested ETL, SQL analytics layer, and read-only
+> API now include a reproducible Power BI model, DAX measures, report specification, data
+> dictionary, reconciliation baseline, and secure local connection guide.
 
 ## Planned MVP
 
@@ -202,6 +202,20 @@ Fact-level endpoints accept appropriate `start_date`, `end_date`, `region`, `cat
 `subcategory` filters. Ranked endpoints validate `limit` and `sort_by`; ETL history uses
 `limit` and `offset`. SQL parameters are bound, sort expressions are allowlisted, and API
 database transactions are explicitly read-only.
+
+## Power BI dashboard handoff
+
+The dashboard package avoids committing an opaque `.pbix` binary while making the report
+reproducible:
+
+- [`dashboard/README.md`](dashboard/README.md) defines pages, visuals, and acceptance criteria.
+- [`dashboard/powerbi_data_dictionary.md`](dashboard/powerbi_data_dictionary.md) documents grains,
+  fields, aggregations, and optional relationships.
+- [`dashboard/measures.dax`](dashboard/measures.dax) provides fact-model and views-only measures.
+- [`docs/powerbi_setup.md`](docs/powerbi_setup.md) covers connection, modeling, refresh, security,
+  and reconciliation to PostgreSQL and the API.
+
+All supplied KPI values are deterministic outputs from synthetic demonstration data.
 
 ## Configuration
 
