@@ -19,7 +19,7 @@ analytics, BI, data engineering, and junior backend roles.
 - A responsive browser dashboard with bounded CSV/XLSX upload and automatic refresh.
 - A reproducible four-page Power BI specification and DAX measure library.
 - A guarded AI narrator over deterministic intents, reviewed SQL, and local documentation.
-- Docker Compose operations and PostgreSQL-backed CI with an 80% coverage gate.
+- Docker Compose operations and documented local verification commands.
 
 The complete vertical slice is:
 

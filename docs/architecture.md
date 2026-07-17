@@ -50,7 +50,7 @@ Secrets come from environment variables. Containers run the application as a non
 - Alembic migrations and analytical views are reproducible from an empty database.
 - Structured JSON logs go to standard output.
 - Health checks coordinate PostgreSQL, API, and pgAdmin startup.
-- Unit, integration, SQL-view, HTTP, rollback, and idempotency tests run in CI.
+- Unit, integration, SQL-view, HTTP, rollback, and idempotency tests run locally before releases.
 
 ## Known scale boundary
 
