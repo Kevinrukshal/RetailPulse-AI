@@ -5,9 +5,9 @@ sales data into validated PostgreSQL records, business KPIs, read-only FastAPI e
 and Power BI-ready views. It is designed as an interview-friendly portfolio project for
 analytics, BI, data engineering, and junior backend roles.
 
-> Project status: release-candidate hardening. The full non-AI platform, Power BI handoff,
-> CI pipeline, and portfolio documentation are implemented. All bundled findings use synthetic
-> demonstration data.
+> Project status: v1.0.0. The complete non-AI platform, Power BI handoff, CI pipeline, and
+> portfolio documentation are implemented and release-verified. All bundled findings use
+> synthetic demonstration data.
 
 ## What it demonstrates
 

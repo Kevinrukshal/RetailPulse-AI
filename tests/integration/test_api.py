@@ -102,6 +102,7 @@ def test_quality_and_paginated_etl_history(client: TestClient) -> None:
 
 
 def test_openapi_exposes_only_get_operations() -> None:
+    assert app.openapi()["info"]["version"] == "1.0.0"
     operations = {
         method
         for path in app.openapi()["paths"].values()
