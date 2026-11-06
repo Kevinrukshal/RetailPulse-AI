@@ -1,4 +1,4 @@
-const state = { selectedFile: null, dashboard: null };
+const state = { selectedFile: null, dashboard: null, token: "" };
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -12,7 +12,10 @@ const asPercent = (value) => `${(Number(value || 0) * 100).toFixed(1)}%`;
 const shortDate = (value) => value ? new Date(`${String(value).slice(0, 10)}T00:00:00`).toLocaleDateString("en-US", { month: "short", year: "numeric" }) : "—";
 
 async function fetchJson(path, options = {}) {
-  const response = await fetch(path, options);
+  const headers = new Headers(options.headers);
+  headers.set("Authorization", `Bearer ${state.token}`);
+  const response = await fetch(path, { ...options, headers });
+  if (response.status === 401 && $("#login-form").hidden) { state.token = ""; location.reload(); throw new Error("Session ended"); }
   if (response.status === 404) return null;
   if (!response.ok) {
     let detail = `Request failed (${response.status})`;
@@ -228,7 +231,22 @@ function initialize() {
   $("#upload-button").addEventListener("click", uploadSelectedFile);
   $("#refresh-button").addEventListener("click", loadDashboard);
   $$(".nav-item").forEach((item) => item.addEventListener("click", () => setSection(item.dataset.section)));
-  loadDashboard();
+  $("#loading").hidden = true;
+  $("#logout-button").addEventListener("click", () => { state.token = ""; location.reload(); });
+  $("#login-form").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    state.token = $("#access-token").value.trim();
+    $("#access-token").value = "";
+    try {
+      await fetchJson("/api/v1/assistant/status");
+      $("#login-form").hidden = true;
+      $(".shell").hidden = false;
+      await loadDashboard();
+    } catch (error) {
+      state.token = "";
+      $("#login-error").textContent = error.message;
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initialize);

@@ -24,7 +24,9 @@ class Settings(BaseSettings):
     api_host: str = "0.0.0.0"
     api_port: int = Field(default=8000, ge=1, le=65535)
     cors_origins: str = "http://localhost:3000,http://localhost:5173"
-    upload_enabled: bool = True
+    api_access_token: SecretStr | None = None
+    ai_external_sharing_enabled: bool = False
+    upload_enabled: bool = False
     upload_max_mb: float = Field(default=10.0, gt=0, le=100)
 
     postgres_db: str = "retailpulse"

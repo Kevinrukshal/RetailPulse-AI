@@ -12,7 +12,9 @@ from app.core.config import get_settings
 @lru_cache
 def get_engine() -> Engine:
     """Create one pool-backed SQLAlchemy engine per process."""
-    return create_engine(get_settings().sqlalchemy_database_url, pool_pre_ping=True)
+    return create_engine(
+        get_settings().sqlalchemy_database_url, pool_pre_ping=True, hide_parameters=True
+    )
 
 
 def get_session_factory() -> sessionmaker[Session]:

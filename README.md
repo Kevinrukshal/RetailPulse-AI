@@ -52,6 +52,9 @@ dataset to be introduced without rewriting the pipeline.
 
 ## Quick start
 
+Set strong database/pgAdmin passwords and a random `API_ACCESS_TOKEN` in `.env`
+before starting Compose; see [local access and data protection](#local-access-and-data-protection).
+
 Run these commands from the repository root:
 
 ```powershell
@@ -220,7 +223,7 @@ audited transactional ETL write path.
 
 The upload route accepts a raw CSV/XLSX body, enforces `UPLOAD_MAX_MB`, deletes its temporary
 copy after processing, and uses the same validated, audited, idempotent ETL as the CLI. It is
-enabled for local use by default; set `UPLOAD_ENABLED=false` before exposing an API-only service.
+disabled by default; explicitly set `UPLOAD_ENABLED=true` only when importing authorized data.
 
 ## Power BI dashboard handoff
 
@@ -268,3 +271,27 @@ Kevin
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
+
+## Local access and data protection
+
+Before starting, set a random `API_ACCESS_TOKEN` of at least 32 characters in `.env`
+(generate with `python -c "import secrets; print(secrets.token_urlsafe(32))"`).
+All `/api/v1/` endpoints require `Authorization: Bearer <token>`; missing configuration
+fails closed. Unlock the dashboard with this token; it is kept only in page memory,
+never browser storage or a URL. Reload or sign out to forget it. This is single-operator
+access, not per-user permissions. Rotate the token by changing `.env` and restarting.
+Compose binds services to loopback; pgAdmin requires login. Keep strong database and
+pgAdmin passwords. Existing pgAdmin volumes may retain older configuration; verify its
+login screen. Use HTTPS and rate limits before any remote access.
+
+Uploads allow at most 100,000 rows. XLSX archives are limited to 1,000 entries and
+50 MiB expanded size. Files exceeding limits are rejected, never silently truncated.
+AI additionally requires `AI_EXTERNAL_SHARING_ENABLED=true`. Customer names/IDs and
+free-form user questions are excluded from provider requests; selected commercial
+metrics and approved documentation still leave the machine. Keep disabled for confidential
+data unless that sharing is authorized. Uploaded data and generated reports remain on disk;
+remove these deliberately according to your retention policy.
+
+Uploads are disabled by default. Set `UPLOAD_ENABLED=true` explicitly to enable imports.
+XLSX parsing additionally caps columns at 256 and total worksheet cells at 2,000,000,
+checks cell coordinates before pandas, and rejects XML entity expansion.

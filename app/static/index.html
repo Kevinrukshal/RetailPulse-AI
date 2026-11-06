@@ -8,7 +8,15 @@
   <link rel="stylesheet" href="/app/styles.css">
 </head>
 <body>
-  <div class="shell">
+  <form id="login-form" class="card" style="max-width:480px;margin:10vh auto;padding:32px">
+    <h1>Unlock RetailPulse</h1>
+    <p>Enter your configured access token. It stays in this page's memory until you reload or sign out.</p>
+    <label for="access-token">Access token</label>
+    <input id="access-token" type="password" required autocomplete="off" style="width:100%;margin:12px 0">
+    <button class="button primary" type="submit">Unlock</button>
+    <p id="login-error" role="alert"></p>
+  </form>
+  <div class="shell" hidden>
     <aside class="sidebar">
       <a class="brand" href="#overview" aria-label="RetailPulse home">
         <span class="brand-mark">RP</span>
@@ -35,6 +43,7 @@
           <h1 id="page-title">Executive overview</h1>
         </div>
         <div class="top-actions">
+          <button id="logout-button" class="button secondary" type="button">Sign out</button>
           <button id="refresh-button" class="button secondary" type="button">Refresh data</button>
           <a class="button ghost" href="/docs" target="_blank" rel="noreferrer">API docs</a>
         </div>

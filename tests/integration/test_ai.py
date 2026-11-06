@@ -11,7 +11,9 @@ from sqlalchemy import text
 from ai.assistant import BusinessAssistant
 from ai.query_router import AnalyticsIntent
 from ai.rag import RetrievedContext
+from app.api import security
 from app.api.routes.assistant import get_business_assistant
+from app.core.config import Settings
 from app.database.session import get_engine, get_session_factory
 from app.main import app
 from etl.pipeline import run_pipeline
@@ -83,7 +85,11 @@ def test_every_approved_intent_executes_read_only_sql(question: str) -> None:
 
 
 def test_disabled_endpoint_and_nonsecret_status() -> None:
-    with TestClient(app, raise_server_exceptions=False) as client:
+    with TestClient(
+        app,
+        raise_server_exceptions=False,
+        headers={"Authorization": "Bearer test-token-" + "x" * 32},
+    ) as client:
         status_response = client.get("/api/v1/assistant/status")
         query_response = client.post(
             "/api/v1/assistant/query", json={"question": "Which products lost money?"}
@@ -108,7 +114,11 @@ def test_query_endpoint_returns_grounded_evidence_with_fake_provider() -> None:
 
     app.dependency_overrides[get_business_assistant] = fake_assistant_dependency
     try:
-        with TestClient(app, raise_server_exceptions=False) as client:
+        with TestClient(
+            app,
+            raise_server_exceptions=False,
+            headers={"Authorization": "Bearer test-token-" + "x" * 32},
+        ) as client:
             response = client.post(
                 "/api/v1/assistant/query",
                 json={
@@ -127,7 +137,11 @@ def test_query_endpoint_returns_grounded_evidence_with_fake_provider() -> None:
 
 
 def test_assistant_cors_preflight_allows_configured_post_origin() -> None:
-    with TestClient(app, raise_server_exceptions=False) as client:
+    with TestClient(
+        app,
+        raise_server_exceptions=False,
+        headers={"Authorization": "Bearer test-token-" + "x" * 32},
+    ) as client:
         response = client.options(
             "/api/v1/assistant/query",
             headers={
@@ -138,3 +152,13 @@ def test_assistant_cors_preflight_allows_configured_post_origin() -> None:
 
     assert response.status_code == 200
     assert response.headers["access-control-allow-origin"] == "http://localhost:5173"
+
+
+@pytest.fixture(autouse=True)
+def authorized_api(monkeypatch):
+    monkeypatch.setattr(
+        security,
+        "get_settings",
+        lambda: Settings(api_access_token="test-token-" + "x" * 32, _env_file=None),
+    )
+    yield

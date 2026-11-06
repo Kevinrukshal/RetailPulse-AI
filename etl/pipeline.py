@@ -128,7 +128,7 @@ def run_pipeline(
     except Exception as exc:
         if run_created:
             _record_failure(database_engine, etl_run_id, started_at, exc)
-        LOGGER.exception(
+        LOGGER.error(
             "etl_pipeline_failed",
             extra={"etl_run_id": str(etl_run_id), "source_file": source_path.name},
         )
@@ -156,12 +156,10 @@ def _record_failure(
                 etl_run_id=etl_run_id,
                 completed_at=completed_at,
                 duration_seconds=(completed_at - started_at).total_seconds(),
-                error_details=f"{type(error).__name__}: {error}",
+                error_details=type(error).__name__,
             )
     except SQLAlchemyError:
-        LOGGER.exception(
-            "etl_failure_status_could_not_be_saved", extra={"etl_run_id": str(etl_run_id)}
-        )
+        LOGGER.error("etl_failure_status_could_not_be_saved", extra={"etl_run_id": str(etl_run_id)})
 
 
 def _load_column_mapping(path: Path | None) -> dict[str, str] | None:

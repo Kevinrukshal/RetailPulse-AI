@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-retail_user}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
     ports:
-      - "${POSTGRES_EXPOSED_PORT:-5432}:5432"
+      - "127.0.0.1:${POSTGRES_EXPOSED_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -33,7 +33,7 @@ services:
       DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-retail_user}:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}@db:5432/${POSTGRES_DB:-retailpulse}
     command: ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"]
     ports:
-      - "${API_EXPOSED_PORT:-8000}:8000"
+      - "127.0.0.1:${API_EXPOSED_PORT:-8000}:8000"
     volumes:
       - ./data:/app/data
     depends_on:
@@ -52,9 +52,9 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:?Set PGADMIN_DEFAULT_EMAIL in .env}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:?Set PGADMIN_DEFAULT_PASSWORD in .env}
-      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_SERVER_MODE: "True"
     ports:
-      - "${PGADMIN_EXPOSED_PORT:-5050}:80"
+      - "127.0.0.1:${PGADMIN_EXPOSED_PORT:-5050}:80"
     volumes:
       - pgadmin_data:/var/lib/pgadmin
     depends_on:

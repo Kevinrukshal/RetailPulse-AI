@@ -20,7 +20,7 @@ router = APIRouter(prefix="/api/v1/assistant", tags=["AI Assistant"])
 def get_narrator() -> Narrator:
     """Create the configured provider lazily only when AI is enabled and called."""
     settings = get_settings()
-    if not settings.ai_enabled:
+    if not settings.ai_enabled or not settings.ai_external_sharing_enabled:
         raise AssistantProviderError("AI assistant is disabled")
     api_key = settings.openai_api_key.get_secret_value() if settings.openai_api_key else ""
     return OpenAINarrator(api_key=api_key, model=settings.ai_model or "")
@@ -31,7 +31,7 @@ def get_business_assistant(
 ) -> BusinessAssistant:
     """Build a request-scoped orchestrator around a read-only session."""
     settings = get_settings()
-    if not settings.ai_enabled:
+    if not settings.ai_enabled or not settings.ai_external_sharing_enabled:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail="AI assistant is disabled; set AI_ENABLED=true with provider credentials",
@@ -55,7 +55,7 @@ def assistant_status() -> AssistantStatus:
     """Report availability without exposing credentials."""
     settings = get_settings()
     return AssistantStatus(
-        enabled=settings.ai_enabled,
+        enabled=settings.ai_enabled and settings.ai_external_sharing_enabled,
         provider=settings.ai_provider,
         model=settings.ai_model if settings.ai_enabled else None,
         supported_intents=list(AnalyticsIntent),

@@ -7,13 +7,28 @@ from uuid import uuid4
 import pytest
 from fastapi.testclient import TestClient
 
+from app.api import security
 from app.api.routes import upload
+from app.core.config import Settings
 from app.main import app
 
 
 @pytest.fixture
-def client() -> TestClient:
-    with TestClient(app, raise_server_exceptions=False) as test_client:
+def client(monkeypatch) -> TestClient:
+
+    monkeypatch.setattr(
+        upload, "get_settings", lambda: Settings(upload_enabled=True, _env_file=None)
+    )
+    monkeypatch.setattr(
+        security,
+        "get_settings",
+        lambda: Settings(api_access_token="test-token-" + "x" * 32, _env_file=None),
+    )
+    with TestClient(
+        app,
+        raise_server_exceptions=False,
+        headers={"Authorization": "Bearer test-token-" + "x" * 32},
+    ) as test_client:
         yield test_client
 
 

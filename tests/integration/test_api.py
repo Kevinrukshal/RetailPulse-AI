@@ -8,7 +8,9 @@ from fastapi.testclient import TestClient
 from sqlalchemy import text
 from sqlalchemy.exc import OperationalError
 
+from app.api import security
 from app.api.dependencies import get_read_only_session
+from app.core.config import Settings
 from app.database.session import get_engine
 from app.main import app
 from etl.pipeline import run_pipeline
@@ -39,8 +41,17 @@ def loaded_api_sample(tmp_path_factory: pytest.TempPathFactory) -> None:
 
 
 @pytest.fixture
-def client() -> TestClient:
-    with TestClient(app, raise_server_exceptions=False) as test_client:
+def client(monkeypatch) -> TestClient:
+    monkeypatch.setattr(
+        security,
+        "get_settings",
+        lambda: Settings(api_access_token="test-token-" + "x" * 32, _env_file=None),
+    )
+    with TestClient(
+        app,
+        raise_server_exceptions=False,
+        headers={"Authorization": "Bearer test-token-" + "x" * 32},
+    ) as test_client:
         yield test_client
 
 

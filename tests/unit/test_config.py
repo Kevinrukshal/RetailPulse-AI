@@ -3,7 +3,8 @@
 from app.core.config import Settings
 
 
-def test_default_settings_target_local_docker_services() -> None:
+def test_default_settings_target_local_docker_services(monkeypatch) -> None:
+    monkeypatch.delenv("DATABASE_URL", raising=False)
     settings = Settings(_env_file=None)
 
     assert settings.app_env == "development"

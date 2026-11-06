@@ -72,3 +72,8 @@ Intent routing is deliberately narrow and English-oriented. The local retriever 
 than embedding-based. Answers inherit the source data's limitations and must not be treated as
 causal recommendations. Add a new intent only by reviewing its question patterns, fixed query,
 expected grain, source documentation, result validation, and tests.
+
+## Local access and data protection
+
+See [local access setup](deployment.md#local-access-and-data-protection) for required API tokens,
+loopback ports, upload limits, and explicit AI sharing permission.

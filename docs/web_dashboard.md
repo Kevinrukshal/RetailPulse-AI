@@ -5,6 +5,9 @@ dashboard, so no separate frontend server or Node.js installation is required.
 
 ## Import data
 
+First unlock the dashboard with your configured access token and explicitly set
+`UPLOAD_ENABLED=true` in `.env` before importing.
+
 1. Click the upload area and select a `.csv` or `.xlsx` file (maximum 10 MB by default).
 2. Select **Process file**.
 3. Wait for the audited ETL result. Valid rows are loaded, invalid rows are quarantined, and the
@@ -22,5 +25,11 @@ UPLOAD_ENABLED=true
 UPLOAD_MAX_MB=10
 ```
 
-The dashboard is intended for trusted local use. There is no user authentication in this portfolio
-release; disable upload or add an authenticated reverse proxy before exposing it to the internet.
+The dashboard uses a shared operator token for trusted local access. It does not provide separate
+user accounts or tenant isolation. Keep uploads disabled when not needed and use HTTPS and
+appropriate gateway access controls before any remote use.
+
+## Local access and data protection
+
+See [local access setup](deployment.md#local-access-and-data-protection) for required API tokens,
+loopback ports, upload limits, and explicit AI sharing permission.

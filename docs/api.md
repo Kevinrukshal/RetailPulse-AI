@@ -35,11 +35,15 @@ Invoke-RestMethod "http://localhost:8000/api/v1/revenue/monthly?start_date=2025-
 SQL values are bound parameters. The few dynamic order expressions are selected from explicit
 server-side maps. Each request transaction is set read-only at the database level.
 
-This local portfolio API intentionally has no authentication. Browser uploads are limited by
-`UPLOAD_MAX_MB` (10 MB by default), but should be disabled with `UPLOAD_ENABLED=false` before
-internet exposure unless an authenticated gateway, rate limiting, HTTPS, and environment-specific
-CORS controls are added.
+All data and upload endpoints require the configured bearer token. Browser uploads are disabled
+by default and limited by `UPLOAD_MAX_MB` (10 MB). Explicitly enable imports only for authorized
+data. Use HTTPS, a gateway rate limit, and environment-specific access controls before remote use.
 
 The assistant endpoint is disabled by default. It accepts a 5-500 character question, maps it to a
 fixed intent/query, and returns `422` for unsupported questions, `503` when disabled, and `502` for
 a provider outage. See `docs/ai_assistant.md` for configuration and safety controls.
+
+## Local access and data protection
+
+See [local access setup](deployment.md#local-access-and-data-protection) for required API tokens,
+loopback ports, upload limits, and explicit AI sharing permission.

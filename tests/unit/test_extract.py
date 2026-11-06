@@ -107,3 +107,60 @@ def test_rejects_ambiguous_or_noncanonical_mapping() -> None:
         apply_column_mapping(source, {"Order": "order_id", "Transaction": "order_id"})
     with pytest.raises(ColumnMappingError, match="not canonical"):
         apply_column_mapping(source, {"Order": "unknown_target"})
+
+
+def test_security_row_bound_rejects_whole_file(tmp_path, monkeypatch):
+    from etl import extract
+    from etl.exceptions import UnreadableDataFileError
+
+    monkeypatch.setattr(extract, "MAX_ROWS", 2)
+    path = tmp_path / "bounded.csv"
+    path.write_text("a\n1\n2\n3\n")
+    with pytest.raises(UnreadableDataFileError, match="row limit"):
+        extract.extract_sales_data(path)
+
+
+def test_security_expanded_zip_bound(tmp_path, monkeypatch):
+    from zipfile import ZIP_DEFLATED, ZipFile
+
+    from etl import extract
+    from etl.exceptions import UnreadableDataFileError
+
+    monkeypatch.setattr(extract, "MAX_EXPANDED_BYTES", 100)
+    path = tmp_path / "bounded.xlsx"
+    with ZipFile(path, "w", ZIP_DEFLATED) as archive:
+        archive.writestr("sheet.xml", "x" * 101)
+    with pytest.raises(UnreadableDataFileError, match="expanded archive"):
+        extract.extract_sales_data(path)
+
+
+@pytest.mark.parametrize("reference", ["XFD1", "A1048576"])
+def test_security_sparse_cell_bounds(tmp_path, reference):
+    from zipfile import ZipFile
+
+    from etl import extract
+    from etl.exceptions import UnreadableDataFileError
+
+    path = tmp_path / "sparse.xlsx"
+    with ZipFile(path, "w") as archive:
+        archive.writestr(
+            "xl/worksheets/sheet1.xml", f'<worksheet><row><c r="{reference}"/></row></worksheet>'
+        )
+    with pytest.raises(UnreadableDataFileError, match="cell bounds"):
+        extract.extract_sales_data(path)
+
+
+def test_security_xml_entities_rejected(tmp_path):
+    from zipfile import ZipFile
+
+    from etl import extract
+    from etl.exceptions import UnreadableDataFileError
+
+    path = tmp_path / "entity.xlsx"
+    with ZipFile(path, "w") as archive:
+        archive.writestr(
+            "xl/worksheets/sheet1.xml",
+            '<!DOCTYPE x [<!ENTITY x "secret">]><worksheet>&x;</worksheet>',
+        )
+    with pytest.raises(UnreadableDataFileError):
+        extract.extract_sales_data(path)

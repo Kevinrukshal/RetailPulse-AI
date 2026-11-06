@@ -7,7 +7,7 @@ none is implied to be production-ready by this repository.
 
 ```powershell
 Copy-Item .env.example .env
-# Replace every change_me value in .env.
+# Fill the blank database/pgAdmin passwords and API_ACCESS_TOKEN with generated secrets.
 docker compose config
 docker compose up --build -d
 docker compose ps
@@ -49,3 +49,37 @@ tested; forward-fix is safer after destructive or data-shaping migrations.
 Power BI Desktop connects directly to local PostgreSQL. Service refresh requires either an
 on-premises data gateway to the local network or a securely hosted PostgreSQL endpoint. Configure
 credentials in the Power BI service and grant access only to approved reporting views.
+
+## Local access and data protection
+
+Before starting, set a random `API_ACCESS_TOKEN` of at least 32 characters in `.env`
+(generate with `python -c "import secrets; print(secrets.token_urlsafe(32))"`).
+All `/api/v1/` endpoints require `Authorization: Bearer <token>`; missing configuration
+fails closed. Unlock the dashboard with this token; it is kept only in page memory,
+never browser storage or a URL. Reload or sign out to forget it. This is single-operator
+access, not per-user permissions. Rotate the token by changing `.env` and restarting.
+Compose binds services to loopback; pgAdmin requires login. Keep strong database and
+pgAdmin passwords. Existing pgAdmin volumes may retain older configuration; verify its
+login screen. Use HTTPS and rate limits before any remote access.
+
+Uploads allow at most 100,000 rows. XLSX archives are limited to 1,000 entries and
+50 MiB expanded size. Files exceeding limits are rejected, never silently truncated.
+AI additionally requires `AI_EXTERNAL_SHARING_ENABLED=true`. Customer names/IDs and
+free-form user questions are excluded from provider requests; selected commercial
+metrics and approved documentation still leave the machine. Keep disabled for confidential
+data unless that sharing is authorized. Uploaded data and generated reports remain on disk;
+remove these deliberately according to your retention policy.
+
+API access is limited to 120 attempts per source address per minute in each process.
+The bounded in-memory limit resets on restart; use a gateway limit for multiple workers.
+
+Uploads are disabled by default. Set `UPLOAD_ENABLED=true` explicitly to enable imports.
+XLSX parsing additionally caps columns at 256 and total worksheet cells at 2,000,000,
+checks cell coordinates before pandas, and rejects XML entity expansion.
+
+Generate separate database, pgAdmin, and API secrets with `python -c "import secrets;
+print(secrets.token_urlsafe(32))"`. Fill the blank password values before Compose starts.
+Leave `DATABASE_URL` empty when using individual PostgreSQL settings outside Compose.
+Assistant JSON is capped at 16 KiB before parsing, including chunked requests.
+The local rate limit uses the ASGI client address: configure trusted proxy addresses explicitly
+before remote use; never trust arbitrary forwarded headers. Loopback is the supported default.

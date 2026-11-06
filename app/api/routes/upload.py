@@ -85,7 +85,7 @@ async def upload_sales_file(
         except (ExtractionError, ValidationError, ValueError) as exc:
             raise HTTPException(
                 status_code=status.HTTP_422_UNPROCESSABLE_CONTENT,
-                detail=str(exc),
+                detail="The file could not be processed. Check its format and required columns.",
             ) from exc
     finally:
         shutil.rmtree(upload_directory, ignore_errors=True)

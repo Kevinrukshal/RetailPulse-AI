@@ -53,9 +53,16 @@ class OpenAINarrator:
         context: list[RetrievedContext],
     ) -> str:
         evidence = {
-            "user_question": question,
+            "user_question": intent.value,
             "approved_intent": intent.value,
-            "query_result": data,
+            "query_result": [
+                {
+                    key: value
+                    for key, value in row.items()
+                    if key not in {"customer_name", "customer_id"}
+                }
+                for row in data
+            ],
             "documentation": [{"source": item.source, "content": item.content} for item in context],
         }
         instructions = (
