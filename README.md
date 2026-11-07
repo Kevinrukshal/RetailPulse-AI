@@ -32,16 +32,6 @@ Synthetic sample data and every insight derived from it will be clearly labeled 
 demonstration content. A configurable column-mapping layer will allow a real public
 dataset to be introduced without rewriting the pipeline.
 
-## Architecture decisions
-
-- Normalized `customers`, `products`, `orders`, and `order_items` tables preserve clear
-  business entities and avoid update anomalies.
-- Power BI consumes denormalized analytical views rather than the transactional tables.
-- ETL runs from the command line or the explicit, bounded browser upload route; analytics stay read-only.
-- Settings come from environment variables, logs go to standard output as JSON, and
-  secrets stay outside source control.
-- AI is disabled by default; its provider SDK is isolated in the optional `ai` package extra.
-
 ## Requirements
 
 - Windows with PowerShell
@@ -53,7 +43,7 @@ dataset to be introduced without rewriting the pipeline.
 ## Quick start
 
 Set strong database/pgAdmin passwords and a random `API_ACCESS_TOKEN` in `.env`
-before starting Compose; see [local access and data protection](#local-access-and-data-protection).
+before starting Compose; see [local access and data protection](docs/project-reference.md#local-access-and-data-protection).
 
 Run these commands from the repository root:
 
@@ -62,6 +52,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -e ".[dev]"
 Copy-Item .env.example .env
+# Configure the passwords and API_ACCESS_TOKEN in .env before continuing.
 docker compose up --build -d
 docker compose exec api python -m etl.pipeline --file data/sample/sample_sales.csv
 Start-Process http://localhost:8000
@@ -83,171 +74,20 @@ docker compose exec -e RUN_INTEGRATION_TESTS=1 api pytest --cov=ai --cov=app --c
 
 All commands must exit with code `0` before a release is accepted.
 
-## Demonstration data and extraction
+## Repository layout
 
-Regenerate the 750-row synthetic sample and test fixtures with:
-
-```powershell
-.\.venv\Scripts\python.exe scripts\generate_sample_data.py
-```
-
-The public extraction function is `etl.extract.extract_sales_data`. It accepts `.csv` and
-`.xlsx` paths, returns a Pandas DataFrame, selects the first usable Excel worksheet, and
-raises clear domain exceptions for missing, empty, encoded, unsupported, or unreadable
-inputs. Optional source-to-canonical aliases support future public datasets without ETL
-rewrites.
-
-The generated records are fictional demonstration data. Do not present findings from them
-as real business conclusions.
-
-## Validation and quality scoring
-
-`etl.validate.validate_sales_data` preserves the source DataFrame and returns separate
-valid and rejected DataFrames. Every rejected row contains all applicable machine-readable
-reason codes. Unreasonable profit is retained as a warning for investigation rather than
-silently discarded.
-
-The quality score is:
-
-```text
-round(100 * valid_rows / total_rows, 2)
-```
-
-A row with several issues counts once as rejected. `etl.quality_report.write_quality_outputs`
-writes valid and rejected CSVs plus machine-readable JSON and human-readable Markdown.
-
-## Deterministic transformation
-
-`etl.transform.transform_sales_data` standardizes validated values, parses dates and
-numerics, and derives calendar fields, profit margin, revenue per unit, discount band, and
-profit status. It also attaches the ETL run ID, source SHA-256, UTC load timestamp, and a
-stable order-item key. The key combines source hash, order ID, product ID, and source row
-number, preserving legitimate repeated products while making the same-file rerun stable.
-
-## PostgreSQL and Docker Compose
-
-Copy the local environment template once, then build the three services:
-
-```powershell
-Copy-Item .env.example .env
-docker compose config
-docker compose up --build -d
-docker compose ps
-docker compose exec api alembic upgrade head
-Invoke-RestMethod http://localhost:8000/health
-```
-
-Expected local services:
-
-- Browser dashboard and Swagger: `http://localhost:8000` and `http://localhost:8000/docs`
-- PostgreSQL 16: `localhost:5432`
-- pgAdmin: `http://localhost:5050`
-
-The API image runs as a non-root user and logs to standard output. Compose uses named
-volumes for PostgreSQL and pgAdmin, binds `data/` for ETL artifacts, waits for PostgreSQL
-health, and applies Alembic migrations before starting Uvicorn. Ports and credentials come
-from `.env`; never commit that file.
-
-### Normalized model versus a star schema
-
-The initial model separates customers, products, order headers, order items, ETL runs,
-quality results, and rejected records. This reduces duplicated descriptive data and makes
-loading and auditing easy to explain. A dimensional star schema would copy descriptive
-attributes into dedicated dimensions around a sales fact table for reporting performance.
-RetailPulse initially keeps normalized source-of-truth tables and exposes denormalized SQL
-views to Power BI; a dedicated dimensional layer can be added later if scale justifies it.
-
-## Run the ETL pipeline
-
-With the Compose stack healthy, run the sample inside the API container:
-
-```powershell
-docker compose exec api python -m etl.pipeline --file data/sample/sample_sales.csv
-```
-
-For a local Python process, set `DATABASE_URL` to a reachable PostgreSQL host and run:
-
-```powershell
-.\.venv\Scripts\python.exe -m etl.pipeline --file data\sample\sample_sales.csv
-```
-
-The command exits with `0` on success, `2` for source/validation problems, `3` for database
-problems, and `1` for unexpected failures. It writes valid/rejected CSV files and JSON/
-Markdown quality reports under `data/processed` and `data/rejected`. Each execution gets a
-new ETL run record; the stable order-item key prevents the same file from duplicating sales
-facts when it is processed again.
-
-## SQL analytics
-
-Alembic creates six read-only views from `sql/views.sql`:
-
-- `executive_summary`
-- `monthly_performance`
-- `product_performance`
-- `customer_performance`
-- `regional_performance`
-- `profit_leakage`
-
-`sql/analysis_queries.sql` contains 22 executable, documented analyses using CTEs, window
-functions, ranking, `CASE`, date functions, joins, and aggregation. These cover executive
-KPIs, trends, product/customer/region performance, RFM, discount impact, and profit leakage.
-Any result from the bundled synthetic dataset is a demonstration finding only.
-
-## Analytics API
-
-Swagger UI is available at `http://localhost:8000/docs`. The analytics and assistant endpoints are
-read-only; upload is the explicit ETL write endpoint:
-
-```text
-GET /health
-GET /api/v1/summary
-GET /api/v1/revenue/monthly
-GET /api/v1/products/top
-GET /api/v1/products/loss-making
-GET /api/v1/customers/top
-GET /api/v1/customers/segments
-GET /api/v1/regions/performance
-GET /api/v1/profit-leakage
-GET /api/v1/data-quality/latest
-GET /api/v1/etl-runs
-GET /api/v1/assistant/status
-POST /api/v1/assistant/query
-POST /api/v1/upload?filename=sales.csv
-```
-
-Fact-level endpoints accept appropriate `start_date`, `end_date`, `region`, `category`, and
-`subcategory` filters. Ranked endpoints validate `limit` and `sort_by`; ETL history uses
-`limit` and `offset`. SQL parameters are bound, sort expressions are allowlisted, and API
-analytical database transactions are explicitly read-only. Upload processing uses the separately
-audited transactional ETL write path.
-
-The upload route accepts a raw CSV/XLSX body, enforces `UPLOAD_MAX_MB`, deletes its temporary
-copy after processing, and uses the same validated, audited, idempotent ETL as the CLI. It is
-disabled by default; explicitly set `UPLOAD_ENABLED=true` only when importing authorized data.
-
-## Power BI dashboard handoff
-
-The dashboard package avoids committing an opaque `.pbix` binary while making the report
-reproducible:
-
-- [`dashboard/README.md`](dashboard/README.md) defines pages, visuals, and acceptance criteria.
-- [`dashboard/powerbi_data_dictionary.md`](dashboard/powerbi_data_dictionary.md) documents grains,
-  fields, aggregations, and optional relationships.
-- [`dashboard/measures.dax`](dashboard/measures.dax) provides fact-model and views-only measures.
-- [`docs/powerbi_setup.md`](docs/powerbi_setup.md) covers connection, modeling, refresh, security,
-  and reconciliation to PostgreSQL and the API.
-
-All supplied KPI values are deterministic outputs from synthetic demonstration data.
-
-## Configuration
-
-`app/core/config.py` uses Pydantic Settings v2. Environment variables override defaults and
-`.env.example` documents all values. Keep `AI_ENABLED=false` for the core-only platform. To use
-the narrator, set `INSTALL_AI=true`, configure the provider key/model, and rebuild the API image.
-The detailed threat model and examples are in [the AI assistant guide](docs/ai_assistant.md).
+- `app/`: FastAPI routes, services, database models and browser dashboard assets.
+- `etl/`: extraction, validation, transformations and loading.
+- `ai/`: optional grounded assistant.
+- `migrations/` and `sql/`: database evolution, views and analytical queries.
+- `dashboard/`: reproducible Power BI specifications and DAX measures.
+- `data/sample/`: synthetic demonstration inputs.
+- `scripts/`, `tests/` and `docs/`: maintenance, verification and guides.
 
 ## Documentation
 
+- [Project reference](docs/project-reference.md): architecture decisions, extraction,
+  validation, ETL commands, SQL, API contracts, configuration and data protection.
 - [Architecture](docs/architecture.md)
 - [Database design](docs/database.md)
 - [Analytics API](docs/api.md)
@@ -261,37 +101,12 @@ No cloud infrastructure is claimed by this local-first release.
 
 ## Author
 
-Kevin
+Kevin Rukshal
 
-- Full name: _Not provided_
-- GitHub: _Not provided_
-- LinkedIn: _Not provided_
-- Email: _Not provided_
+- [GitHub](https://github.com/Kevinrukshal)
+- [LinkedIn](https://www.linkedin.com/in/kevinrukshal/)
+- [Email](mailto:contact@kevinrukshal.com)
 
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
-
-## Local access and data protection
-
-Before starting, set a random `API_ACCESS_TOKEN` of at least 32 characters in `.env`
-(generate with `python -c "import secrets; print(secrets.token_urlsafe(32))"`).
-All `/api/v1/` endpoints require `Authorization: Bearer <token>`; missing configuration
-fails closed. Unlock the dashboard with this token; it is kept only in page memory,
-never browser storage or a URL. Reload or sign out to forget it. This is single-operator
-access, not per-user permissions. Rotate the token by changing `.env` and restarting.
-Compose binds services to loopback; pgAdmin requires login. Keep strong database and
-pgAdmin passwords. Existing pgAdmin volumes may retain older configuration; verify its
-login screen. Use HTTPS and rate limits before any remote access.
-
-Uploads allow at most 100,000 rows. XLSX archives are limited to 1,000 entries and
-50 MiB expanded size. Files exceeding limits are rejected, never silently truncated.
-AI additionally requires `AI_EXTERNAL_SHARING_ENABLED=true`. Customer names/IDs and
-free-form user questions are excluded from provider requests; selected commercial
-metrics and approved documentation still leave the machine. Keep disabled for confidential
-data unless that sharing is authorized. Uploaded data and generated reports remain on disk;
-remove these deliberately according to your retention policy.
-
-Uploads are disabled by default. Set `UPLOAD_ENABLED=true` explicitly to enable imports.
-XLSX parsing additionally caps columns at 256 and total worksheet cells at 2,000,000,
-checks cell coordinates before pandas, and rejects XML entity expansion.
